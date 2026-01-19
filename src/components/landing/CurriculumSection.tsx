@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { ChevronDown, FileCode2, Bot, Link2, Cloud } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "framer-motion";
+import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
 
 const weeks = [
   {
@@ -77,27 +79,31 @@ export function CurriculumSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section header */}
-          <div className="text-center mb-16">
+          <ScrollReveal className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               4 Semanas. 8 Sesiones. 4 Proyectos Reales.
             </h2>
-          </div>
+          </ScrollReveal>
 
           {/* Curriculum accordion */}
-          <div className="space-y-4">
+          <StaggerContainer className="space-y-4">
             {weeks.map((week) => (
-              <div
+              <motion.div
                 key={week.number}
-                className="bg-card border border-border rounded-xl overflow-hidden"
+                variants={staggerItem}
+                className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-card/90 to-card/60 backdrop-blur-sm border border-white/5 hover:border-primary/20 transition-all duration-500 group"
               >
+                {/* Subtle glow on hover */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
                 {/* Week header */}
                 <button
                   onClick={() => setOpenWeek(openWeek === week.number ? null : week.number)}
-                  className="w-full flex items-center justify-between p-6 text-left hover:bg-surface-hover transition-colors"
+                  className="relative z-10 w-full flex items-center justify-between p-6 text-left hover:bg-white/[0.02] transition-colors"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                      <week.icon className="w-6 h-6 text-primary" />
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <week.icon className="w-7 h-7 text-primary" />
                     </div>
                     <div>
                       <div className="flex items-center gap-3">
@@ -109,60 +115,72 @@ export function CurriculumSection() {
                   </div>
                   <ChevronDown
                     className={cn(
-                      "w-5 h-5 text-muted-foreground transition-transform",
+                      "w-5 h-5 text-muted-foreground transition-transform duration-300",
                       openWeek === week.number && "rotate-180"
                     )}
                   />
                 </button>
 
                 {/* Week content */}
-                {openWeek === week.number && (
-                  <div className="px-6 pb-6 border-t border-border">
-                    <div className="grid md:grid-cols-2 gap-8 pt-6">
-                      {/* Learnings */}
-                      <div>
-                        <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
-                          Lo que aprendes
-                        </h4>
-                        <ul className="space-y-3">
-                          {week.learnings.map((item, index) => (
-                            <li key={index} className="flex items-start gap-3">
-                              <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
-                              <span className="text-foreground">{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                <AnimatePresence>
+                  {openWeek === week.number && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      className="overflow-hidden"
+                    >
+                      <div className="relative z-10 px-6 pb-6 border-t border-white/5">
+                        <div className="grid md:grid-cols-2 gap-8 pt-6">
+                          {/* Learnings */}
+                          <div>
+                            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
+                              Lo que aprendes
+                            </h4>
+                            <ul className="space-y-3">
+                              {week.learnings.map((item, index) => (
+                                <li key={index} className="flex items-start gap-3">
+                                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                                  <span className="text-foreground">{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
 
-                      {/* Project */}
-                      <div className="bg-surface rounded-lg p-5">
-                        <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
-                          Lo que construyes
-                        </h4>
-                        <p className="text-primary font-semibold mb-3">→ {week.project.name}</p>
-                        <p className="text-sm text-muted-foreground">
-                          <span className="text-foreground/70">Input:</span> {week.project.input}
-                        </p>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          <span className="text-foreground/70">Output:</span> {week.project.output}
-                        </p>
+                          {/* Project */}
+                          <div className="rounded-xl bg-gradient-to-br from-surface/80 to-surface/40 border border-white/5 p-5">
+                            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
+                              Lo que construyes
+                            </h4>
+                            <p className="text-primary font-semibold mb-3">→ {week.project.name}</p>
+                            <p className="text-sm text-muted-foreground">
+                              <span className="text-foreground/70">Input:</span> {week.project.input}
+                            </p>
+                            <p className="text-sm text-muted-foreground mt-1">
+                              <span className="text-foreground/70">Output:</span> {week.project.output}
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                )}
-              </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
             ))}
-          </div>
+          </StaggerContainer>
 
           {/* Supporting text */}
-          <div className="mt-12 text-center bg-card border border-border rounded-xl p-8">
-            <p className="text-xl font-semibold mb-2">¿No sabes programar? No importa.</p>
-            <p className="text-muted-foreground">
-              Usas AI coding assistants (Cursor, Claude Code) para generar código.
-              <br />
-              Tú diriges. La IA escribe. Nosotros te enseñamos a orquestar.
-            </p>
-          </div>
+          <ScrollReveal delay={0.2}>
+            <div className="mt-12 text-center rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-white/5 p-8">
+              <p className="text-xl font-semibold mb-2">¿No sabes programar? No importa.</p>
+              <p className="text-muted-foreground">
+                Usas AI coding assistants (Cursor, Claude Code) para generar código.
+                <br />
+                Tú diriges. La IA escribe. Nosotros te enseñamos a orquestar.
+              </p>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
