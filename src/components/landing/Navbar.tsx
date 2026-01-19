@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home, BookOpen, BarChart3, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { NavBar } from "@/components/ui/tubelight-navbar";
 
-const navLinks = [
-  { href: "#programa", label: "Programa" },
-  { href: "#resultados", label: "Resultados" },
-  { href: "#faq", label: "FAQ" },
+const navItems = [
+  { name: "Inicio", url: "#", icon: Home },
+  { name: "Programa", url: "#programa", icon: BookOpen },
+  { name: "Resultados", url: "#resultados", icon: BarChart3 },
+  { name: "FAQ", url: "#faq", icon: HelpCircle },
 ];
 
 export function Navbar() {
@@ -25,7 +27,7 @@ export function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-background/95 backdrop-blur-md border-b border-border"
+            ? "bg-background/80 backdrop-blur-md border-b border-white/5"
             : "bg-transparent"
         }`}
       >
@@ -36,25 +38,17 @@ export function Navbar() {
               <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-sm">AO</span>
               </div>
-              <span className="font-semibold text-foreground">Agent Operators</span>
+              <span className="font-semibold text-foreground hidden sm:inline">Agent Operators</span>
             </a>
 
-            {/* Desktop Nav */}
-            <div className="hidden md:flex items-center gap-8">
-              {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
-                >
-                  {link.label}
-                </a>
-              ))}
+            {/* Desktop Nav - Tubelight */}
+            <div className="hidden md:block">
+              <NavBar items={navItems} />
             </div>
 
             {/* Desktop CTA */}
             <div className="hidden md:block">
-              <Button className="gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-0.5">
+              <Button className="gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-0.5 rounded-full">
                 Reserva Tu Lugar
               </Button>
             </div>
@@ -74,19 +68,20 @@ export function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-background/98 backdrop-blur-lg md:hidden pt-20">
-          <nav className="container mx-auto px-4 py-8 flex flex-col gap-6">
-            {navLinks.map((link) => (
+          <nav className="container mx-auto px-4 py-8 flex flex-col gap-4">
+            {navItems.map((item) => (
               <a
-                key={link.href}
-                href={link.href}
-                className="text-xl font-medium text-foreground py-2"
+                key={item.url}
+                href={item.url}
+                className="flex items-center gap-3 text-lg font-medium text-foreground py-3 px-4 rounded-xl hover:bg-card transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {link.label}
+                <item.icon className="w-5 h-5 text-primary" />
+                {item.name}
               </a>
             ))}
             <Button
-              className="gradient-primary w-full mt-4"
+              className="gradient-primary w-full mt-4 rounded-xl py-6"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Reserva Tu Lugar
@@ -97,7 +92,7 @@ export function Navbar() {
 
       {/* Floating Mobile CTA */}
       <div className="fixed bottom-6 left-4 right-4 z-40 md:hidden">
-        <Button className="w-full gradient-primary shadow-primary py-6 text-base font-semibold">
+        <Button className="w-full gradient-primary shadow-primary py-6 text-base font-semibold rounded-2xl">
           Reserva Tu Lugar →
         </Button>
       </div>

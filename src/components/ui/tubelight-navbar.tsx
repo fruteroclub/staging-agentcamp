@@ -1,0 +1,112 @@
+import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { LucideIcon } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+interface NavItem {
+  name: string;
+  url: string;
+  icon: LucideIcon;
+}
+
+interface NavBarProps {
+  items: NavItem[];
+  className?: string;
+}
+
+export function NavBar({ items, className }: NavBarProps) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [hoverIndex, setHoverIndex] = useState<number | null>(null);
+  const navRef = useRef<HTMLDivElement>(null);
+  const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 });
+
+  const currentIndex = hoverIndex !== null ? hoverIndex : activeIndex;
+
+  useEffect(() => {
+    const updateIndicator = () => {
+      if (navRef.current) {
+        const buttons = navRef.current.querySelectorAll("a");
+        const activeButton = buttons[currentIndex];
+        if (activeButton) {
+          const navRect = navRef.current.getBoundingClientRect();
+          const buttonRect = activeButton.getBoundingClientRect();
+          setIndicatorStyle({
+            left: buttonRect.left - navRect.left,
+            width: buttonRect.width,
+          });
+        }
+      }
+    };
+
+    updateIndicator();
+    window.addEventListener("resize", updateIndicator);
+    return () => window.removeEventListener("resize", updateIndicator);
+  }, [currentIndex]);
+
+  const handleClick = (index: number, url: string) => {
+    setActiveIndex(index);
+    // Smooth scroll to section if it's an anchor link
+    if (url.startsWith("#")) {
+      const element = document.querySelector(url);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  return (
+    <div
+      className={cn(
+        "relative flex items-center gap-1 rounded-full bg-card/80 backdrop-blur-md border border-white/10 p-1.5 shadow-lg",
+        className
+      )}
+      ref={navRef}
+    >
+      {/* Tubelight indicator */}
+      <motion.div
+        className="absolute h-[calc(100%-12px)] rounded-full bg-primary/20 border border-primary/30"
+        initial={false}
+        animate={{
+          left: indicatorStyle.left,
+          width: indicatorStyle.width,
+        }}
+        transition={{ type: "spring", stiffness: 400, damping: 30 }}
+        style={{ top: 6 }}
+      />
+      
+      {/* Glow effect */}
+      <motion.div
+        className="absolute h-[calc(100%-12px)] rounded-full bg-primary/30 blur-md"
+        initial={false}
+        animate={{
+          left: indicatorStyle.left,
+          width: indicatorStyle.width,
+        }}
+        transition={{ type: "spring", stiffness: 400, damping: 30 }}
+        style={{ top: 6 }}
+      />
+
+      {items.map((item, index) => (
+        <a
+          key={item.name}
+          href={item.url}
+          onClick={(e) => {
+            e.preventDefault();
+            handleClick(index, item.url);
+          }}
+          onMouseEnter={() => setHoverIndex(index)}
+          onMouseLeave={() => setHoverIndex(null)}
+          className={cn(
+            "relative z-10 flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium transition-colors duration-200",
+            currentIndex === index
+              ? "text-primary"
+              : "text-muted-foreground hover:text-foreground"
+          )}
+        >
+          <item.icon className="w-4 h-4" />
+          <span className="hidden sm:inline">{item.name}</span>
+        </a>
+      ))}
+    </div>
+  );
+}
