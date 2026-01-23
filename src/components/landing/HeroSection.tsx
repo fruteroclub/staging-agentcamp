@@ -81,6 +81,7 @@ export function HeroSection() {
             <Button
               size="lg"
               className="gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-1 px-8 py-6 text-lg font-semibold group"
+              aria-label="Reservar lugar en Agentcamp cohorte 2"
             >
               Reserva Tu Lugar
               <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -89,6 +90,7 @@ export function HeroSection() {
               variant="outline"
               size="lg"
               className="border-border hover:border-primary hover:bg-primary/10 px-8 py-6 text-lg"
+              aria-label="Ver programa del curso Agentcamp"
             >
               Ver Programa
             </Button>

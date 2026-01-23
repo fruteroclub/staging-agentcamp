@@ -6,17 +6,167 @@
     <title>Agentcamp | Agentes IA en Producción Sin Código</title>
     <meta name="description" content="Programa de 4 semanas para construir Agentes IA reales. Sin experiencia técnica. Deploy en producción. En español. Cohorte limitada a 50 builders." />
     
+    <!-- SEO Meta Tags -->
+    <link rel="canonical" href="https://frutero.club/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#6366f1" />
+
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Agentcamp | Agentes IA en Producción Sin Código" />
     <meta property="og:description" content="Programa de 4 semanas para construir Agentes IA reales. Sin experiencia técnica. Deploy en producción. En español." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://frutero.club/" />
+    <meta property="og:image" content="https://frutero.club/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_MX" />
 
+    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Agentcamp | Agentes IA en Producción Sin Código" />
     <meta name="twitter:description" content="Programa de 4 semanas para construir Agentes IA reales. Sin experiencia técnica. Deploy en producción." />
-    
+    <meta name="twitter:image" content="https://frutero.club/twitter-image.jpg" />
+    <meta name="twitter:site" content="@fruteroclub" />
+
+    <!-- Favicons and App Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/kukulcan-logo-color.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data: Course Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Agentcamp - Agentes IA en Producción",
+      "description": "Programa de 4 semanas para construir Agentes IA reales. Sin experiencia técnica. Deploy en producción. En español. Cohorte limitada a 50 builders.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Frutero",
+        "url": "https://frutero.club",
+        "sameAs": [
+          "https://x.com/fruteroclub",
+          "https://www.linkedin.com/company/frutero-club/",
+          "https://www.youtube.com/@fruterotv"
+        ]
+      },
+      "courseMode": "online",
+      "inLanguage": "es",
+      "duration": "P4W",
+      "numberOfLessons": 8,
+      "educationLevel": "Beginner",
+      "teaches": [
+        "Arquitectura de agentes AI con Orchestration-First approach",
+        "Integración de herramientas con Composio",
+        "Deployment de agentes en producción",
+        "Debugging y monitoring de agentes"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://frutero.club"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Frutero",
+      "alternateName": "Frutero Club",
+      "url": "https://frutero.club",
+      "logo": "https://frutero.club/kukulcan-logo-color.svg",
+      "description": "Comunidad LATAM de AI Builders",
+      "sameAs": [
+        "https://x.com/fruteroclub",
+        "https://www.linkedin.com/company/frutero-club/",
+        "https://www.youtube.com/@fruterotv"
+      ]
+    }
+    </script>
+
+    <!-- Structured Data: FAQ Page Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Necesito saber programar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Usamos AI coding assistants (Cursor, Claude Code) para generar código. Tú aprendes a dirigir y orquestar, no a escribir Python desde cero. Requisito real: saber usar una computadora y estar dispuesto a aprender herramientas nuevas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo necesito dedicar por semana?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "5-7 horas semanales: 3-4 horas en sesiones live y 2-3 horas de trabajo independiente y proyectos. El programa está diseñado para gente con trabajo full-time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué herramientas voy a usar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El stack incluye: IDE con AI assistant (Cursor o VS Code + Copilot), Framework de agentes, Claude API para LLM calls, Composio para integraciones, y Cloud platform para deployment. Todo se configura en el pre-work antes de empezar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Las sesiones son en vivo o grabadas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En vivo con Q&A interactivo. Las grabaciones quedan disponibles para repaso, pero el valor está en participar live."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa si me atraso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tienes office hours 2x por semana para ponerte al día. Soporte async en la comunidad para dudas específicas. Acceso a grabaciones para repasar. El programa tiene ritmo, pero hay red de apoyo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué tipo de agentes puedo construir después?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El programa te da las bases para construir: Asistentes de email y calendario, Pipelines de contenido automatizado, Agentes de research y análisis, Workflows de customer support, y Automatizaciones operativas internas. El límite es tu caso de uso, no el conocimiento técnico."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hay comunidad después del programa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Acceso permanente a la comunidad de Agentcamp. Networking con otros graduados. Actualizaciones de contenido."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué es gratis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El programa es patrocinado por empresas de infraestructura AI que quieren que más builders en LATAM aprendan a construir con su tecnología. Tú aprendes gratis, ellos ganan adopción. Win-win."
+          }
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>

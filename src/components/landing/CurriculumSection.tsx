@@ -135,9 +135,9 @@ export function CurriculumSection() {
                         <div className="grid md:grid-cols-2 gap-8 pt-6">
                           {/* Learnings */}
                           <div>
-                            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
+                            <h3 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
                               Lo que aprendes
-                            </h4>
+                            </h3>
                             <ul className="space-y-3">
                               {week.learnings.map((item, index) => (
                                 <li key={index} className="flex items-start gap-3">
@@ -150,9 +150,9 @@ export function CurriculumSection() {
 
                           {/* Project */}
                           <div className="rounded-xl bg-gradient-to-br from-surface/80 to-surface/40 border border-white/5 p-5">
-                            <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
+                            <h3 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
                               Lo que construyes
-                            </h4>
+                            </h3>
                             <p className="text-primary font-semibold mb-3">→ {week.project.name}</p>
                             <p className="text-sm text-muted-foreground">
                               <span className="text-foreground/70">Input:</span> {week.project.input}

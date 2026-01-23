@@ -22,8 +22,20 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'Escape') {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
   return (
     <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-lg"
+      >
+        Saltar al contenido principal
+      </a>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
@@ -34,10 +46,14 @@ export function Navbar() {
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">AO</span>
-              </div>
+            <a href="#" className="flex items-center gap-2 group">
+              <img
+                src="/frutero-logo.svg"
+                alt="Agentcamp by Frutero"
+                className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
+                width="104"
+                height="44"
+              />
               <span className="font-semibold text-foreground hidden sm:inline">Agentcamp</span>
             </a>
 
@@ -57,7 +73,8 @@ export function Navbar() {
             <button
               className="md:hidden p-2 text-foreground"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle menu"
+              aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+              aria-expanded={isMobileMenuOpen}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -67,7 +84,13 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-background/98 backdrop-blur-lg md:hidden pt-20">
+        <div
+          className="fixed inset-0 z-40 bg-background/98 backdrop-blur-lg md:hidden pt-20"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Menú de navegación"
+          onKeyDown={handleKeyDown}
+        >
           <nav className="container mx-auto px-4 py-8 flex flex-col gap-4">
             {navItems.map((item) => (
               <a

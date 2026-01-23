@@ -1,5 +1,6 @@
 import { motion, useInView, Variants, Easing } from "framer-motion";
 import { useRef, ReactNode } from "react";
+import { useMotionPreference } from "@/hooks/useMotionPreference";
 
 interface ScrollRevealProps {
   children: ReactNode;
@@ -20,13 +21,27 @@ export function ScrollReveal({
 }: ScrollRevealProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once, margin: "-100px" });
+  const prefersReducedMotion = useMotionPreference();
 
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y }}
-      transition={{ duration, delay, ease: [0.25, 0.1, 0.25, 1] }}
+      initial={{
+        opacity: prefersReducedMotion ? 1 : 0,
+        y: prefersReducedMotion ? 0 : y
+      }}
+      animate={isInView
+        ? { opacity: 1, y: 0 }
+        : {
+            opacity: prefersReducedMotion ? 1 : 0,
+            y: prefersReducedMotion ? 0 : y
+          }
+      }
+      transition={{
+        duration: prefersReducedMotion ? 0 : duration,
+        delay: prefersReducedMotion ? 0 : delay,
+        ease: [0.25, 0.1, 0.25, 1]
+      }}
       className={className}
     >
       {children}
@@ -47,6 +62,7 @@ export function StaggerContainer({
 }: StaggerContainerProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const prefersReducedMotion = useMotionPreference();
 
   return (
     <motion.div
@@ -57,7 +73,7 @@ export function StaggerContainer({
         hidden: {},
         visible: {
           transition: {
-            staggerChildren: staggerDelay,
+            staggerChildren: prefersReducedMotion ? 0 : staggerDelay,
           },
         },
       }}

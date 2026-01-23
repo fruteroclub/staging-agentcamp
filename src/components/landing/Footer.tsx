@@ -21,10 +21,14 @@ export function Footer() {
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             {/* Logo */}
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">AO</span>
-              </div>
+            <div className="flex items-center gap-3">
+              <img
+                src="/kukulcan-logo-color.svg"
+                alt="Powered by Frutero"
+                className="h-12 w-auto"
+                width="128"
+                height="128"
+              />
               <div>
                 <span className="font-semibold text-foreground">Agentcamp</span>
                 <span className="text-muted-foreground text-sm ml-2">by Frutero</span>
@@ -51,7 +55,9 @@ export function Footer() {
                   key={social.label}
                   href={social.href}
                   className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center hover:border-primary/50 transition-colors"
-                  aria-label={social.label}
+                  aria-label={`Síguenos en ${social.label}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <social.icon className="w-5 h-5 text-muted-foreground" />
                 </a>
