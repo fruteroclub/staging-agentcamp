@@ -9,6 +9,7 @@ interface ScrollRevealProps {
   duration?: number;
   y?: number;
   once?: boolean;
+  animationKey?: string;
 }
 
 export function ScrollReveal({
@@ -18,6 +19,7 @@ export function ScrollReveal({
   duration = 0.5,
   y = 30,
   once = true,
+  animationKey,
 }: ScrollRevealProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once, margin: "-100px" });
@@ -26,6 +28,7 @@ export function ScrollReveal({
   return (
     <motion.div
       ref={ref}
+      key={animationKey}
       initial={{
         opacity: prefersReducedMotion ? 1 : 0,
         y: prefersReducedMotion ? 0 : y
@@ -53,12 +56,14 @@ interface StaggerContainerProps {
   children: ReactNode;
   className?: string;
   staggerDelay?: number;
+  animationKey?: string;
 }
 
 export function StaggerContainer({
   children,
   className = "",
   staggerDelay = 0.1,
+  animationKey,
 }: StaggerContainerProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -67,6 +72,7 @@ export function StaggerContainer({
   return (
     <motion.div
       ref={ref}
+      key={animationKey}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={{
