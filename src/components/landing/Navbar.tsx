@@ -2,17 +2,19 @@ import { useState, useEffect } from "react";
 import { Menu, X, Home, BookOpen, BarChart3, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NavBar } from "@/components/ui/tubelight-navbar";
-
-const navItems = [
-  { name: "Inicio", url: "#", icon: Home },
-  { name: "Programa", url: "#programa", icon: BookOpen },
-  { name: "Resultados", url: "#resultados", icon: BarChart3 },
-  { name: "FAQ", url: "#faq", icon: HelpCircle },
-];
+import { useTranslation } from "react-i18next";
 
 export function Navbar() {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navItems = [
+    { name: t('navbar.links.home'), url: "#", icon: Home },
+    { name: t('navbar.links.program'), url: "#programa", icon: BookOpen },
+    { name: t('navbar.links.results'), url: "#resultados", icon: BarChart3 },
+    { name: t('navbar.links.faq'), url: "#faq", icon: HelpCircle },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,7 +56,7 @@ export function Navbar() {
                 width="104"
                 height="44"
               />
-              <span className="font-semibold text-foreground hidden sm:inline">Agentcamp</span>
+              <span className="font-semibold text-foreground hidden sm:inline">{t('navbar.logo.text')}</span>
             </a>
 
             {/* Desktop Nav - Tubelight */}
@@ -65,7 +67,7 @@ export function Navbar() {
             {/* Desktop CTA */}
             <div className="hidden md:block">
               <Button className="gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-0.5 rounded-full">
-                Reserva Tu Lugar
+                {t('navbar.cta')}
               </Button>
             </div>
 
@@ -73,7 +75,7 @@ export function Navbar() {
             <button
               className="md:hidden p-2 text-foreground"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+              aria-label={t('navbar.menuLabel')}
               aria-expanded={isMobileMenuOpen}
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -107,7 +109,7 @@ export function Navbar() {
               className="gradient-primary w-full mt-4 rounded-xl py-6"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Reserva Tu Lugar
+              {t('navbar.cta')}
             </Button>
           </nav>
         </div>
@@ -116,7 +118,7 @@ export function Navbar() {
       {/* Floating Mobile CTA */}
       <div className="fixed bottom-6 left-4 right-4 z-40 md:hidden">
         <Button className="w-full gradient-primary shadow-primary py-6 text-base font-semibold rounded-2xl">
-          Reserva Tu Lugar →
+          {t('navbar.ctaMobile')}
         </Button>
       </div>
     </>
