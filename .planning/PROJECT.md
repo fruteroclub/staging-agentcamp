@@ -43,13 +43,14 @@ Effectively communicate the AgentCamp 2.0 program value to both Spanish-speaking
 
 **Current State:**
 - Vite + React 18 + TypeScript project
-- Landing page with all content currently in Spanish
+- Landing page with all content hardcoded in Spanish (strings embedded in components)
 - Established component architecture with section-based composition
 - Uses Framer Motion for scroll animations throughout
 
 **User Need:**
-- Existing Spanish content targets potential participants
-- Need English version to communicate with potential partners
+- Existing Spanish content targets potential participants (primary audience)
+- Need English version to communicate with potential partners (secondary audience)
+- Must extract Spanish → generate English translations → enable toggle
 - Toggle must be easily accessible (navbar placement)
 
 **Technical Environment:**
