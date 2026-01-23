@@ -3,15 +3,15 @@ import { Twitter, Linkedin, Youtube } from "lucide-react";
 const footerLinks = [
   { href: "#programa", label: "Programa" },
   { href: "#faq", label: "FAQ" },
-  { href: "#", label: "Contacto" },
+  { href: "https://frutero.club/", label: "Contacto" },
   { href: "#", label: "Términos" },
   { href: "#", label: "Privacidad" },
 ];
 
 const socialLinks = [
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Twitter, href: "https://x.com/fruteroclub", label: "Twitter" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/frutero-club/", label: "LinkedIn" },
+  { icon: Youtube, href: "https://www.youtube.com/@fruterotv", label: "YouTube" },
 ];
 
 export function Footer() {
