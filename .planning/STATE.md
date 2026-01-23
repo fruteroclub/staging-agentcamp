@@ -10,28 +10,28 @@ See: .planning/PROJECT.md (updated 2026-01-23)
 ## Current Position
 
 Phase: 2 of 4 (Component Integration)
-Plan: 1 of 2 in current phase
-Status: In progress
-Last activity: 2026-01-23 — Completed 02-01-PLAN.md (Animation & Translation Integration)
+Plan: 2 of 2 in current phase
+Status: Phase complete
+Last activity: 2026-01-23 — Completed 02-02-PLAN.md (Array-Based Components Migration)
 
-Progress: [████░░░░░░] 40%
+Progress: [█████░░░░░] 50%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 3
-- Average duration: 4.3 min
-- Total execution time: 0.22 hours
+- Total plans completed: 4
+- Average duration: 5.0 min
+- Total execution time: 0.33 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation-content | 2 | 9 min | 4.5 min |
-| 02-component-integration | 1 | 4 min | 4 min |
+| 02-component-integration | 2 | 11 min | 5.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 2 min, 7 min, 4 min
+- Last 5 plans: 2 min, 7 min, 4 min, 7 min
 - Trend: Consistently fast execution
 
 *Updated after each plan completion*
@@ -58,6 +58,9 @@ Recent decisions affecting current work:
 - Unique key prefixes (02-01): badges-, title-, subtitle1-, etc. to avoid React duplicate key warnings
 - Social link aria-labels unchanged (02-01): Brand names, not translated content
 - Background animations excluded (02-01): Decorative elements don't need language-based re-animation
+- Index-based translation pattern (02-02): t(`key.items.${index}.prop`) for array iterations
+- AnimatePresence key pattern (02-02): key on content only to preserve parent accordion state
+- whitespace-pre-line for multiline (02-02): CSS class for translations with \n line breaks
 
 ### Pending Todos
 
@@ -69,6 +72,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-23T20:07:22Z (plan execution)
-Stopped at: Completed 02-01-PLAN.md (Animation & Translation Integration)
+Last session: 2026-01-23T21:23:35Z (plan execution)
+Stopped at: Completed 02-02-PLAN.md (Array-Based Components Migration) - Phase 2 complete
 Resume file: None
