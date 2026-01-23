@@ -1,29 +1,25 @@
 import { ArrowRight, Check, X } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
 
-const transformations = [
-  { before: "Experimentas con prompts", after: "Operas workflows automatizados" },
-  { before: "Demos locales", after: "Sistemas deployed en la nube" },
-  { before: "Agentes que alucinan", after: "Agentes con control y oversight" },
-  { before: '"Algún día aprendo"', after: "Agent Operator certificado" },
-];
-
 export function TransformationSection() {
+  const { t, i18n } = useTranslation();
+
   return (
     <section className="py-24 bg-card/50">
       <div className="container mx-auto px-4">
         {/* Section header */}
-        <ScrollReveal className="text-center mb-16">
+        <ScrollReveal animationKey={i18n.language} className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">
-            En 4 semanas, esto cambia:
+            {t('transformation.title')}
           </h2>
         </ScrollReveal>
 
         {/* Transformation table */}
         <div className="max-w-3xl mx-auto">
-          <StaggerContainer className="grid gap-4">
-            {transformations.map((item, index) => (
+          <StaggerContainer animationKey={i18n.language} className="grid gap-4">
+            {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
                 variants={staggerItem}
@@ -34,7 +30,7 @@ export function TransformationSection() {
                   <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-destructive/20 to-destructive/5 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <X className="w-4 h-4 text-destructive" />
                   </div>
-                  <span className="text-muted-foreground text-sm md:text-base">{item.before}</span>
+                  <span className="text-muted-foreground text-sm md:text-base">{t(`transformation.items.${index}.before`)}</span>
                 </div>
 
                 {/* Arrow */}
@@ -47,7 +43,7 @@ export function TransformationSection() {
                   <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-success/20 to-success/5 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <Check className="w-4 h-4 text-success" />
                   </div>
-                  <span className="text-foreground font-medium text-sm md:text-base">{item.after}</span>
+                  <span className="text-foreground font-medium text-sm md:text-base">{t(`transformation.items.${index}.after`)}</span>
                 </div>
               </motion.div>
             ))}
