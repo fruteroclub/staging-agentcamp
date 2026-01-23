@@ -45,11 +45,11 @@ Plans:
   3. Framer Motion animations re-trigger when language changes via `key={i18n.language}` prop
   4. ScrollReveal component accepts animationKey prop and forces remount on key change
   5. Application renders correctly in both languages when manually switching via console
-**Plans**: TBD
+**Plans**: 2 plans in 2 waves
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md — Extend ScrollReveal/StaggerContainer with animationKey, migrate Footer/Navbar/Hero/FinalCTA
+- [ ] 02-02-PLAN.md — Migrate remaining 9 components (arrays, curriculum accordion, FAQ)
 
 ### Phase 3: Language Switcher
 **Goal**: Users can switch between English and Spanish via accessible navbar control
