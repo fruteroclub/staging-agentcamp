@@ -1,12 +1,5 @@
 import { Twitter, Linkedin, Youtube } from "lucide-react";
-
-const footerLinks = [
-  { href: "#programa", label: "Programa" },
-  { href: "#faq", label: "FAQ" },
-  { href: "https://frutero.club/", label: "Contacto" },
-  { href: "#", label: "Términos" },
-  { href: "#", label: "Privacidad" },
-];
+import { useTranslation } from "react-i18next";
 
 const socialLinks = [
   { icon: Twitter, href: "https://x.com/fruteroclub", label: "Twitter" },
@@ -15,6 +8,15 @@ const socialLinks = [
 ];
 
 export function Footer() {
+  const { t } = useTranslation();
+
+  const footerLinks = [
+    { href: "#programa", label: t('footer.links.program') },
+    { href: "#faq", label: t('footer.links.faq') },
+    { href: "https://frutero.club/", label: t('footer.links.contact') },
+    { href: "#", label: t('footer.links.terms') },
+    { href: "#", label: t('footer.links.privacy') },
+  ];
   return (
     <footer className="py-12 bg-background border-t border-border">
       <div className="container mx-auto px-4">
@@ -30,8 +32,8 @@ export function Footer() {
                 height="128"
               />
               <div>
-                <span className="font-semibold text-foreground">Agentcamp</span>
-                <span className="text-muted-foreground text-sm ml-2">by Frutero</span>
+                <span className="font-semibold text-foreground">{t('footer.logo.text')}</span>
+                <span className="text-muted-foreground text-sm ml-2">{t('footer.logo.byline')}</span>
               </div>
             </div>
 
@@ -68,7 +70,7 @@ export function Footer() {
           {/* Copyright */}
           <div className="text-center mt-8 pt-8 border-t border-border">
             <p className="text-sm text-muted-foreground">
-              © 2026 Frutero. Todos los derechos reservados.
+              {t('footer.copyright')}
             </p>
           </div>
         </div>
