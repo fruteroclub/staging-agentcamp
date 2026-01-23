@@ -29,11 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. `/locales/en/translation.json` contains complete English translations with identical key structure
   4. Pre-commit validation script prevents translation key mismatches between languages
   5. Application still renders with hardcoded Spanish strings (no visual changes yet)
-**Plans**: TBD
+**Plans**: 2 plans in 2 waves
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — Install i18next packages, create config, wire into main.tsx
+- [ ] 01-02-PLAN.md — Extract Spanish content, generate English translations, create validation script
 
 ### Phase 2: Component Integration
 **Goal**: All landing page components use translation hooks instead of hardcoded strings, with animations re-triggering on language change
@@ -88,7 +88,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Content | 0/2 | Not started | - |
+| 1. Foundation & Content | 0/2 | Planned | - |
 | 2. Component Integration | 0/2 | Not started | - |
 | 3. Language Switcher | 0/1 | Not started | - |
 | 4. Detection & Polish | 0/1 | Not started | - |
