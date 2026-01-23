@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const LOCALES_DIR = path.join(__dirname, '../public/locales');
+const LOCALES_DIR = path.join(__dirname, '../src/locales');
 const LANGUAGES = ['es', 'en'];
 
 function getKeys(obj, prefix = '') {

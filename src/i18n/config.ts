@@ -5,7 +5,7 @@ import resourcesToBackend from 'i18next-resources-to-backend';
 
 i18n
   .use(resourcesToBackend((language: string, namespace: string) =>
-    import(`../../public/locales/${language}/${namespace}.json`)
+    import(`../locales/${language}/${namespace}.json`)
   ))
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -21,5 +21,10 @@ i18n
       lookupLocalStorage: 'i18nextLng',
     },
   });
+
+// Expose i18n to window for console testing (development only)
+if (typeof window !== 'undefined') {
+  (window as any).i18n = i18n;
+}
 
 export default i18n;
