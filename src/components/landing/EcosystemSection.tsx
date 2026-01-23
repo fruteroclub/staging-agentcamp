@@ -27,7 +27,7 @@ export function EcosystemSection() {
               Infraestructura de Producción
             </h2>
             <p className="text-muted-foreground text-lg">
-              Agent Operators corre sobre el mismo stack que usan equipos de Silicon Valley.
+              Agentcamp corre sobre el mismo stack que usan equipos de Silicon Valley.
             </p>
           </ScrollReveal>
 

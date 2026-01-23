@@ -38,7 +38,7 @@ export function Navbar() {
               <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-sm">AO</span>
               </div>
-              <span className="font-semibold text-foreground hidden sm:inline">Agent Operators</span>
+              <span className="font-semibold text-foreground hidden sm:inline">Agentcamp</span>
             </a>
 
             {/* Desktop Nav - Tubelight */}

@@ -33,7 +33,7 @@ export function HeroSection() {
           >
             <Badge variant="outline" className="border-primary/50 text-primary bg-primary/10 px-4 py-1.5">
               <Sparkles className="w-3.5 h-3.5 mr-1.5" />
-              100% Gratis
+              100% Virtual
             </Badge>
             <Badge variant="outline" className="border-border text-muted-foreground px-4 py-1.5">
               Programa de 4 semanas
@@ -47,9 +47,9 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
           >
-            Construye AI Agents.{" "}
-            <span className="text-gradient">Deploy Real.</span>{" "}
-            Sin Código.
+            Construye Agentes IA{" "}<br />
+            <span className="text-gradient">Despliega en Producción</span>{" "}<br />
+            Sin Código
           </motion.h1>
 
           {/* Sub-headline */}
@@ -68,7 +68,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg md:text-xl text-foreground font-medium mb-10"
           >
-            Agent Operators te lleva de experimentar a operar en 4 semanas.
+            Agentcamp te lleva de experimentar a operar en 4 semanas.
           </motion.p>
 
           {/* CTAs */}
@@ -101,7 +101,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-sm text-muted-foreground"
           >
-            Cohorte 1 · Solo 50 lugares · Patrocinado por nuestros partners
+            Cohorte 2 · Solo 50 lugares
           </motion.p>
         </div>
       </div>

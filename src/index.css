@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Agent Operators Design System - Dark Theme
+/* Agentcamp Design System - Dark Theme
    All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Dark theme as default for Agent Operators */
+    /* Dark theme as default for Agentcamp */
     --background: 0 0% 6%;
     --foreground: 0 0% 100%;
 

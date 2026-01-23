@@ -26,7 +26,7 @@ export function Footer() {
                 <span className="text-primary-foreground font-bold text-sm">AO</span>
               </div>
               <div>
-                <span className="font-semibold text-foreground">Agent Operators</span>
+                <span className="font-semibold text-foreground">Agentcamp</span>
                 <span className="text-muted-foreground text-sm ml-2">by Frutero</span>
               </div>
             </div>

@@ -33,8 +33,8 @@ export function PainPointsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            El problema no es la IA.{" "}
-            <span className="text-muted-foreground">Es el gap entre demo y producción.</span>
+            El problema no es la IA.{" "}<br />
+            <span className="text-muted-foreground">Es la brecha entre demo y producción.</span>
           </h2>
         </motion.div>
 

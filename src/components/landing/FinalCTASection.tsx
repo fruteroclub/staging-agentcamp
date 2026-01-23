@@ -47,7 +47,7 @@ export function FinalCTASection() {
                 size="lg"
                 className="gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-1 px-10 py-7 text-lg font-semibold group animate-pulse-glow rounded-2xl"
               >
-                Únete a Agent Operators
+                Únete a Agentcamp
                 <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </motion.div>

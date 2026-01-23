@@ -16,7 +16,7 @@ const testimonials = [
     company: "Tech Company",
   },
   {
-    quote: "Pensé que necesitaba un developer. Agent Operators me demostró que no.",
+    quote: "Pensé que necesitaba un developer. Agentcamp me demostró que no.",
     name: "Ana López",
     role: "Content Creator",
     company: "Independent",

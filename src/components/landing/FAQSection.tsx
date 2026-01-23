@@ -56,7 +56,7 @@ El límite es tu caso de uso, no el conocimiento técnico.`,
   },
   {
     question: "¿Hay comunidad después del programa?",
-    answer: `Sí. Acceso permanente a la comunidad de Agent Operators. Networking con otros graduados. Actualizaciones de contenido.`,
+    answer: `Sí. Acceso permanente a la comunidad de Agentcamp. Networking con otros graduados. Actualizaciones de contenido.`,
   },
   {
     question: "¿Por qué es gratis?",
