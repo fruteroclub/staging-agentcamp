@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Content** - Install i18next, configure infrastructure, extract and translate all content
 - [x] **Phase 2: Component Integration** - Replace hardcoded strings with translation hooks, fix animation re-triggering
 - [x] **Phase 3: Language Switcher** - Build and integrate navbar switcher with accessibility support
-- [ ] **Phase 4: Detection & Polish** - Add browser language detection, smooth transitions, production validation
+- [ ] **Phase 4: Detection & Polish** - Add browser language detection, instant switching, layout validation
 
 ## Phase Details
 
@@ -64,22 +64,23 @@ Plans:
 **Plans**: 1 plan in 1 wave
 
 Plans:
-- [ ] 03-01-PLAN.md — Create LanguageSwitcher component with accessibility, integrate into Navbar
+- [x] 03-01-PLAN.md — Create LanguageSwitcher component with accessibility, integrate into Navbar
 
 ### Phase 4: Detection & Polish
-**Goal**: Production-ready experience with browser detection, smooth transitions, and validated layouts
+**Goal**: Production-ready experience with Spanish-first browser detection and validated layouts
 **Depends on**: Phase 3
-**Requirements**: DETECT-01, DETECT-02, DETECT-03, POLISH-01, POLISH-02, POLISH-03, POLISH-04
+**Requirements**: DETECT-01, DETECT-02, DETECT-03, POLISH-02
 **Success Criteria** (what must be TRUE):
   1. First-time visitors see Spanish by default, or English if browser preference is English
   2. Selected language persists in localStorage across browser sessions
   3. User's explicit switcher choice always overrides auto-detection on future visits
-  4. Language switch includes smooth fade/slide transitions leveraging Framer Motion
-  5. All layouts handle Spanish text length variance (20-30% longer) without breaking on mobile or desktop
-**Plans**: TBD
+  4. All layouts handle Spanish text length variance without breaking on mobile or desktop
+**Plans**: 1 plan in 1 wave
+
+**Decision:** Instant language switching (no smooth transitions) - Content updates immediately when user clicks EN/ES for fast, responsive UX. POLISH-01 (smooth transitions) deferred as unnecessary complexity.
 
 Plans:
-- [ ] 04-01: TBD
+- [ ] 04-01-PLAN.md — Configure Spanish-first detection, validate production layouts
 
 ## Progress
 
