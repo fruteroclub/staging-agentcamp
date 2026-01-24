@@ -11,7 +11,12 @@
     },
     "cta": "Reserva Tu Lugar",
     "ctaMobile": "Reserva Tu Lugar →",
-    "menuLabel": "Toggle menu"
+    "menuLabel": "Toggle menu",
+    "languageSwitcher": {
+      "label": "Elegir idioma",
+      "switchToEnglish": "Cambiar a inglés",
+      "switchToSpanish": "Cambiar a español"
+    }
   },
   "hero": {
     "badge": {
