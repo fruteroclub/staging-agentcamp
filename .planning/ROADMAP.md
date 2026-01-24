@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Content** - Install i18next, configure infrastructure, extract and translate all content
 - [x] **Phase 2: Component Integration** - Replace hardcoded strings with translation hooks, fix animation re-triggering
 - [x] **Phase 3: Language Switcher** - Build and integrate navbar switcher with accessibility support
-- [ ] **Phase 4: Detection & Polish** - Add browser language detection, instant switching, layout validation
+- [x] **Phase 4: Detection & Polish** - Add browser language detection, instant switching, layout validation
 
 ## Phase Details
 
@@ -80,7 +80,7 @@ Plans:
 **Decision:** Instant language switching (no smooth transitions) - Content updates immediately when user clicks EN/ES for fast, responsive UX. POLISH-01 (smooth transitions) deferred as unnecessary complexity.
 
 Plans:
-- [ ] 04-01-PLAN.md — Configure Spanish-first detection, validate production layouts
+- [x] 04-01-PLAN.md — Configure Spanish-first detection, validate production layouts
 
 ## Progress
 
@@ -92,4 +92,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Foundation & Content | 2/2 | Complete | 2026-01-23 |
 | 2. Component Integration | 2/2 | Complete | 2026-01-23 |
 | 3. Language Switcher | 1/1 | Complete | 2026-01-23 |
-| 4. Detection & Polish | 0/1 | Not started | - |
+| 4. Detection & Polish | 1/1 | Complete | 2026-01-24 |
