@@ -8,6 +8,18 @@ This guide documents the complete implementation of multi-language support in a 
 
 ---
 
+## ⚠️ CRITICAL WARNING: Framer Motion + i18n Compatibility
+
+**If you're using Framer Motion's `whileInView` animations with i18n, you WILL encounter a critical rendering bug.**
+
+**Symptom:** After toggling language, only the Hero section and top of the second section are visible. All other content disappears.
+
+**Required Fix:** Add `animationKey={i18n.language}` to ALL ScrollReveal/animated components. See [Critical Issue 1](#️-critical-issue-1-page-content-disappears-after-language-toggle) for complete details and solution.
+
+**This took 3 attempts and ~20 minutes to debug.** Save yourself the time and apply the fix from the start.
+
+---
+
 ## Table of Contents
 
 1. [Architecture Overview](#architecture-overview)
@@ -871,10 +883,18 @@ localStorage.getItem('i18nextLng'); // Should be 'en' or 'es'
 
 ### Animation Re-triggering
 
-**✅ DO: Use language-aware keys**
+⚠️ **CRITICAL:** If using Framer Motion's `whileInView`, see [Critical Issue 1](#️-critical-issue-1-page-content-disappears-after-language-toggle). Without proper `animationKey` implementation, your page will break after language toggle.
+
+**✅ DO: Use language-aware keys with animationKey prop**
 ```tsx
 const { t, i18n } = useTranslation();
 
+// For scroll-triggered animations (whileInView)
+<ScrollReveal animationKey={i18n.language}> {/* CRITICAL for whileInView */}
+  <h2>{t('title')}</h2>
+</ScrollReveal>
+
+// For regular motion elements
 <motion.div key={`element-${i18n.language}`}>
   {t('content')}
 </motion.div>
@@ -882,6 +902,10 @@ const { t, i18n } = useTranslation();
 
 **❌ DON'T: Static keys or no keys**
 ```tsx
+<ScrollReveal> {/* BROKEN: Content disappears after language toggle */}
+  {t('content')}
+</ScrollReveal>
+
 <motion.div> {/* Won't re-animate */}
   {t('content')}
 </motion.div>
@@ -942,7 +966,147 @@ const { t, i18n } = useTranslation();
 
 ## Issues & Solutions
 
-### Issue 1: ES Module vs CommonJS
+### ⚠️ CRITICAL Issue 1: Page Content Disappears After Language Toggle
+
+**Problem:** After implementing language switcher and toggling between languages, only the Hero section and the top portion of the second section were visible. The rest of the page content disappeared or failed to render.
+
+**Symptoms:**
+- Hero section renders correctly
+- First ~200px of second section visible
+- All content below completely missing
+- No console errors
+- Content exists in DOM but not visible
+- Issue occurs ONLY after language toggle, not on initial load
+
+**Root Cause:** Framer Motion's `whileInView` viewport animations were not re-triggering after language change. When content re-rendered with new language, the animations remained in their "initial" hidden state instead of transitioning to "visible".
+
+**Why it happened:**
+1. ScrollReveal components use `viewport={{ once: true }}` - animations only trigger once
+2. When language changes, content re-renders but scroll position doesn't change
+3. Framer Motion sees elements as "already viewed" and skips animation
+4. Elements stay in `initial={{ opacity: 0, y: 20 }}` state → invisible
+
+**Attempted Solutions (3 iterations):**
+
+**❌ Attempt 1: Add `key` to ScrollReveal wrapper**
+```tsx
+// Didn't work - too granular
+<ScrollReveal key={`section-${i18n.language}`}>
+  <h2>{t('title')}</h2>
+</ScrollReveal>
+```
+*Result:* Some sections appeared but not consistently. Problem persisted.
+
+**❌ Attempt 2: Force viewport re-detection with layout key**
+```tsx
+// Didn't work - viewport state cached
+<main key={i18n.language}>
+  <ScrollReveal>
+    <Section1 />
+  </ScrollReveal>
+</main>
+```
+*Result:* Hero worked, other sections still hidden.
+
+**✅ Attempt 3: Add `animationKey` prop to ScrollReveal AND pass `i18n.language`**
+
+This is the solution that worked:
+
+**Step 1:** Enhanced ScrollReveal to accept `animationKey` prop
+```tsx
+// src/components/ui/scroll-reveal.tsx
+interface ScrollRevealProps {
+  children: React.ReactNode;
+  animationKey?: string; // NEW: Forces re-animation
+  // ... other props
+}
+
+export function ScrollReveal({ children, animationKey, ...props }: ScrollRevealProps) {
+  return (
+    <motion.div
+      key={animationKey} // Pass to motion.div to force remount
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+      {...props}
+    >
+      {children}
+    </motion.div>
+  );
+}
+```
+
+**Step 2:** Pass `i18n.language` as animationKey in ALL section components
+```tsx
+import { useTranslation } from 'react-i18next';
+
+export function PainPointsSection() {
+  const { t, i18n } = useTranslation();
+
+  return (
+    <ScrollReveal animationKey={i18n.language}> {/* CRITICAL: Forces re-animation */}
+      <h2>{t('painPoints.title')}</h2>
+      <StaggerContainer animationKey={i18n.language}> {/* Also on nested containers */}
+        {/* Content */}
+      </StaggerContainer>
+    </ScrollReveal>
+  );
+}
+```
+
+**Step 3:** Apply to EVERY component with scroll-triggered animations
+
+**Why this works:**
+- `animationKey` changes when language changes (e.g., "es" → "en")
+- React sees different `key` value → unmounts old element, mounts new one
+- New element triggers `whileInView` viewport detection fresh
+- Animations play from `initial` → `visible` as if scrolling for first time
+- Content becomes visible properly
+
+**Critical Files to Update:**
+```bash
+# ALL section components need animationKey prop
+src/components/landing/PainPointsSection.tsx
+src/components/landing/TransformationSection.tsx
+src/components/landing/MethodSection.tsx
+src/components/landing/EcosystemSection.tsx
+src/components/landing/TestimonialsSection.tsx
+src/components/landing/AudienceFitSection.tsx
+src/components/landing/PricingSection.tsx
+src/components/landing/CurriculumSection.tsx
+src/components/landing/FAQSection.tsx
+src/components/landing/FinalCTASection.tsx
+```
+
+**Testing the Fix:**
+```javascript
+// 1. Load page in Spanish
+// 2. Scroll down to see all sections animate
+// 3. Scroll back to top
+// 4. Click language switcher to English
+// Expected: ALL sections re-animate and are visible
+// Previous bug: Only hero + partial second section visible
+
+// 5. Scroll down again
+// Expected: Sections don't re-animate (once: true still works)
+```
+
+**Lesson Learned:**
+When combining Framer Motion viewport animations (`whileInView`) with dynamic content (i18n), you MUST:
+1. Add optional `animationKey` prop to animation wrapper components
+2. Pass changing value (like `i18n.language`) to force remount
+3. Apply consistently to ALL scroll-triggered components
+4. This is a **blocking issue** - without it, your page will be broken after language toggle
+
+**Time to Debug:** ~20 minutes across 3 attempts
+
+**Related Reading:**
+- Framer Motion viewport detection: https://www.framer.com/motion/viewport/
+- React key prop and reconciliation: https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key
+
+---
+
+### Issue 2: ES Module vs CommonJS
 
 **Problem:** Validation script failed with "require is not defined in ES module scope"
 
@@ -971,7 +1135,7 @@ scripts/validate-translations.cjs  # ✓ Works
 
 ---
 
-### Issue 2: React Duplicate Key Warnings
+### Issue 3: React Duplicate Key Warnings
 
 **Problem:** Multiple motion elements with same key caused warnings
 
@@ -999,7 +1163,7 @@ scripts/validate-translations.cjs  # ✓ Works
 
 ---
 
-### Issue 3: Accordion State Lost on Language Change
+### Issue 4: Accordion State Lost on Language Change
 
 **Problem:** Curriculum accordion reset to closed when switching languages
 
@@ -1035,7 +1199,7 @@ scripts/validate-translations.cjs  # ✓ Works
 
 ---
 
-### Issue 4: Navbar Layout Broken After Adding Switcher
+### Issue 5: Navbar Layout Broken After Adding Switcher
 
 **Problem:** Navigation items pushed to right side instead of centered
 
