@@ -13,7 +13,7 @@ Transform the AgentCamp 2.0 landing page from Spanish-only to a bilingual experi
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Content** - Install i18next, configure infrastructure, extract and translate all content
-- [ ] **Phase 2: Component Integration** - Replace hardcoded strings with translation hooks, fix animation re-triggering
+- [x] **Phase 2: Component Integration** - Replace hardcoded strings with translation hooks, fix animation re-triggering
 - [ ] **Phase 3: Language Switcher** - Build and integrate navbar switcher with accessibility support
 - [ ] **Phase 4: Detection & Polish** - Add browser language detection, smooth transitions, production validation
 
@@ -48,8 +48,8 @@ Plans:
 **Plans**: 2 plans in 2 waves
 
 Plans:
-- [ ] 02-01-PLAN.md — Extend ScrollReveal/StaggerContainer with animationKey, migrate Footer/Navbar/Hero/FinalCTA
-- [ ] 02-02-PLAN.md — Migrate remaining 9 components (arrays, curriculum accordion, FAQ)
+- [x] 02-01-PLAN.md — Extend ScrollReveal/StaggerContainer with animationKey, migrate Footer/Navbar/Hero/FinalCTA
+- [x] 02-02-PLAN.md — Migrate remaining 9 components (arrays, curriculum accordion, FAQ)
 
 ### Phase 3: Language Switcher
 **Goal**: Users can switch between English and Spanish via accessible navbar control
@@ -89,6 +89,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Content | 2/2 | Complete | 2026-01-23 |
-| 2. Component Integration | 0/2 | Not started | - |
+| 2. Component Integration | 2/2 | Complete | 2026-01-23 |
 | 3. Language Switcher | 0/1 | Not started | - |
 | 4. Detection & Polish | 0/1 | Not started | - |
