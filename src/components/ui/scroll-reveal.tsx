@@ -22,7 +22,8 @@ export function ScrollReveal({
   animationKey,
 }: ScrollRevealProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once, margin: "-100px" });
+  // When animationKey is provided (language switching), disable 'once' to allow re-animation
+  const isInView = useInView(ref, { once: animationKey ? false : once, margin: "-100px" });
   const prefersReducedMotion = useMotionPreference();
 
   return (
@@ -66,7 +67,8 @@ export function StaggerContainer({
   animationKey,
 }: StaggerContainerProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  // When animationKey is provided (language switching), disable 'once' to allow re-animation
+  const isInView = useInView(ref, { once: animationKey ? false : true, margin: "-100px" });
   const prefersReducedMotion = useMotionPreference();
 
   return (
