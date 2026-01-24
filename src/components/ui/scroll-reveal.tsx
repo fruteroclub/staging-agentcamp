@@ -22,8 +22,12 @@ export function ScrollReveal({
   animationKey,
 }: ScrollRevealProps) {
   const ref = useRef(null);
-  // When animationKey is provided (language switching), disable 'once' to allow re-animation
-  const isInView = useInView(ref, { once: animationKey ? false : once, margin: "-100px" });
+  // When animationKey is provided (language switching), use more sensitive detection
+  const isInView = useInView(ref, {
+    once: animationKey ? false : once,
+    margin: animationKey ? "0px" : "-100px",
+    amount: animationKey ? 0 : 0.2
+  });
   const prefersReducedMotion = useMotionPreference();
 
   return (
@@ -67,8 +71,12 @@ export function StaggerContainer({
   animationKey,
 }: StaggerContainerProps) {
   const ref = useRef(null);
-  // When animationKey is provided (language switching), disable 'once' to allow re-animation
-  const isInView = useInView(ref, { once: animationKey ? false : true, margin: "-100px" });
+  // When animationKey is provided (language switching), use more sensitive detection
+  const isInView = useInView(ref, {
+    once: animationKey ? false : true,
+    margin: animationKey ? "0px" : "-100px",
+    amount: animationKey ? 0 : 0.2
+  });
   const prefersReducedMotion = useMotionPreference();
 
   return (
