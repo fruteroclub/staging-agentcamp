@@ -10,7 +10,14 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'en',
+    supportedLngs: ['en', 'es'],
+    fallbackLng: (code) => {
+      // Spanish-first detection: English browsers get English, all others get Spanish
+      if (code && code.toLowerCase().startsWith('en')) {
+        return ['en'];
+      }
+      return ['es'];
+    },
     defaultNS: 'translation',
     interpolation: {
       escapeValue: false, // React already escapes
