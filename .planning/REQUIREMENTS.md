@@ -44,16 +44,16 @@ Requirements for initial i18n release. Each maps to roadmap phases.
 
 ### Browser Detection
 
-- [ ] **DETECT-01**: Browser language auto-detection on first visit
-- [ ] **DETECT-02**: Detection order: localStorage → browser preference → Spanish default
-- [ ] **DETECT-03**: User's explicit choice overrides auto-detection on subsequent visits
+- [x] **DETECT-01**: Browser language auto-detection on first visit
+- [x] **DETECT-02**: Detection order: localStorage → browser preference → Spanish default
+- [x] **DETECT-03**: User's explicit choice overrides auto-detection on subsequent visits
 
 ### Polish
 
-- [ ] **POLISH-01**: Smooth transition animations when switching languages
-- [ ] **POLISH-02**: Layout handles Spanish text length variance (20-30% longer than English)
-- [ ] **POLISH-03**: Date formatting with locale-specific rules (if applicable)
-- [ ] **POLISH-04**: Number formatting with locale-specific rules (if applicable)
+- [~] **POLISH-01**: Smooth transition animations when switching languages (DEFERRED - instant switching preferred)
+- [x] **POLISH-02**: Layout handles Spanish text length variance (20-30% longer than English)
+- [~] **POLISH-03**: Date formatting with locale-specific rules (N/A - no dates in content)
+- [~] **POLISH-04**: Number formatting with locale-specific rules (N/A - no numbers requiring locale formatting)
 
 ## v2 Requirements
 
@@ -113,13 +113,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SWITCH-04 | Phase 3 | Complete |
 | SWITCH-05 | Phase 3 | Complete |
 | SWITCH-06 | Phase 3 | Complete |
-| DETECT-01 | Phase 4 | Pending |
-| DETECT-02 | Phase 4 | Pending |
-| DETECT-03 | Phase 4 | Pending |
-| POLISH-01 | Phase 4 | Pending |
-| POLISH-02 | Phase 4 | Pending |
-| POLISH-03 | Phase 4 | Pending |
-| POLISH-04 | Phase 4 | Pending |
+| DETECT-01 | Phase 4 | Complete |
+| DETECT-02 | Phase 4 | Complete |
+| DETECT-03 | Phase 4 | Complete |
+| POLISH-01 | Phase 4 | Deferred |
+| POLISH-02 | Phase 4 | Complete |
+| POLISH-03 | Phase 4 | N/A |
+| POLISH-04 | Phase 4 | N/A |
 
 **Coverage:**
 - v1 requirements: 30 total
@@ -128,4 +128,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-23*
-*Last updated: 2026-01-23 after roadmap creation*
+*Last updated: 2026-01-24 after Phase 4 completion*

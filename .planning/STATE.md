@@ -5,7 +5,7 @@
 See: .planning/PROJECT.md (updated 2026-01-23)
 
 **Core value:** Effectively communicate the AgentCamp 2.0 program value to both Spanish-speaking participants and English-speaking partners through a visually engaging, multi-language landing experience.
-**Current focus:** Phase 3 - Language Switcher
+**Current focus:** Milestone complete - Production-ready
 
 ## Current Position
 
@@ -68,6 +68,7 @@ Recent decisions affecting current work:
 - lang attributes for button text (03-01): Ensures screen readers pronounce language codes correctly
 - Spanish-first fallback (04-01): Custom fallbackLng function returns Spanish default except for English browser preferences
 - supportedLngs constraint (04-01): Explicit ['en', 'es'] array prevents i18next from attempting unsupported language files
+- Absolute nav centering (04-01): Navbar items centered via absolute positioning (left-1/2 -translate-x-1/2) independent of logo and switcher+CTA
 
 ### Pending Todos
 
