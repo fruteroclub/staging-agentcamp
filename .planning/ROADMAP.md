@@ -61,10 +61,10 @@ Plans:
   3. Clicking switcher immediately updates all content without page reload
   4. Switcher supports keyboard navigation (Tab, Enter, Arrow keys)
   5. Screen readers announce language options and current selection via aria-labels
-**Plans**: TBD
+**Plans**: 1 plan in 1 wave
 
 Plans:
-- [ ] 03-01: TBD
+- [ ] 03-01-PLAN.md — Create LanguageSwitcher component with accessibility, integrate into Navbar
 
 ### Phase 4: Detection & Polish
 **Goal**: Production-ready experience with browser detection, smooth transitions, and validated layouts
@@ -84,11 +84,11 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Content | 2/2 | Complete | 2026-01-23 |
 | 2. Component Integration | 2/2 | Complete | 2026-01-23 |
-| 3. Language Switcher | 0/1 | Not started | - |
+| 3. Language Switcher | 0/1 | Planned | - |
 | 4. Detection & Polish | 0/1 | Not started | - |
