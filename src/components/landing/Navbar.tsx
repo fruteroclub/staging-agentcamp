@@ -3,6 +3,7 @@ import { Menu, X, Home, BookOpen, BarChart3, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NavBar } from "@/components/ui/tubelight-navbar";
 import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export function Navbar() {
   const { t } = useTranslation();
@@ -60,12 +61,12 @@ export function Navbar() {
             </a>
 
             {/* Desktop Nav - Tubelight */}
-            <div className="hidden md:block">
+            <div className="hidden md:flex items-center gap-4">
               <NavBar items={navItems} />
-            </div>
 
-            {/* Desktop CTA */}
-            <div className="hidden md:block">
+              {/* Language Switcher - between nav and CTA (SWITCH-02) */}
+              <LanguageSwitcher />
+
               <Button className="gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-0.5 rounded-full">
                 {t('navbar.cta')}
               </Button>
@@ -94,6 +95,11 @@ export function Navbar() {
           onKeyDown={handleKeyDown}
         >
           <nav className="container mx-auto px-4 py-8 flex flex-col gap-4">
+            {/* Language Switcher at top of mobile menu (SWITCH-02) */}
+            <div className="flex justify-center mb-6">
+              <LanguageSwitcher />
+            </div>
+
             {navItems.map((item) => (
               <a
                 key={item.url}
