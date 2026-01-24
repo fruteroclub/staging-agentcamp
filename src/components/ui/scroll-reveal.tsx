@@ -1,5 +1,5 @@
 import { motion, useInView, Variants, Easing } from "framer-motion";
-import { useRef, ReactNode } from "react";
+import { useRef, ReactNode, useState, useEffect } from "react";
 import { useMotionPreference } from "@/hooks/useMotionPreference";
 
 interface ScrollRevealProps {
@@ -22,6 +22,8 @@ export function ScrollReveal({
   animationKey,
 }: ScrollRevealProps) {
   const ref = useRef(null);
+  const [forceVisible, setForceVisible] = useState(false);
+
   // When animationKey is provided (language switching), use more sensitive detection
   const isInView = useInView(ref, {
     once: animationKey ? false : once,
@@ -29,6 +31,21 @@ export function ScrollReveal({
     amount: animationKey ? 0 : 0.2
   });
   const prefersReducedMotion = useMotionPreference();
+
+  // Force animation when animationKey changes (language switch)
+  useEffect(() => {
+    if (animationKey) {
+      // Small delay to ensure DOM is ready
+      const timer = setTimeout(() => {
+        setForceVisible(true);
+        // Reset after animation completes
+        setTimeout(() => setForceVisible(false), duration * 1000 + delay * 1000);
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [animationKey, duration, delay]);
+
+  const shouldAnimate = animationKey ? (isInView || forceVisible) : isInView;
 
   return (
     <motion.div
@@ -38,7 +55,7 @@ export function ScrollReveal({
         opacity: prefersReducedMotion ? 1 : 0,
         y: prefersReducedMotion ? 0 : y
       }}
-      animate={isInView
+      animate={shouldAnimate
         ? { opacity: 1, y: 0 }
         : {
             opacity: prefersReducedMotion ? 1 : 0,
@@ -71,6 +88,8 @@ export function StaggerContainer({
   animationKey,
 }: StaggerContainerProps) {
   const ref = useRef(null);
+  const [forceVisible, setForceVisible] = useState(false);
+
   // When animationKey is provided (language switching), use more sensitive detection
   const isInView = useInView(ref, {
     once: animationKey ? false : true,
@@ -79,12 +98,27 @@ export function StaggerContainer({
   });
   const prefersReducedMotion = useMotionPreference();
 
+  // Force animation when animationKey changes (language switch)
+  useEffect(() => {
+    if (animationKey) {
+      // Small delay to ensure DOM is ready
+      const timer = setTimeout(() => {
+        setForceVisible(true);
+        // Reset after stagger animation completes
+        setTimeout(() => setForceVisible(false), 1000);
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [animationKey]);
+
+  const shouldAnimate = animationKey ? (isInView || forceVisible) : isInView;
+
   return (
     <motion.div
       ref={ref}
       key={animationKey}
       initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
+      animate={shouldAnimate ? "visible" : "hidden"}
       variants={{
         hidden: {},
         visible: {
