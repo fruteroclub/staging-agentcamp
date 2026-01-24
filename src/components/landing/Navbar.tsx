@@ -60,11 +60,13 @@ export function Navbar() {
               <span className="font-semibold text-foreground hidden sm:inline">{t('navbar.logo.text')}</span>
             </a>
 
-            {/* Desktop Nav - Tubelight */}
-            <div className="hidden md:flex items-center gap-4">
+            {/* Desktop Nav - Tubelight (centered) */}
+            <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
               <NavBar items={navItems} />
+            </div>
 
-              {/* Language Switcher - between nav and CTA (SWITCH-02) */}
+            {/* Language Switcher + CTA (right side) */}
+            <div className="hidden md:flex items-center gap-4">
               <LanguageSwitcher />
 
               <Button className="gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-0.5 rounded-full">
