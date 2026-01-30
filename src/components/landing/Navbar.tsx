@@ -69,8 +69,10 @@ export function Navbar() {
             <div className="hidden md:flex items-center gap-4">
               <LanguageSwitcher />
 
-              <Button className="gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-0.5 rounded-full">
-                {t('navbar.cta')}
+              <Button className="gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-0.5 rounded-full" asChild>
+                <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
+                  {t('navbar.cta')}
+                </a>
               </Button>
             </div>
 
@@ -116,8 +118,11 @@ export function Navbar() {
             <Button
               className="gradient-primary w-full mt-4 rounded-xl py-6"
               onClick={() => setIsMobileMenuOpen(false)}
+              asChild
             >
-              {t('navbar.cta')}
+              <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
+                {t('navbar.cta')}
+              </a>
             </Button>
           </nav>
         </div>
@@ -125,8 +130,10 @@ export function Navbar() {
 
       {/* Floating Mobile CTA */}
       <div className="fixed bottom-6 left-4 right-4 z-40 md:hidden">
-        <Button className="w-full gradient-primary shadow-primary py-6 text-base font-semibold rounded-2xl">
-          {t('navbar.ctaMobile')}
+        <Button className="w-full gradient-primary shadow-primary py-6 text-base font-semibold rounded-2xl" asChild>
+          <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
+            {t('navbar.ctaMobile')}
+          </a>
         </Button>
       </div>
     </>

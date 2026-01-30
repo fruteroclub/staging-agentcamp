@@ -88,9 +88,12 @@ export function HeroSection() {
               size="lg"
               className="gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-1 px-8 py-6 text-lg font-semibold group"
               aria-label="Reservar lugar en Agentcamp cohorte 2"
+              asChild
             >
-              {t('hero.cta.primary')}
-              <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+              <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
+                {t('hero.cta.primary')}
+                <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
             <Button
               variant="outline"

@@ -96,9 +96,12 @@ export function PricingSection() {
                 <Button
                   size="lg"
                   className="w-full gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-1 py-7 text-lg font-semibold group rounded-2xl"
+                  asChild
                 >
-                  {t('pricing.cta')}
-                  <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
+                    {t('pricing.cta')}
+                    <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  </a>
                 </Button>
 
                 {/* Guarantee */}
