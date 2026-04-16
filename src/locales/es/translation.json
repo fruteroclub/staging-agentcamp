@@ -41,41 +41,41 @@
   "painPoints": {
     "title": {
       "line1": "El problema no es la IA.",
-      "line2": "Es la brecha entre demo y producción."
+      "line2": "Es que experimentar no es lo mismo que operar."
     },
     "items": {
       "0": {
-        "title": "Prompts Sueltos",
-        "description": "Cada conversación empieza de cero. No hay sistema. No hay memoria. No hay flujo."
+        "title": "Te sientes atrasado",
+        "description": "Ves a otros hablar de agentes y automatizaciones. Tú sigues copiando prompts y empezando de cero cada vez."
       },
       "1": {
-        "title": "Demos Que Mueren",
-        "description": "Funciona en tu laptop. Lo muestras emocionado. Nunca llega a producción."
+        "title": "Pruebas pero no produces",
+        "description": "Llevas meses experimentando con ChatGPT y Claude. Tienes entusiasmo, pero no tienes nada funcionando en tu trabajo real."
       },
       "2": {
-        "title": "Cero Control",
-        "description": "El agente alucina. Hace cosas random. Y no tienes idea de cómo debuggearlo."
+        "title": "La IA no trabaja para ti",
+        "description": "Usas herramientas de IA de forma fragmentada. Sin sistema, sin flujo, sin resultados concretos que recuperen tu tiempo."
       }
     }
   },
   "transformation": {
-    "title": "En 4 semanas, esto cambia:",
+    "title": "En 5 semanas, esto cambia:",
     "items": {
       "0": {
-        "before": "Experimentas con prompts",
-        "after": "Operas workflows automatizados"
+        "before": "Experimentas con IA sin resultados",
+        "after": "Tienes sistemas que trabajan para ti"
       },
       "1": {
-        "before": "Demos locales",
-        "after": "Sistemas deployed en la nube"
+        "before": "Te sientes atrasado y agobiado",
+        "after": "Operas con más tiempo y más control"
       },
       "2": {
-        "before": "Agentes que alucinan",
-        "after": "Agentes con control y oversight"
+        "before": "Herramientas fragmentadas sin flujo",
+        "after": "Workflows reales funcionando en producción"
       },
       "3": {
-        "before": "\"Algún día aprendo\"",
-        "after": "Agent Operator certificado"
+        "before": "\"Algún día lo voy a aprender\"",
+        "after": "Tu propio Agent Team trabajando para ti"
       }
     }
   },
