@@ -304,7 +304,9 @@
     "guarantee": "Week 1 Guarantee: If after the first week you feel it's not for you, just let us know. No questions asked."
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "Your Questions Answered",
+    "subtitle": "Everything you need to know before reserving your spot.",
+    "footer": "Have a question that's not here? Write to us at hola@frutero.club",
     "items": {
       "0": {
         "question": "Do I need to know how to code?",

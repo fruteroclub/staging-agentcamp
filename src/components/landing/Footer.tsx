@@ -25,16 +25,13 @@ export function Footer() {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <img
-                src="/kukulcan-logo-color.svg"
-                alt="Powered by Frutero"
-                className="h-12 w-auto"
-                width="128"
-                height="128"
+                src="/godinez-logo.svg"
+                alt="Godínez.AI"
+                className="h-10 w-auto"
+                width="120"
+                height="40"
               />
-              <div>
-                <span className="font-semibold text-foreground">{t('footer.logo.text')}</span>
-                <span className="text-muted-foreground text-sm ml-2">{t('footer.logo.byline')}</span>
-              </div>
+              <span className="font-semibold text-foreground">AgentCamp</span>
             </div>
 
             {/* Links */}

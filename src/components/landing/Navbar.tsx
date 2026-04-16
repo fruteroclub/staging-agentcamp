@@ -49,15 +49,14 @@ export function Navbar() {
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-2 group">
+            <a href="/" className="flex items-center gap-2 group">
               <img
-                src="/frutero-logo.svg"
-                alt="Agentcamp by Frutero"
+                src="/godinez-logo.svg"
+                alt="Godínez.AI"
                 className="h-10 w-auto transition-transform duration-300 group-hover:scale-105"
                 width="104"
                 height="44"
               />
-              <span className="font-semibold text-foreground hidden sm:inline">{t('navbar.logo.text')}</span>
             </a>
 
             {/* Desktop Nav - Tubelight (centered) */}
@@ -69,7 +68,7 @@ export function Navbar() {
             <div className="hidden md:flex items-center gap-4">
               <LanguageSwitcher />
 
-              <Button className="gradient-primary hover:shadow-primary transition-all duration-300 hover:-translate-y-0.5 rounded-full" asChild>
+              <Button className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:-translate-y-0.5 rounded-full" asChild>
                 <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
                   {t('navbar.cta')}
                 </a>
@@ -116,7 +115,7 @@ export function Navbar() {
               </a>
             ))}
             <Button
-              className="gradient-primary w-full mt-4 rounded-xl py-6"
+              className="bg-primary hover:bg-primary-hover w-full mt-4 rounded-xl py-6"
               onClick={() => setIsMobileMenuOpen(false)}
               asChild
             >
@@ -130,7 +129,7 @@ export function Navbar() {
 
       {/* Floating Mobile CTA */}
       <div className="fixed bottom-6 left-4 right-4 z-40 md:hidden">
-        <Button className="w-full gradient-primary shadow-primary py-6 text-base font-semibold rounded-2xl" asChild>
+        <Button className="w-full bg-primary hover:bg-primary-hover py-6 text-base font-semibold rounded-2xl" asChild>
           <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
             {t('navbar.ctaMobile')}
           </a>

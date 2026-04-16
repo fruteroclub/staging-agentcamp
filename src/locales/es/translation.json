@@ -21,22 +21,22 @@
   "hero": {
     "badge": {
       "virtual": "100% Virtual",
-      "duration": "Programa de 4 semanas"
+      "duration": "Programa de 5 semanas"
     },
     "title": {
-      "line1": "Construye Agentes IA",
-      "line2": "Despliega en Producción",
-      "line3": "Sin Código"
+      "line1": "De experimentar con IA",
+      "line2": "a tener asistentes que",
+      "line3": "trabajan para ti"
     },
     "subtitle": {
-      "problem": "Llevas meses jugando con ChatGPT y Claude. Copias prompts. Pruebas herramientas. Pero no tienes nada en producción.",
-      "solution": "Agentcamp te lleva de experimentar a operar en 4 semanas."
+      "problem": "Recupera tiempo. Multiplica tu capacidad. Delega el trabajo que te drena.",
+      "solution": ""
     },
     "cta": {
       "primary": "Reserva Tu Lugar",
       "secondary": "Ver Programa"
     },
-    "urgency": "Cohorte 2 · Solo 50 lugares"
+    "urgency": "Menos de 100 lugares disponibles"
   },
   "painPoints": {
     "title": {
@@ -264,13 +264,13 @@
     }
   },
   "pricing": {
-    "cohortTitle": "Cohorte 1 — Febrero 2026",
-    "cohortSubtitle": "Patrocinado por nuestros partners de infraestructura",
-    "badge": "100% Patrocinado",
+    "cohortTitle": "Elige tu plan",
+    "cohortSubtitle": "Sin contratos. Cancela cuando quieras.",
+    "badge": "Preinscripción",
     "price": {
-      "current": "$0",
-      "original": "$499 USD",
-      "note": "Valorado en $499 — gratis para la primera cohorte"
+      "current": "$5,000 MXN",
+      "original": "$7,000 MXN",
+      "note": "Precio normal $7,000 MXN — ahorra $2,000 con preinscripción"
     },
     "details": {
       "duration": {
@@ -293,7 +293,7 @@
     "includes": {
       "title": "Incluye:",
       "items": {
-        "0": "8 sesiones en vivo + grabaciones",
+        "0": "10 sesiones en vivo + grabaciones",
         "1": "4 proyectos con feedback",
         "2": "Acceso a comunidad de Operators",
         "3": "Office hours 2x por semana",
@@ -301,42 +301,44 @@
       }
     },
     "cta": "Asegura Tu Lugar",
-    "guarantee": "Garantía Semana 1: Si después de la primera semana sientes que no es para ti, simplemente nos avisas. Sin preguntas."
+    "guarantee": "Garantía Semana 1: Si después de la primera semana sientes que no es para ti, simplemente nos avisas."
   },
   "faq": {
-    "title": "Preguntas Frecuentes",
+    "title": "Resolvemos tus dudas",
+    "subtitle": "Todo lo que necesitas saber antes de reservar tu lugar.",
+    "footer": "¿Tienes una pregunta que no está aquí? Escríbenos directamente a hola@frutero.club",
     "items": {
       "0": {
-        "question": "¿Necesito saber programar?",
-        "answer": "No. Usamos AI coding assistants (Cursor, Claude Code) para generar código. Tú aprendes a dirigir y orquestar, no a escribir Python desde cero.\n\nRequisito real: saber usar una computadora y estar dispuesto a aprender herramientas nuevas."
+        "question": "¿Necesito experiencia técnica o saber programar?",
+        "answer": "No. AgentCamp está diseñado para profesionales que quieren resultados, no para developers.\n\nAprendes a dirigir y orquestar agentes, no a escribir código desde cero. Si sabes usar una computadora y estás dispuesto a aprender herramientas nuevas, tienes todo lo que necesitas."
       },
       "1": {
-        "question": "¿Cuánto tiempo necesito dedicar por semana?",
-        "answer": "5-7 horas semanales:\n• 3-4 horas en sesiones live\n• 2-3 horas de trabajo independiente y proyectos\n\nEl programa está diseñado para gente con trabajo full-time."
+        "question": "¿Cuánto tiempo voy a ver resultados reales?",
+        "answer": "El objetivo del programa es que al final de la semana 2 tu agente ya te haya ahorrado al menos 3 horas de trabajo.\n\nNo es una promesa vaga. Es el primer hito del programa. Para la semana 5 tendrás un portafolio de workflows funcionando en producción."
       },
       "2": {
-        "question": "¿Qué herramientas voy a usar?",
-        "answer": "El stack incluye:\n• IDE con AI assistant (Cursor o VS Code + Copilot)\n• Framework de agentes (definido con sponsors)\n• Claude API para LLM calls\n• Composio para integraciones\n• Cloud platform para deployment\n\nTodo se configura en el pre-work antes de empezar."
+        "question": "¿Puedo hacer esto si tengo trabajo full-time?",
+        "answer": "Sí. El programa está diseñado exactamente para eso.\n\nNecesitas 5-7 horas por semana: 3-4 horas en sesiones en vivo y 2-3 horas de trabajo independiente. Hay grabaciones de todas las sesiones y office hours 2x por semana para que nadie se quede atrás."
       },
       "3": {
-        "question": "¿Las sesiones son en vivo o grabadas?",
-        "answer": "En vivo con Q&A interactivo. Las grabaciones quedan disponibles para repaso, pero el valor está en participar live."
+        "question": "¿Qué incluye el acceso a Godínez.AI?",
+        "answer": "Durante las 5 semanas del programa y un mes adicional, tienes acceso completo a Godínez.AI — la plataforma de agentes IA personales que usarás para construir tus workflows.\n\nNo es un demo. Es el producto real. Los workflows que construyas durante el programa son tuyos y siguen funcionando después."
       },
       "4": {
-        "question": "¿Qué pasa si me atraso?",
-        "answer": "Tienes office hours 2x por semana para ponerte al día. Soporte async en la comunidad para dudas específicas. Acceso a grabaciones para repasar.\n\nEl programa tiene ritmo, pero hay red de apoyo."
+        "question": "¿Qué pasa cuando termina el programa?",
+        "answer": "Al graduarte tienes dos cosas: un portafolio de agentes funcionando y una certificación.\n\nSi quieres seguir usando Godínez.AI, puedes continuar como suscriptor. Los graduados de AgentCamp tienen acceso a precio especial de alumnos durante los primeros 3 meses."
       },
       "5": {
-        "question": "¿Qué tipo de agentes puedo construir después?",
-        "answer": "El programa te da las bases para construir:\n• Asistentes de email y calendario\n• Pipelines de contenido automatizado\n• Agentes de research y análisis\n• Workflows de customer support\n• Automatizaciones operativas internas\n\nEl límite es tu caso de uso, no el conocimiento técnico."
+        "question": "¿Cuánto cuesta Godínez.AI después del programa?",
+        "answer": "El plan Personal cuesta $2,500 MXN/mes.\n\nComo graduado de AgentCamp tienes precio especial: $2,000 MXN/mes los primeros 3 meses, o $1,500 MXN/mes en el plan anual. La mayoría de nuestros graduados recupera ese costo en las primeras semanas con el tiempo que ahorran."
       },
       "6": {
-        "question": "¿Hay comunidad después del programa?",
-        "answer": "Sí. Acceso permanente a la comunidad de Agentcamp. Networking con otros graduados. Actualizaciones de contenido."
+        "question": "¿Las sesiones son en vivo o grabadas?",
+        "answer": "En vivo, con Q&A interactivo en cada sesión. El valor real está en participar live.\n\nTodas las sesiones quedan grabadas para que puedas repasar cuando quieras. No te quedas sin contexto si un día no puedes conectarte."
       },
       "7": {
-        "question": "¿Por qué es gratis?",
-        "answer": "El programa es patrocinado por empresas de infraestructura AI que quieren que más builders en LATAM aprendan a construir con su tecnología. Tú aprendes gratis, ellos ganan adopción. Win-win."
+        "question": "¿Para quién NO es AgentCamp?",
+        "answer": "AgentCamp no es para ti si buscas solo teoría sobre IA o quieres aprender a programar desde cero.\n\nEs para profesionales que ya experimentan con IA pero no están obteniendo leverage real — y quieren pasar de curiosidad a ejecución con su propio equipo de agentes."
       }
     }
   },
@@ -345,9 +347,9 @@
       "line1": "Deja de experimentar.",
       "line2": "Empieza a operar."
     },
-    "subtitle": "En 4 semanas vas a tener un AI agent en producción que trabaja para ti—no una carpeta más de prompts.",
-    "cta": "Únete a Agentcamp",
-    "urgency": "Cohorte 1 · 50 lugares · 100% Patrocinado"
+    "subtitle": "En 5 semanas vas a tener tu propio Agent Team en producción trabajando para ti — no una carpeta más de prompts.",
+    "cta": "Reserva Tu Lugar",
+    "urgency": "Menos de 100 lugares disponibles"
   },
   "footer": {
     "logo": {

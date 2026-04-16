@@ -34,14 +34,14 @@ export function PainPointsSection() {
               <motion.div
                 key={index}
                 variants={staggerItem}
-                className="group relative p-8 rounded-3xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-white/5 shadow-[0_0_50px_-12px_hsl(var(--destructive)/0.1)] hover:border-destructive/30 hover:shadow-[0_0_60px_-12px_hsl(var(--destructive)/0.2)] transition-all duration-500"
+                className="group relative p-8 rounded-3xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-white/5 hover:border-accent/40 hover:shadow-[0_0_60px_-12px_hsl(var(--accent)/0.2)] transition-all duration-500"
               >
                 {/* Subtle gradient orb */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-destructive/5 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent/5 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 <div className="relative z-10">
-                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-destructive/20 to-destructive/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="w-7 h-7 text-destructive" />
+                  <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="w-7 h-7 text-accent" />
                   </div>
                   <h3 className="text-xl font-semibold mb-3">{t(`painPoints.items.${index}.title`)}</h3>
                   <p className="text-muted-foreground leading-relaxed">{t(`painPoints.items.${index}.description`)}</p>
