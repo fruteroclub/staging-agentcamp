@@ -19,7 +19,11 @@
     }
   },
   "hero": {
-    "title": "Deja de experimentar con IA. Empieza a operar con agentes.",
+    "overline": "Programa intensivo · 5 semanas · En español",
+    "title": {
+      "line1": "Deja de experimentar con IA.",
+      "line2": "Empieza a operar con agentes."
+    },
     "subtitle": "Un programa de 5 semanas donde sales con un agente propio — con arquitectura, integraciones, identidad y reputación verificable — resolviendo trabajo real dentro de Godínez.AI Studio.",
     "proofLine": "$5,000 MXN primeros 20 lugares · $7,500 MXN regular · 50 lugares · Inicia 4 de mayo",
     "cta": {
@@ -234,7 +238,10 @@
     }
   },
   "finalCta": {
-    "title": "Pasa de experimentar con IA a operar con agentes.",
+    "title": {
+      "line1": "Pasa de experimentar con IA",
+      "line2": "a operar con agentes."
+    },
     "proofLine1": "$5,000 MXN primeros 20 · $7,500 MXN regular · 50 lugares",
     "proofLine2": "Inicia 4 de mayo · Cierra 3 de mayo 23:59 CDMX",
     "cta": {

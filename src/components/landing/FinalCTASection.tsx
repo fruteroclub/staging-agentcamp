@@ -25,8 +25,9 @@ export function FinalCTASection() {
         <div className="max-w-3xl mx-auto text-center">
           {/* Headline */}
           <ScrollReveal animationKey={i18n.language}>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              {t('finalCta.title')}
+            <h2 className="text-3xl md:text-5xl font-semibold leading-[1.1] tracking-[-0.01em] mb-6">
+              {t('finalCta.title.line1')}{" "}
+              <span className="text-primary font-serif italic text-[1.1em]">{t('finalCta.title.line2')}</span>
             </h2>
           </ScrollReveal>
 
@@ -49,7 +50,7 @@ export function FinalCTASection() {
               >
                 <Button
                   size="lg"
-                  className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:-translate-y-1 px-10 py-7 text-lg font-semibold group animate-pulse-glow rounded-2xl"
+                  className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:-translate-y-1 px-[30px] py-[15px] text-[17px] font-semibold group animate-pulse-glow rounded-[10px]"
                   asChild
                 >
                   <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
@@ -61,7 +62,7 @@ export function FinalCTASection() {
               <Button
                 variant="ghost"
                 size="lg"
-                className="text-muted-foreground hover:text-foreground px-8 py-6 text-lg"
+                className="text-muted-foreground hover:text-foreground px-[30px] py-[15px] text-[17px]"
                 asChild
               >
                 <a href="https://wa.me/message/XXXX" target="_blank" rel="noopener noreferrer">

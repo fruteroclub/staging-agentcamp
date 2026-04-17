@@ -14,7 +14,7 @@ export function MethodSection() {
         <div className="max-w-4xl mx-auto">
           {/* Section header */}
           <ScrollReveal animationKey={i18n.language} className="text-center mb-4">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-semibold">
               {t('method.title')}
             </h2>
           </ScrollReveal>
@@ -44,7 +44,7 @@ export function MethodSection() {
                   </div>
 
                   {/* Content */}
-                  <div className="flex-1 p-6 rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-white/5 group-hover:border-primary/20 transition-all duration-500">
+                  <div className="flex-1 p-6 rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 group-hover:border-primary/20 transition-all duration-500">
                     <div className="flex items-center gap-3 mb-2">
                       <span className="text-sm font-mono text-primary">{t(`method.weeks.${index}.number`)}</span>
                       <span className="text-xl font-semibold">{t(`method.weeks.${index}.title`)}</span>

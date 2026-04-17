@@ -13,7 +13,7 @@ export function PricingSection() {
         <div className="max-w-3xl mx-auto">
           {/* Section header */}
           <ScrollReveal animationKey={i18n.language} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-semibold">
               {t('pricing.title')}
             </h2>
           </ScrollReveal>
@@ -28,19 +28,17 @@ export function PricingSection() {
               <div className="absolute -top-24 -left-24 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
               <div className="absolute -bottom-24 -right-24 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
 
-              {/* Price display */}
-              <div className="relative z-10 px-12 py-10 border-b border-white/5">
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-4">
-                  <div className="text-center">
-                    <span className="text-5xl font-bold">{t('pricing.earlyBird.price')}</span>
-                    <p className="text-sm text-primary mt-1">{t('pricing.earlyBird.label')}</p>
-                  </div>
-                  <div className="text-center">
-                    <span className="text-3xl font-bold text-muted-foreground">{t('pricing.regular.price')}</span>
-                    <p className="text-sm text-muted-foreground mt-1">{t('pricing.regular.label')}</p>
-                  </div>
+              {/* Price display — stacked */}
+              <div className="relative z-10 px-12 py-10 border-b border-white/5 text-center">
+                <div className="mb-1">
+                  <span className="text-5xl font-semibold text-warning">{t('pricing.earlyBird.price')}</span>
                 </div>
-                <p className="text-muted-foreground text-sm text-center">
+                <p className="text-sm text-primary mb-4">{t('pricing.earlyBird.label')}</p>
+                <div className="mb-1">
+                  <span className="text-2xl font-semibold text-muted-foreground line-through decoration-muted-foreground/40">{t('pricing.regular.price')}</span>
+                </div>
+                <p className="text-sm text-muted-foreground mb-4">{t('pricing.regular.label')}</p>
+                <p className="text-muted-foreground text-sm">
                   {t('pricing.paymentLine')}
                 </p>
               </div>
@@ -60,25 +58,23 @@ export function PricingSection() {
                 </ul>
               </div>
 
-              {/* Logistics + CTA */}
-              <div className="relative z-10 px-12 py-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+              {/* Logistics + CTA — stacked: details on top, button below */}
+              <div className="relative z-10 px-12 py-8 flex flex-col items-center gap-6 text-center">
                 <div className="space-y-1 text-sm text-muted-foreground">
                   <p>{t('pricing.logistics.spots')}</p>
                   <p>{t('pricing.logistics.startDate')}</p>
                   <p>{t('pricing.logistics.deadline')}</p>
                 </div>
-                <div className="shrink-0 w-full sm:w-auto">
-                  <Button
-                    size="lg"
-                    className="w-full sm:w-auto bg-primary hover:bg-primary-hover transition-all duration-300 px-8 py-5 text-base font-semibold group rounded-2xl"
-                    asChild
-                  >
-                    <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
-                      {t('pricing.cta')}
-                      <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
-                    </a>
-                  </Button>
-                </div>
+                <Button
+                  size="lg"
+                  className="w-full sm:w-auto bg-primary hover:bg-primary-hover transition-all duration-300 px-[30px] py-[15px] text-[17px] font-semibold group rounded-[10px]"
+                  asChild
+                >
+                  <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
+                    {t('pricing.cta')}
+                    <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  </a>
+                </Button>
               </div>
             </motion.div>
           </ScrollReveal>

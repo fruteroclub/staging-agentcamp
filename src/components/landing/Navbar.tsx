@@ -115,7 +115,7 @@ export function Navbar() {
               </a>
             ))}
             <Button
-              className="bg-primary hover:bg-primary-hover w-full mt-4 rounded-[10px] py-6 font-semibold"
+              className="bg-primary hover:bg-primary-hover w-full mt-4 rounded-[10px] py-6 text-[17px] font-semibold"
               onClick={() => setIsMobileMenuOpen(false)}
               asChild
             >

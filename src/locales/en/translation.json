@@ -19,7 +19,11 @@
     }
   },
   "hero": {
-    "title": "Stop experimenting with AI. Start operating with agents.",
+    "overline": "Intensive program · 5 weeks · In Spanish",
+    "title": {
+      "line1": "Stop experimenting with AI.",
+      "line2": "Start operating with agents."
+    },
     "subtitle": "A 5-week program where you leave with your own agent — with architecture, integrations, identity and verifiable reputation — solving real work inside Godínez.AI Studio.",
     "proofLine": "$5,000 MXN first 20 spots · $7,500 MXN regular · 50 spots · Starts May 4",
     "cta": {
@@ -234,7 +238,10 @@
     }
   },
   "finalCta": {
-    "title": "Go from experimenting with AI to operating with agents.",
+    "title": {
+      "line1": "Go from experimenting with AI",
+      "line2": "to operating with agents."
+    },
     "proofLine1": "$5,000 MXN first 20 · $7,500 MXN regular · 50 spots",
     "proofLine2": "Starts May 4 · Closes May 3 23:59 CDMX",
     "cta": {

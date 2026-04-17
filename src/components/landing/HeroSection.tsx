@@ -26,15 +26,28 @@ export function HeroSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
 
-          {/* H1 */}
+          {/* Overline — amarillo, antes del headline */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 mb-6"
+          >
+            <span className="text-overline font-semibold text-warning tracking-[0.1em] uppercase">
+              {t('hero.overline')}
+            </span>
+          </motion.div>
+
+          {/* H1 — Jakarta extrabold line 1 + Playfair italic line 2 */}
           <motion.h1
             key={`title-${i18n.language}`}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-[-0.01em] mb-6"
           >
-            {t('hero.title')}
+            {t('hero.title.line1')}{" "}
+            <span className="text-primary font-serif italic text-[1.1em]">{t('hero.title.line2')}</span>
           </motion.h1>
 
           {/* Sub-headline */}
@@ -43,7 +56,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6"
+            className="text-lg md:text-xl text-foreground-body max-w-2xl mx-auto mb-6"
           >
             {t('hero.subtitle')}
           </motion.p>
@@ -69,7 +82,7 @@ export function HeroSection() {
           >
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary-hover transition-all duration-300 px-10 py-6 text-lg font-semibold group rounded-2xl"
+              className="bg-primary hover:bg-primary-hover transition-all duration-300 px-[30px] py-[15px] text-[17px] font-semibold group rounded-[10px]"
               asChild
             >
               <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
@@ -80,7 +93,7 @@ export function HeroSection() {
             <Button
               variant="ghost"
               size="lg"
-              className="text-muted-foreground hover:text-foreground px-8 py-6 text-lg"
+              className="text-muted-foreground hover:text-foreground px-[30px] py-[15px] text-[17px]"
               aria-label="Ver currículum de AgentCamp"
               asChild
             >

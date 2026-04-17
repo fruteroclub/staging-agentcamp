@@ -12,7 +12,7 @@ export function EcosystemSection() {
         <div className="max-w-3xl mx-auto">
           {/* Section header */}
           <ScrollReveal animationKey={i18n.language} className="text-center mb-4">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-semibold">
               {t('outcomes.title')}
             </h2>
           </ScrollReveal>
