@@ -1,9 +1,6 @@
-import { RefreshCw, StopCircle, Dices } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
-
-const icons = [RefreshCw, StopCircle, Dices];
+import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
 
 export function PainPointsSection() {
   const { t, i18n } = useTranslation();
@@ -11,45 +8,44 @@ export function PainPointsSection() {
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        {/* Section header */}
-        <motion.div
-          key={i18n.language}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-[28px] md:text-[32px] font-semibold leading-[1.25] mb-4">
-            {t('painPoints.title.line1')}{" "}<br />
-            <span className="text-foreground-body">{t('painPoints.title.line2')}</span>
-          </h2>
-        </motion.div>
+        <div className="max-w-3xl mx-auto">
+          {/* Section header */}
+          <ScrollReveal animationKey={i18n.language} className="text-center mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold">
+              {t('painPoints.title')}
+            </h2>
+          </ScrollReveal>
 
-        {/* Pain points grid */}
-        <StaggerContainer animationKey={i18n.language} className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {Array.from({ length: 3 }).map((_, index) => {
-            const Icon = icons[index];
-            return (
+          {/* Body */}
+          <ScrollReveal animationKey={i18n.language} delay={0.1} className="text-center mb-12">
+            <p className="text-lg text-muted-foreground">
+              {t('painPoints.body')}
+            </p>
+          </ScrollReveal>
+
+          {/* Bullets */}
+          <StaggerContainer animationKey={i18n.language} className="space-y-4 mb-12">
+            {Array.from({ length: 4 }).map((_, index) => (
               <motion.div
                 key={index}
                 variants={staggerItem}
-                className="group relative p-8 rounded-3xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-white/5 hover:border-accent/40 hover:shadow-[0_0_60px_-12px_hsl(var(--accent)/0.2)] transition-all duration-500"
+                className="flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-white/5"
               >
-                {/* Subtle gradient orb */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent/5 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-                <div className="relative z-10">
-                  <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="w-7 h-7 text-accent" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">{t(`painPoints.items.${index}.title`)}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{t(`painPoints.items.${index}.description`)}</p>
-                </div>
+                <span className="w-2 h-2 rounded-full bg-accent flex-shrink-0" />
+                <span className="text-foreground text-lg">
+                  {t(`painPoints.bullets.${index}`)}
+                </span>
               </motion.div>
-            );
-          })}
-        </StaggerContainer>
+            ))}
+          </StaggerContainer>
+
+          {/* Bridge line */}
+          <ScrollReveal animationKey={i18n.language} delay={0.2} className="text-center">
+            <p className="text-xl font-semibold text-primary">
+              {t('painPoints.bridge')}
+            </p>
+          </ScrollReveal>
+        </div>
       </div>
     </section>
   );
