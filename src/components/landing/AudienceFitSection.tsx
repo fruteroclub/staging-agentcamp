@@ -17,7 +17,7 @@ export function AudienceFitSection() {
             </h2>
           </ScrollReveal>
 
-          {/* Two columns with asymmetric shapes */}
+          {/* Two columns */}
           <StaggerContainer animationKey={i18n.language} className="grid md:grid-cols-2 gap-6">
             {/* For you */}
             <motion.div
@@ -35,7 +35,7 @@ export function AudienceFitSection() {
                   {t('audienceFit.forYou.title')}
                 </h3>
                 <ul className="space-y-4">
-                  {Array.from({ length: 5 }).map((_, index) => (
+                  {Array.from({ length: 3 }).map((_, index) => (
                     <li key={index} className="flex items-start gap-3 group/item">
                       <div className="w-6 h-6 rounded-lg bg-success/10 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-success/20 transition-colors duration-300">
                         <Check className="w-4 h-4 text-success" />
@@ -62,16 +62,9 @@ export function AudienceFitSection() {
                   </div>
                   {t('audienceFit.notForYou.title')}
                 </h3>
-                <ul className="space-y-4">
-                  {Array.from({ length: 5 }).map((_, index) => (
-                    <li key={index} className="flex items-start gap-3 group/item">
-                      <div className="w-6 h-6 rounded-lg bg-destructive/10 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-destructive/20 transition-colors duration-300">
-                        <X className="w-4 h-4 text-destructive" />
-                      </div>
-                      <span className="text-foreground/90">{t(`audienceFit.notForYou.items.${index}`)}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-foreground/90 leading-relaxed">
+                  {t('audienceFit.notForYou.description')}
+                </p>
               </div>
             </motion.div>
           </StaggerContainer>

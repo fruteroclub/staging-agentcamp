@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown, Users, Calendar } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -26,19 +26,6 @@ export function HeroSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
 
-
-          {/* Context label */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 mb-6"
-          >
-            <span className="text-sm font-medium text-muted-foreground tracking-widest uppercase">
-              Programa intensivo · 5 semanas · En español
-            </span>
-          </motion.div>
-
           {/* H1 */}
           <motion.h1
             key={`title-${i18n.language}`}
@@ -47,20 +34,29 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
           >
-            {t('hero.title.line1')}{" "}
-            {t('hero.title.line2')}{" "}
-            <span className="text-warning italic">{t('hero.title.line3')}</span>
+            {t('hero.title')}
           </motion.h1>
 
           {/* Sub-headline */}
           <motion.p
-            key={`subtitle1-${i18n.language}`}
+            key={`subtitle-${i18n.language}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10"
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6"
           >
-            {t('hero.subtitle.problem')}
+            {t('hero.subtitle')}
+          </motion.p>
+
+          {/* Proof line */}
+          <motion.p
+            key={`proof-${i18n.language}`}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="text-sm text-muted-foreground mb-10"
+          >
+            {t('hero.proofLine')}
           </motion.p>
 
           {/* CTAs */}
@@ -85,33 +81,13 @@ export function HeroSection() {
               variant="ghost"
               size="lg"
               className="text-muted-foreground hover:text-foreground px-8 py-6 text-lg"
-              aria-label="Ver programa del curso Agentcamp"
+              aria-label="Ver currículum de AgentCamp"
+              asChild
             >
-              {t('hero.cta.secondary')}
+              <a href="#curriculum">
+                {t('hero.cta.secondary')}
+              </a>
             </Button>
-          </motion.div>
-
-          {/* Program details strip */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground"
-          >
-            <span className="flex items-center gap-1.5">
-              <Calendar className="w-4 h-4 text-primary" />
-              5 semanas
-            </span>
-            <span className="w-px h-4 bg-white/10" />
-            <span className="flex items-center gap-1.5">
-              <Users className="w-4 h-4 text-primary" />
-              Máximo 100 lugares
-            </span>
-            <span className="w-px h-4 bg-white/10" />
-            <span className="flex items-center gap-1.5">
-              <Calendar className="w-4 h-4 text-primary" />
-              Certificación incluida
-            </span>
           </motion.div>
         </div>
       </div>

@@ -41,18 +41,15 @@ export function FAQSection() {
         <div className="max-w-3xl mx-auto">
           {/* Section header */}
           <ScrollReveal animationKey={i18n.language} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3">
+            <h2 className="text-3xl md:text-4xl font-bold">
               {t('faq.title')}
             </h2>
-            <p className="text-muted-foreground">
-              {t('faq.subtitle')}
-            </p>
           </ScrollReveal>
 
           {/* FAQ Accordion */}
           <StaggerContainer animationKey={i18n.language}>
             <Accordion type="single" collapsible className="space-y-3">
-              {Array.from({ length: 8 }).map((_, index) => (
+              {Array.from({ length: 9 }).map((_, index) => (
                 <motion.div key={index} variants={staggerItem}>
                   <AccordionItem
                     value={`item-${index}`}
@@ -71,13 +68,6 @@ export function FAQSection() {
               ))}
             </Accordion>
           </StaggerContainer>
-
-          {/* CTA de cierre */}
-          <ScrollReveal animationKey={i18n.language} className="text-center mt-12">
-            <p className="text-muted-foreground text-sm">
-              {t('faq.footer')}
-            </p>
-          </ScrollReveal>
         </div>
       </div>
     </section>

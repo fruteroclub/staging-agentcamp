@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Check, ArrowRight, Sparkles } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { ScrollReveal } from "@/components/ui/scroll-reveal";
+import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
 
 export function PricingSection() {
   const { t, i18n } = useTranslation();
@@ -13,13 +12,10 @@ export function PricingSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           {/* Section header */}
-          <ScrollReveal animationKey={i18n.language} className="text-center mb-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-1">
-              {t('pricing.cohortTitle')}
+          <ScrollReveal animationKey={i18n.language} className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold">
+              {t('pricing.title')}
             </h2>
-            <p className="text-muted-foreground text-sm">
-              {t('pricing.cohortSubtitle')}
-            </p>
           </ScrollReveal>
 
           {/* Pricing card */}
@@ -32,23 +28,45 @@ export function PricingSection() {
               <div className="absolute -top-24 -left-24 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
               <div className="absolute -bottom-24 -right-24 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
 
-              {/* Header — precio + badge en horizontal */}
-              <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-4 px-12 py-10 border-b border-white/5">
-                <div>
-                  <Badge className="bg-primary text-primary-foreground mb-3 px-4 py-1 rounded-full text-xs">
-                    <Sparkles className="w-3 h-3 mr-1.5" />
-                    {t('pricing.badge')}
-                  </Badge>
-                  <div className="flex items-baseline gap-3">
-                    <span className="text-5xl font-bold">{t('pricing.price.current')}</span>
-                    <span className="text-muted-foreground line-through text-lg">{t('pricing.price.original')}</span>
+              {/* Price display */}
+              <div className="relative z-10 px-12 py-10 border-b border-white/5">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-4">
+                  <div className="text-center">
+                    <span className="text-5xl font-bold">{t('pricing.earlyBird.price')}</span>
+                    <p className="text-sm text-primary mt-1">{t('pricing.earlyBird.label')}</p>
                   </div>
-                  <p className="text-muted-foreground mt-1 text-sm">
-                    {t('pricing.price.note')}
-                  </p>
+                  <div className="text-center">
+                    <span className="text-3xl font-bold text-muted-foreground">{t('pricing.regular.price')}</span>
+                    <p className="text-sm text-muted-foreground mt-1">{t('pricing.regular.label')}</p>
+                  </div>
                 </div>
+                <p className="text-muted-foreground text-sm text-center">
+                  {t('pricing.paymentLine')}
+                </p>
+              </div>
 
-                {/* CTA lateral en desktop */}
+              {/* Includes */}
+              <div className="relative z-10 px-12 py-8 border-b border-white/5">
+                <p className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
+                  {t('pricing.includes.title')}
+                </p>
+                <ul className="grid sm:grid-cols-2 gap-3">
+                  {Array.from({ length: 6 }).map((_, index) => (
+                    <li key={index} className="flex items-start gap-2">
+                      <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">{t(`pricing.includes.items.${index}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Logistics + CTA */}
+              <div className="relative z-10 px-12 py-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div className="space-y-1 text-sm text-muted-foreground">
+                  <p>{t('pricing.logistics.spots')}</p>
+                  <p>{t('pricing.logistics.startDate')}</p>
+                  <p>{t('pricing.logistics.deadline')}</p>
+                </div>
                 <div className="shrink-0 w-full sm:w-auto">
                   <Button
                     size="lg"
@@ -61,21 +79,6 @@ export function PricingSection() {
                     </a>
                   </Button>
                 </div>
-              </div>
-
-              {/* Includes + garantía */}
-              <div className="relative z-10 px-12 py-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                <ul className="grid grid-cols-2 gap-x-10 gap-y-2.5">
-                  {Array.from({ length: 5 }).map((_, index) => (
-                    <li key={index} className="flex items-center gap-2">
-                      <Check className="w-4 h-4 text-primary shrink-0" />
-                      <span className="text-sm text-muted-foreground">{t(`pricing.includes.items.${index}`)}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-xs text-muted-foreground sm:max-w-[200px] sm:text-right shrink-0">
-                  {t('pricing.guarantee')}
-                </p>
               </div>
             </motion.div>
           </ScrollReveal>
