@@ -1,0 +1,212 @@
+# AgentCamp — Full Page Content
+
+> A 5-week intensive program to build and launch your own AI agent — with architecture, integrations, identity and verifiable reputation — solving real work inside Godinez.AI Studio.
+
+By [Frutero](https://frutero.club) · In Spanish · 50 spots · Starts May 4, 2026
+
+---
+
+## Hero
+
+**Intensive program · 5 weeks · In Spanish**
+
+Stop experimenting with AI. Start operating with agents.
+
+A 5-week program where you leave with your own agent — with architecture, integrations, identity and verifiable reputation — solving real work inside Godinez.AI Studio.
+
+$5,000 MXN first 20 spots · $7,500 MXN regular · 50 spots · Starts May 4
+
+- [Apply: I want my spot](https://tally.so/r/aQ2D0b)
+- [View curriculum](#curriculum)
+
+---
+
+## What Is AgentCamp
+
+It's not a course. It's a program to build agents that operate.
+
+You learn by building inside Godinez.AI Studio. Every week you finish with a real artifact: an agent, an architecture, integrations, a workflow, and a demonstrable capstone.
+
+### Build
+Your agent, its architecture and its skills.
+
+### Connect
+Your tools, your files, your identity.
+
+### Prove
+Real workflows, metrics, public demo and verifiable reputation.
+
+The agents you build here have their own architecture, persistent identity, economic capability and verifiable reputation. The four layers that separate a demo from a real system.
+
+---
+
+## Pain Points
+
+You've tried ChatGPT, Claude, Copilot and 17 other tools. You're still doing everything yourself.
+
+The problem isn't AI. It's the gap between opening a tool and having a system that works for you.
+
+- Lots of prompts, little architecture.
+- Lots of loose tools, little system.
+- Lots of curiosity, little real output.
+- Lots of theory, little implementation.
+
+AgentCamp exists to close that gap.
+
+---
+
+## How It Works
+
+5 weeks · 2 live sessions per week · 1 artifact per week
+
+- **Week 1 — Activate**: Your first agent running from day one.
+- **Week 2 — Architect**: Understand how your agent thinks and teach it new skills.
+- **Week 3 — Connect**: Your agent touches the real world: tools, files, identity.
+- **Week 4 — Automate**: Design workflows that solve real work and operate without you.
+- **Week 5 — Launch**: Present your capstone with real evidence to community and allies.
+
+---
+
+## Curriculum
+
+Five weeks. Ten sessions. Cumulative progress toward agents that are more real, more useful and more visible.
+
+### Week 1 — From prompt to first agent
+You set up your personal agent and learn to give it instructions with real context.
+**You leave with:** An active agent solving a real task.
+
+### Week 2 — Agent architecture with OpenClaw
+You understand bootstrap, memory, context and skills: the difference between a serious agent and a chatbot in disguise.
+**You leave with:** An agent with its own architecture and functional skills.
+
+### Week 3 — Integrations, tools and identity
+Your agent connects to real tools, files and workspaces, and operates with its own persistent identity.
+**You leave with:** Real integrations, operational workspace and active identity.
+
+### Week 4 — Workflows and agent economics
+You design workflows that run without you and learn how your agent can charge, pay and participate in real economic processes.
+**You leave with:** A workflow solving a real case, with integrated economic capability.
+
+### Week 5 — Iteration, reputation and Demo Day
+You evaluate, iterate and present your capstone with public metrics and verifiable reputation.
+**You leave with:** Recorded demo, real metrics, documented case and public reputation.
+
+---
+
+## What You Take With You
+
+All graduates leave with:
+
+- A working agent with its own architecture
+- Persistent identity for your agent
+- Real integrations with your tools
+- A workflow solving a real case
+- Integrated transaction capability
+- Verifiable reputation and public track record
+- A capstone presented at Demo Day with recorded demo, metrics and documented case
+
+---
+
+## Manifesto
+
+Serious agents don't live in a sandbox.
+
+An agent without identity isn't yours. An agent that can't transact doesn't participate in the economy. An agent without reputation has no history.
+
+That's why AgentCamp teaches the complete layer: architecture, own identity, economic capability and verifiable reputation. Not as extras — as the fundamentals of what it means to operate a real agent.
+
+---
+
+## Demo Day · June 7
+
+The program closes with a public presentation of capstones, use cases and real metrics in front of community, allies and ecosystem guests.
+
+Demo Day is not ceremony. It's proof.
+
+You leave with a recorded demo, documented case, real metrics and your place in the first generation of Agent Operators.
+
+---
+
+## Who AgentCamp Is For
+
+### It's for you if:
+- You're a professional (manager, coordinator, consultant, founder, business owner) and you know your repetitive work could run on its own.
+- You've tried AI enough to know there's something there — and enough to be frustrated that nobody shows you how to set it up for real.
+- You want to leave with a system operating, not with notes.
+
+### Not for you if:
+You're looking for a theoretical AI course. AgentCamp is for building.
+
+---
+
+## Investment
+
+- **Early bird: $5,000 MXN** (first 20 spots)
+- **Regular: $7,500 MXN**
+- Pay with credit or debit card via Stripe.
+
+### Includes:
+- 5 weeks of live program (10 sessions) + recordings
+- 5 weeks + 1 month access to Godinez.AI Studio
+- Mentorship with the Frutero ecosystem and allied partners
+- Templates and playbooks
+- Agent Operator certification
+- Access to the Frutero community
+
+### Logistics:
+- Capacity: 50 spots
+- Starts: May 4, 2026
+- Registration closes: May 3 23:59 CDMX
+
+[Apply: I want my spot](https://tally.so/r/aQ2D0b)
+
+---
+
+## Frequently Asked Questions
+
+**Do I need to know how to code?**
+No. AgentCamp is designed for professionals with or without a technical background. If you know how to use your daily tools, you have more than enough skill.
+
+**How technical is the program?**
+Technical enough for you to build a serious agent. Guided enough so you don't get lost. You work inside Godinez.AI Studio, which gives you base architecture without having to build it from scratch.
+
+**How much time do I need to dedicate per week?**
+Between 4 and 6 hours: 2 live sessions plus building time. If you fall behind, you have recordings and mentorship.
+
+**What do I build by the end?**
+A working agent with its own architecture, identity, real integrations and economic capability — running a workflow that solves real work. Plus your capstone presented at Demo Day.
+
+**Does everyone build agents with identity, economic capability and reputation?**
+Yes. That's the definition of an agent within AgentCamp. Everyone learns and applies all four layers. The depth at which each person works them into their capstone depends on the use case, but nobody leaves without having built them.
+
+**What is Godinez.AI Studio?**
+The native agent environment where you build inside AgentCamp. It gives you base architecture, memory, skills and tools — so you can focus on building agents that solve real work.
+
+**What happens with Godinez.AI Studio after the included month?**
+You can continue with any of the plans. AgentCamp graduates get preferred alumni pricing.
+
+**What happens after the program?**
+Graduation to the alumni community. Invitation to the public launch of Godinez.AI on June 17. Access to the opportunity and collaboration network of the Frutero ecosystem.
+
+**What if I have questions before signing up?**
+Schedule 15 minutes via WhatsApp with the team.
+
+---
+
+## Final CTA
+
+Go from experimenting with AI to operating with agents.
+
+$5,000 MXN first 20 · $7,500 MXN regular · 50 spots
+Starts May 4 · Closes May 3 23:59 CDMX
+
+- [Apply: I want my spot](https://tally.so/r/aQ2D0b)
+- [Talk to the team on WhatsApp](https://wa.me/message/XXXX)
+
+---
+
+## About
+
+AgentCamp by [Frutero](https://frutero.club)
+[Twitter](https://x.com/fruteroclub) · [LinkedIn](https://www.linkedin.com/company/frutero-club/) · [YouTube](https://www.youtube.com/@fruterotv)
+© 2026 Frutero. All rights reserved.

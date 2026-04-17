@@ -1,0 +1,30 @@
+# AgentCamp
+
+> A 5-week intensive program to build and launch your own AI agent — with architecture, integrations, identity and verifiable reputation — solving real work inside Godinez.AI Studio.
+
+By [Frutero](https://frutero.club) · In Spanish · 50 spots · Starts May 4, 2026
+
+## Program
+
+- 5 weeks, 10 live sessions, 1 artifact per week
+- Week 1: Activate — Your first agent running from day one
+- Week 2: Architect — Understand how your agent thinks and teach it new skills
+- Week 3: Connect — Your agent touches the real world: tools, files, identity
+- Week 4: Automate — Design workflows that solve real work and operate without you
+- Week 5: Launch — Present your capstone with real evidence to community and allies
+
+## What You Build
+
+A working agent with its own architecture, persistent identity, real integrations and economic capability — running a workflow that solves real work. Plus a capstone presented at Demo Day (June 7).
+
+## Pricing
+
+- Early bird: $5,000 MXN (first 20 spots)
+- Regular: $7,500 MXN
+- Payment via Stripe (credit or debit card)
+
+## Links
+
+- [Apply](https://tally.so/r/aQ2D0b)
+- [Full page content](https://agentcamp-git-dev-fruteroclub.vercel.app/llms-full.txt)
+- [Website](https://agentcamp-git-dev-fruteroclub.vercel.app/)
