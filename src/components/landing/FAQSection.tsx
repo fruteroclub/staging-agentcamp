@@ -41,7 +41,7 @@ export function FAQSection() {
         <div className="max-w-3xl mx-auto">
           {/* Section header */}
           <ScrollReveal animationKey={i18n.language} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-3">
               {t('faq.title')}
             </h2>
             <p className="text-muted-foreground">

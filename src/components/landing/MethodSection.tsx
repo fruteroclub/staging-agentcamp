@@ -14,14 +14,14 @@ export function MethodSection() {
         <div className="max-w-4xl mx-auto">
           {/* Section header */}
           <ScrollReveal animationKey={i18n.language} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6">
               {t('method.title.part1')} <span className="text-gradient">{t('method.title.part2')}</span>
             </h2>
           </ScrollReveal>
 
           {/* Method explanation */}
           <ScrollReveal animationKey={i18n.language} delay={0.1}>
-            <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-card/90 via-card/70 to-card/50 backdrop-blur-sm border border-white/10 p-8 md:p-12 mb-12 group">
+            <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-card/90 via-card/70 to-card/50 backdrop-blur-sm border border-border/50 p-8 md:p-12 mb-12 group">
               {/* Decorative gradient orbs */}
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/15 transition-colors duration-700" />
               <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary/5 rounded-full blur-3xl" />
@@ -33,7 +33,7 @@ export function MethodSection() {
                 <p className="text-xl font-semibold mb-6">
                   {t('method.explanation.approach')}
                 </p>
-                <p className="text-2xl md:text-3xl font-bold text-gradient mb-8">
+                <p className="text-2xl md:text-3xl font-semibold text-gradient mb-8">
                   {t('method.explanation.philosophy')}
                 </p>
                 <p className="text-muted-foreground text-lg">

@@ -17,7 +17,7 @@ export function CurriculumSection() {
         <div className="max-w-4xl mx-auto">
           {/* Section header */}
           <ScrollReveal animationKey={i18n.language} className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
               {t('curriculum.title')}
             </h2>
           </ScrollReveal>

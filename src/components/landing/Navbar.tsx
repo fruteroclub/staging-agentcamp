@@ -42,7 +42,7 @@ export function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-background/80 backdrop-blur-md border-b border-white/5"
+            ? "bg-background/80 backdrop-blur-md"
             : "bg-transparent"
         }`}
       >
@@ -68,7 +68,7 @@ export function Navbar() {
             <div className="hidden md:flex items-center gap-4">
               <LanguageSwitcher />
 
-              <Button className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:-translate-y-0.5 rounded-full" asChild>
+              <Button className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:-translate-y-0.5 rounded-[10px] font-semibold" asChild>
                 <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
                   {t('navbar.cta')}
                 </a>
@@ -115,7 +115,7 @@ export function Navbar() {
               </a>
             ))}
             <Button
-              className="bg-primary hover:bg-primary-hover w-full mt-4 rounded-xl py-6"
+              className="bg-primary hover:bg-primary-hover w-full mt-4 rounded-[10px] py-6 font-semibold"
               onClick={() => setIsMobileMenuOpen(false)}
               asChild
             >
@@ -129,7 +129,7 @@ export function Navbar() {
 
       {/* Floating Mobile CTA */}
       <div className="fixed bottom-6 left-4 right-4 z-40 md:hidden">
-        <Button className="w-full bg-primary hover:bg-primary-hover py-6 text-base font-semibold rounded-2xl" asChild>
+        <Button className="w-full bg-primary hover:bg-primary-hover py-6 text-[17px] font-semibold rounded-[10px]" asChild>
           <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
             {t('navbar.ctaMobile')}
           </a>

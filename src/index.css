@@ -2,118 +2,121 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Agentcamp Design System - Dark Theme
-   Aligned with Godínez.AI brand system.
-   Primary: Magenta #E91E8C | Secondary: Violet #8B5CF6 | Accent: Gold #FFB800
+/* Agentcamp Design System — Brand Guidelines v1.0
+   Godínez.AI · Frutero
+   Primary: Rosa #e91e8c | Secondary: Amarillo #ffb800 | Tertiary: Morado #8b5cf6
+   Background: #1c1c1e (iOS dark mode) — grisáceo, no negro puro
+   WCAG 2.1 AA/AAA verified · 60-30-10 rule
 */
 
 @layer base {
   :root {
-    /* Dark theme as default for Agentcamp */
-    --background: 0 0% 4%;
-    --foreground: 0 0% 100%;
+    /* Fondos — grisáceos (no negro puro, reduce fatiga visual) */
+    --background: 240 3% 11%;          /* #1c1c1e — fondo principal */
+    --background-alt: 240 4% 15%;      /* #242427 — secciones alternas */
+    --foreground: 0 0% 97%;            /* #f8f8f8 — headlines H1/H2/H3 */
+    --foreground-body: 0 0% 91%;       /* #e8e8e8 — body copy, ratio 12:1 AAA */
 
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 100%;
+    --card: 240 5% 17%;                /* #2a2a2e — cards, modales, bloques elevados */
+    --card-foreground: 0 0% 97%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 240 5% 17%;
+    --popover-foreground: 0 0% 97%;
 
-    /* Magenta as primary — #E91E8C */
+    /* Rosa — Primario — CTA y acción · #e91e8c · 4.6:1 AA */
     --primary: 328 81% 52%;
-    --primary-foreground: 0 0% 100%;
+    --primary-foreground: 0 0% 97%;
+    --primary-hover: 328 78% 43%;      /* #c4177a */
 
-    /* Magenta dark for hover states — #C4177A */
-    --primary-hover: 328 78% 43%;
+    --secondary: 240 4% 15%;           /* #242427 — bg-alt */
+    --secondary-foreground: 0 0% 97%;
 
-    --secondary: 0 0% 18%;
-    --secondary-foreground: 0 0% 100%;
+    --muted: 240 4% 15%;               /* #242427 */
+    --muted-foreground: 0 0% 53%;      /* #888888 — captions, texto secundario */
 
-    --muted: 0 0% 18%;
-    --muted-foreground: 240 5% 65%;
-
-    /* Violet as accent — #8B5CF6 */
-    --accent: 263 89% 65%;
-    --accent-foreground: 0 0% 100%;
+    /* Morado — Terciario — íconos de apoyo, bullets · #8b5cf6 · 5.1:1 AA */
+    --accent: 263 70% 66%;
+    --accent-foreground: 0 0% 97%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 97%;
 
-    /* Success - Emerald */
+    /* Success — Emerald */
     --success: 160 84% 39%;
-    --success-foreground: 0 0% 100%;
+    --success-foreground: 0 0% 97%;
 
-    /* Gold — #FFB800 */
+    /* Amarillo — Secundario — precios, stats, overlines · #ffb800 · 8.1:1 AAA */
     --warning: 43 100% 50%;
     --warning-foreground: 0 0% 0%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
+    --border: 240 3% 23%;              /* #38383c — bordes y divisores */
+    --input: 240 3% 23%;
     --ring: 328 81% 52%;
 
-    --radius: 0.5rem;
+    --radius: 0.625rem;                /* 10px — brand spec */
 
-    /* Surface colors */
-    --surface: 0 0% 10%;
-    --surface-hover: 0 0% 14%;
+    /* Surface colors — elevated elements */
+    --surface: 240 5% 17%;             /* #2a2a2e */
+    --surface-hover: 240 5% 21%;       /* #323237 — hover, tooltips */
 
-    --sidebar-background: 0 0% 4%;
-    --sidebar-foreground: 0 0% 100%;
+    --sidebar-background: 240 3% 11%;
+    --sidebar-foreground: 0 0% 97%;
     --sidebar-primary: 328 81% 52%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 14%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 18%;
+    --sidebar-primary-foreground: 0 0% 97%;
+    --sidebar-accent: 240 5% 21%;
+    --sidebar-accent-foreground: 0 0% 97%;
+    --sidebar-border: 240 3% 23%;
     --sidebar-ring: 328 81% 52%;
   }
 
   .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 100%;
+    --background: 240 3% 11%;
+    --background-alt: 240 4% 15%;
+    --foreground: 0 0% 97%;
+    --foreground-body: 0 0% 91%;
 
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 100%;
+    --card: 240 5% 17%;
+    --card-foreground: 0 0% 97%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 240 5% 17%;
+    --popover-foreground: 0 0% 97%;
 
     --primary: 328 81% 52%;
-    --primary-foreground: 0 0% 100%;
-
+    --primary-foreground: 0 0% 97%;
     --primary-hover: 328 78% 43%;
 
-    --secondary: 0 0% 18%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 240 4% 15%;
+    --secondary-foreground: 0 0% 97%;
 
-    --muted: 0 0% 18%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 240 4% 15%;
+    --muted-foreground: 0 0% 53%;
 
-    --accent: 263 70% 65%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 263 70% 66%;
+    --accent-foreground: 0 0% 97%;
 
     --destructive: 0 63% 31%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 0 0% 97%;
 
     --success: 160 84% 39%;
-    --success-foreground: 0 0% 100%;
+    --success-foreground: 0 0% 97%;
 
     --warning: 43 100% 50%;
     --warning-foreground: 0 0% 0%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
+    --border: 240 3% 23%;
+    --input: 240 3% 23%;
     --ring: 328 81% 52%;
 
-    --surface: 0 0% 10%;
-    --surface-hover: 0 0% 14%;
+    --surface: 240 5% 17%;
+    --surface-hover: 240 5% 21%;
 
-    --sidebar-background: 0 0% 4%;
-    --sidebar-foreground: 0 0% 100%;
+    --sidebar-background: 240 3% 11%;
+    --sidebar-foreground: 0 0% 97%;
     --sidebar-primary: 328 81% 52%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 14%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 18%;
+    --sidebar-primary-foreground: 0 0% 97%;
+    --sidebar-accent: 240 5% 21%;
+    --sidebar-accent-foreground: 0 0% 97%;
+    --sidebar-border: 240 3% 23%;
     --sidebar-ring: 328 81% 52%;
   }
 }
@@ -124,19 +127,36 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background antialiased;
     font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    color: hsl(var(--foreground-body));
+    line-height: 1.7;
+    font-size: 17px;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Heading hierarchy — #f8f8f8 for visual distinction from body #e8e8e8 */
+  h1, h2, h3, h4, h5, h6 {
+    color: hsl(var(--foreground));
+  }
+
+  h1 {
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+
+  h2 {
+    line-height: 1.25;
   }
 }
 
 @layer utilities {
   /* Magenta → Violet (brand gradient) */
   .gradient-primary {
-    background: linear-gradient(135deg, hsl(328 81% 52%) 0%, hsl(263 70% 65%) 100%);
+    background: linear-gradient(135deg, hsl(328 81% 52%) 0%, hsl(263 70% 66%) 100%);
   }
 
   .shadow-primary {
@@ -144,7 +164,7 @@
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, hsl(328 81% 52%) 0%, hsl(263 70% 65%) 100%);
+    background: linear-gradient(135deg, hsl(328 81% 52%) 0%, hsl(263 70% 66%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

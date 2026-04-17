@@ -12,7 +12,7 @@ export function EcosystemSection() {
         <div className="max-w-5xl mx-auto">
           {/* Section header */}
           <ScrollReveal animationKey={i18n.language} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
               {t('ecosystem.title')}
             </h2>
             <p className="text-muted-foreground text-lg">
@@ -55,10 +55,10 @@ export function EcosystemSection() {
                   <div
                     key={index}
                     className={`text-center ${
-                      index < 2 ? "border-r border-white/10" : ""
+                      index < 2 ? "border-r border-border" : ""
                     }`}
                   >
-                    <div className="text-2xl md:text-3xl font-bold text-gradient mb-1">
+                    <div className="text-2xl md:text-3xl font-semibold text-warning mb-1">
                       {t(`ecosystem.stats.${index}.value`)}
                     </div>
                     <div className="text-xs md:text-sm text-muted-foreground">
@@ -75,7 +75,7 @@ export function EcosystemSection() {
             <p className="text-sm text-muted-foreground mb-3">
               {t('ecosystem.sponsor.question')}
             </p>
-            <Button variant="outline" size="sm" className="border-white/10 hover:border-primary/50 rounded-xl">
+            <Button variant="outline" size="sm" className="border-border hover:border-primary/50 rounded-xl">
               {t('ecosystem.sponsor.cta')}
             </Button>
           </ScrollReveal>

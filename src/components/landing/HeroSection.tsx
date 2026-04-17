@@ -34,7 +34,7 @@ export function HeroSection() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 mb-6"
           >
-            <span className="text-sm font-medium text-muted-foreground tracking-widest uppercase">
+            <span className="text-overline font-semibold text-warning tracking-[0.1em] uppercase">
               Programa intensivo · 5 semanas · En español
             </span>
           </motion.div>
@@ -45,11 +45,11 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-[-0.01em] mb-6"
           >
             {t('hero.title.line1')}{" "}
             {t('hero.title.line2')}{" "}
-            <span className="text-warning italic">{t('hero.title.line3')}</span>
+            <span className="text-primary font-serif italic text-[1.1em]">{t('hero.title.line3')}</span>
           </motion.h1>
 
           {/* Sub-headline */}
@@ -58,7 +58,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10"
+            className="text-lg md:text-xl text-foreground-body max-w-xl mx-auto mb-10"
           >
             {t('hero.subtitle.problem')}
           </motion.p>
@@ -73,7 +73,7 @@ export function HeroSection() {
           >
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary-hover transition-all duration-300 px-10 py-6 text-lg font-semibold group rounded-2xl"
+              className="bg-primary hover:bg-primary-hover transition-all duration-300 px-[30px] py-[15px] text-[17px] font-semibold group rounded-[10px]"
               asChild
             >
               <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
@@ -102,12 +102,12 @@ export function HeroSection() {
               <Calendar className="w-4 h-4 text-primary" />
               5 semanas
             </span>
-            <span className="w-px h-4 bg-white/10" />
+            <span className="w-px h-4 bg-border" />
             <span className="flex items-center gap-1.5">
               <Users className="w-4 h-4 text-primary" />
               Máximo 100 lugares
             </span>
-            <span className="w-px h-4 bg-white/10" />
+            <span className="w-px h-4 bg-border" />
             <span className="flex items-center gap-1.5">
               <Calendar className="w-4 h-4 text-primary" />
               Certificación incluida

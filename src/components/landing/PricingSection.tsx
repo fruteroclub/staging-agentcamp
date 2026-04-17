@@ -14,7 +14,7 @@ export function PricingSection() {
         <div className="max-w-3xl mx-auto">
           {/* Section header */}
           <ScrollReveal animationKey={i18n.language} className="text-center mb-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-1">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-1">
               {t('pricing.cohortTitle')}
             </h2>
             <p className="text-muted-foreground text-sm">
@@ -40,7 +40,7 @@ export function PricingSection() {
                     {t('pricing.badge')}
                   </Badge>
                   <div className="flex items-baseline gap-3">
-                    <span className="text-5xl font-bold">{t('pricing.price.current')}</span>
+                    <span className="text-5xl font-semibold text-warning">{t('pricing.price.current')}</span>
                     <span className="text-muted-foreground line-through text-lg">{t('pricing.price.original')}</span>
                   </div>
                   <p className="text-muted-foreground mt-1 text-sm">
@@ -52,7 +52,7 @@ export function PricingSection() {
                 <div className="shrink-0 w-full sm:w-auto">
                   <Button
                     size="lg"
-                    className="w-full sm:w-auto bg-primary hover:bg-primary-hover transition-all duration-300 px-8 py-5 text-base font-semibold group rounded-2xl"
+                    className="w-full sm:w-auto bg-primary hover:bg-primary-hover transition-all duration-300 px-[30px] py-[15px] text-[17px] font-semibold group rounded-[10px]"
                     asChild
                   >
                     <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">

@@ -11,7 +11,7 @@ export function TransformationSection() {
       <div className="container mx-auto px-4">
         {/* Section header */}
         <ScrollReveal animationKey={i18n.language} className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">
+          <h2 className="text-3xl md:text-4xl font-semibold">
             {t('transformation.title')}
           </h2>
         </ScrollReveal>
@@ -33,9 +33,9 @@ export function TransformationSection() {
                 className="grid grid-cols-[1fr_40px_1fr] items-center gap-4"
               >
                 {/* Before */}
-                <div className="flex items-center gap-4 p-5 rounded-2xl bg-destructive/5 border border-destructive/20 h-full">
-                  <div className="w-10 h-10 rounded-xl bg-destructive/20 flex items-center justify-center flex-shrink-0">
-                    <X className="w-5 h-5 text-destructive" />
+                <div className="flex items-center gap-4 p-5 rounded-2xl bg-muted/50 border border-border h-full">
+                  <div className="w-10 h-10 rounded-xl bg-muted flex items-center justify-center flex-shrink-0">
+                    <X className="w-5 h-5 text-muted-foreground" />
                   </div>
                   <span className="text-muted-foreground text-base leading-snug">
                     {t(`transformation.items.${index}.before`)}

@@ -20,9 +20,9 @@ export function PainPointsSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-[28px] md:text-[32px] font-semibold leading-[1.25] mb-4">
             {t('painPoints.title.line1')}{" "}<br />
-            <span className="text-muted-foreground">{t('painPoints.title.line2')}</span>
+            <span className="text-foreground-body">{t('painPoints.title.line2')}</span>
           </h2>
         </motion.div>
 

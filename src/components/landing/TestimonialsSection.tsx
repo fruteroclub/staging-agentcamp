@@ -12,7 +12,7 @@ export function TestimonialsSection() {
         <div className="max-w-5xl mx-auto">
           {/* Section header */}
           <ScrollReveal animationKey={i18n.language} className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-semibold">
               {t('testimonials.title')}
             </h2>
           </ScrollReveal>

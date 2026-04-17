@@ -16,15 +16,15 @@ export function LanguageSwitcher() {
       type="single"
       value={currentLang}
       onValueChange={handleLanguageChange}
-      className="bg-card/80 backdrop-blur-md border border-white/10 rounded-full p-1"
+      className="bg-card/80 backdrop-blur-md border border-border/30 rounded-[10px] p-1"
       aria-label={t('navbar.languageSwitcher.label')}
     >
       <ToggleGroupItem
         value="en"
         aria-label={t('navbar.languageSwitcher.switchToEnglish')}
-        className="rounded-full px-3 py-1.5 text-sm font-medium transition-colors
-                   data-[state=on]:bg-primary/20 data-[state=on]:text-primary
-                   data-[state=off]:text-muted-foreground
+        className="rounded-[8px] px-3 py-1.5 text-sm font-medium transition-colors
+                   data-[state=on]:bg-primary/15 data-[state=on]:text-foreground
+                   data-[state=off]:text-muted-foreground data-[state=off]:hover:text-foreground-body
                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
       >
         <span lang="en">EN</span>
@@ -32,9 +32,9 @@ export function LanguageSwitcher() {
       <ToggleGroupItem
         value="es"
         aria-label={t('navbar.languageSwitcher.switchToSpanish')}
-        className="rounded-full px-3 py-1.5 text-sm font-medium transition-colors
-                   data-[state=on]:bg-primary/20 data-[state=on]:text-primary
-                   data-[state=off]:text-muted-foreground
+        className="rounded-[8px] px-3 py-1.5 text-sm font-medium transition-colors
+                   data-[state=on]:bg-primary/15 data-[state=on]:text-foreground
+                   data-[state=off]:text-muted-foreground data-[state=off]:hover:text-foreground-body
                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
       >
         <span lang="es">ES</span>
