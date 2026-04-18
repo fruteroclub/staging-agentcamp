@@ -1,6 +1,5 @@
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export function PainPointsSection() {
   const { t, i18n } = useTranslation();
@@ -17,27 +16,20 @@ export function PainPointsSection() {
           </ScrollReveal>
 
           {/* Body */}
-          <ScrollReveal animationKey={i18n.language} delay={0.1} className="text-center mb-12">
+          <ScrollReveal animationKey={i18n.language} delay={0.1} className="text-center mb-6">
             <p className="text-lg text-muted-foreground">
               {t('painPoints.body')}
             </p>
           </ScrollReveal>
 
-          {/* Bullets */}
-          <StaggerContainer animationKey={i18n.language} className="space-y-4 mb-12">
-            {Array.from({ length: 4 }).map((_, index) => (
-              <motion.div
-                key={index}
-                variants={staggerItem}
-                className="flex items-center gap-4 p-5 rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-white/5"
-              >
-                <span className="w-2 h-2 rounded-full bg-accent flex-shrink-0" />
-                <span className="text-foreground text-lg">
-                  {t(`painPoints.bullets.${index}`)}
-                </span>
-              </motion.div>
-            ))}
-          </StaggerContainer>
+          {/* Extended body */}
+          <ScrollReveal animationKey={i18n.language} delay={0.15}>
+            <div className="p-6 md:p-8 rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-white/5 mb-12">
+              <p className="text-foreground/90 text-lg leading-relaxed">
+                {t('painPoints.extendedBody')}
+              </p>
+            </div>
+          </ScrollReveal>
 
           {/* Bridge line */}
           <ScrollReveal animationKey={i18n.language} delay={0.2} className="text-center">

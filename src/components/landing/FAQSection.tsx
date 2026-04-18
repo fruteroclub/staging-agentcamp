@@ -49,7 +49,7 @@ export function FAQSection() {
           {/* FAQ Accordion */}
           <StaggerContainer animationKey={i18n.language}>
             <Accordion type="single" collapsible className="space-y-3">
-              {Array.from({ length: 9 }).map((_, index) => (
+              {Array.from({ length: 8 }).map((_, index) => (
                 <motion.div key={index} variants={staggerItem}>
                   <AccordionItem
                     value={`item-${index}`}

@@ -79,14 +79,25 @@ export function CurriculumSection() {
                         className="overflow-hidden"
                       >
                         <div className="relative z-10 px-6 pb-6 border-t border-white/5">
-                          <div className="pt-6">
-                            <p className="text-muted-foreground text-base mb-4">
+                          <div className="pt-6 space-y-4">
+                            {/* Description */}
+                            <p className="text-muted-foreground text-base leading-relaxed">
                               {t(`curriculum.weeks.${weekIndex}.description`)}
                             </p>
+
+                            {/* What you learn */}
+                            <div className="rounded-xl bg-gradient-to-br from-accent/5 to-accent/0 border border-accent/10 p-4">
+                              <p className="text-sm text-muted-foreground">
+                                <span className="text-accent font-semibold">{t('curriculum.labels.whatYouLearn')}</span>{" "}
+                                {t(`curriculum.weeks.${weekIndex}.whatYouLearn`)}
+                              </p>
+                            </div>
+
+                            {/* What you build */}
                             <div className="rounded-xl bg-gradient-to-br from-primary/5 to-primary/0 border border-primary/10 p-4">
                               <p className="text-sm text-muted-foreground">
-                                <span className="text-primary font-semibold">Sales con:</span>{" "}
-                                {t(`curriculum.weeks.${weekIndex}.outcome`)}
+                                <span className="text-primary font-semibold">{t('curriculum.labels.whatYouBuild')}</span>{" "}
+                                {t(`curriculum.weeks.${weekIndex}.whatYouBuild`)}
                               </p>
                             </div>
                           </div>

@@ -24,20 +24,25 @@
       "line1": "Stop experimenting with AI.",
       "line2": "Start operating with agents."
     },
-    "subtitle": "A 5-week program where you leave with your own agent — with architecture, integrations, identity and verifiable reputation — solving real work inside Godínez.AI Studio.",
-    "proofLine": "$5,000 MXN first 20 spots · $7,500 MXN regular · 50 spots · Starts May 4",
+    "subtitle": "A 5-week program where you build your own AI agent — one that remembers, connects to your tools, handles payments, and proves its work.",
+    "proofLine": "$300 USD first 20 spots · $450 USD regular · 50 spots · Starts May 11",
     "cta": {
       "primary": "I want my spot",
       "secondary": "View curriculum"
     }
   },
+  "painPoints": {
+    "title": "You've tried ChatGPT, Claude, Copilot and 17 other tools. You're still doing everything yourself.",
+    "body": "The problem isn't AI. It's the gap between opening a tool and having a system that works for you.",
+    "extendedBody": "You've built prompts that work once and break the next day. You've duct-taped Zapier to GPT to Google Sheets and called it \"automation.\" You've spent more time configuring tools than doing the work they were supposed to handle.",
+    "bridge": "AgentCamp exists to close that gap."
+  },
   "whatIs": {
     "title": "It's not a course. It's a program to build agents that operate.",
-    "body": "You learn by building inside Godínez.AI Studio. Every week you finish with a real artifact: an agent, an architecture, integrations, a workflow, and a demonstrable capstone.",
     "columns": {
       "0": {
         "title": "Build",
-        "description": "Your agent, its architecture and its skills."
+        "description": "Your agent, its architecture, and its skills."
       },
       "1": {
         "title": "Connect",
@@ -45,21 +50,9 @@
       },
       "2": {
         "title": "Prove",
-        "description": "Real workflows, metrics, public demo and verifiable reputation."
+        "description": "Real workflows, real metrics, real track record."
       }
-    },
-    "closingLine": "The agents you build here have their own architecture, persistent identity, economic capability and verifiable reputation. The four layers that separate a demo from a real system."
-  },
-  "painPoints": {
-    "title": "You've tried ChatGPT, Claude, Copilot and 17 other tools. You're still doing everything yourself.",
-    "body": "The problem isn't AI. It's the gap between opening a tool and having a system that works for you.",
-    "bullets": {
-      "0": "Lots of prompts, little architecture.",
-      "1": "Lots of loose tools, little system.",
-      "2": "Lots of curiosity, little real output.",
-      "3": "Lots of theory, little implementation."
-    },
-    "bridge": "AgentCamp exists to close that gap."
+    }
   },
   "method": {
     "title": "How it works",
@@ -78,103 +71,160 @@
       "2": {
         "number": "Week 3",
         "title": "Connect",
-        "description": "Your agent touches the real world: tools, files, identity."
+        "description": "Your agent joins the real world with its own identity."
       },
       "3": {
         "number": "Week 4",
         "title": "Automate",
-        "description": "Design workflows that solve real work and operate without you."
+        "description": "Workflows that run without you — and transact."
       },
       "4": {
         "number": "Week 5",
         "title": "Launch",
-        "description": "Present your capstone with real evidence to community and allies."
+        "description": "Public demo with real evidence and a verified track record."
       }
     }
   },
   "curriculum": {
     "title": "Curriculum",
-    "subtitle": "Five weeks. Ten sessions. Cumulative progress toward agents that are more real, more useful and more visible.",
+    "subtitle": "5 weeks. 10 sessions. 5 real artifacts.",
+    "labels": {
+      "whatYouLearn": "What you learn:",
+      "whatYouBuild": "What you build:"
+    },
     "weeks": {
       "0": {
         "number": "Week 1",
         "title": "From prompt to first agent",
-        "description": "You set up your personal agent and learn to give it instructions with real context.",
-        "outcome": "An active agent solving a real task."
+        "description": "In the first session you set up your personal agent and put it to work on a real task. In the second you learn to instruct it like a professional: prompts, context, and the art of directing intelligence.",
+        "whatYouLearn": "What separates an agent from a chatbot. How to provision an agent in Studio. Prompt structure, context layers, system instructions.",
+        "whatYouBuild": "A personal agent active in Studio, solving a real task from your actual work."
       },
       "1": {
         "number": "Week 2",
-        "title": "Agent architecture with OpenClaw",
-        "description": "You understand bootstrap, memory, context and skills: the difference between a serious agent and a chatbot in disguise.",
-        "outcome": "An agent with its own architecture and functional skills."
+        "title": "Agent architecture",
+        "description": "We open the engine. You understand how bootstrap files, memory, context, and skills work — the pieces that separate a real agent from a chatbot in disguise.",
+        "whatYouLearn": "Bootstrap files, persistent vs. ephemeral memory, context layers, skills as composable capabilities.",
+        "whatYouBuild": "An agent with its own architecture, configured memory, and functional skills you created yourself."
       },
       "2": {
         "number": "Week 3",
-        "title": "Integrations, tools and identity",
-        "description": "Your agent connects to real tools, files and workspaces, and operates with its own persistent identity.",
-        "outcome": "Real integrations, operational workspace and active identity."
+        "title": "Integrations, tools, and identity",
+        "description": "Your agent leaves the sandbox. It connects to your email, calendar, files, your stack — and activates its own persistent identity. From this moment, everything it does is recorded in its track record.",
+        "whatYouLearn": "Tool calling, native integrations (Gmail, Calendar, GitHub, files), what it means for an agent to have its own identity, how reputation starts building automatically.",
+        "whatYouBuild": "An agent connected to your real tools, with its own identity, inside an operational workspace. Track record starts accumulating."
       },
       "3": {
         "number": "Week 4",
         "title": "Workflows and agent economics",
-        "description": "You design workflows that run without you and learn how your agent can charge, pay and participate in real economic processes.",
-        "outcome": "A workflow solving a real case, with integrated economic capability."
+        "description": "You design workflows that run without you. You define how your agent charges for its outputs or pays for services — Studio handles the rails. From isolated tasks to complete processes that transact.",
+        "whatYouLearn": "Workflow design (triggers, multi-step, conditionals, error recovery, human-in-the-loop), how to declare payment rules, when an agent should pay vs. charge, spend controls.",
+        "whatYouBuild": "A multi-step workflow solving a real case, with a working economic layer — your agent pays, charges, or both."
       },
       "4": {
         "number": "Week 5",
-        "title": "Iteration, reputation and Demo Day",
-        "description": "You evaluate, iterate and present your capstone with public metrics and verifiable reputation.",
-        "outcome": "Recorded demo, real metrics, documented case and public reputation."
+        "title": "Iteration, reputation, and Demo Day",
+        "description": "You review the track record your agent has been building since Week 3. You iterate with real evidence. We close with Demo Day: you present your capstone in front of sponsors, investors, and the community.",
+        "whatYouLearn": "Basic evals, logging, tracing, common failure patterns, evidence-based iteration, how to read and present your agent's verified track record.",
+        "whatYouBuild": "A capstone with recorded demo, real metrics, documented case, and a verified track record of your agent's work."
       }
     }
   },
+  "stack": {
+    "title": "What You Build With",
+    "subtitle": "AgentCamp runs on production-grade infrastructure — the same tools serious teams use to ship real agents.",
+    "layers": {
+      "0": {
+        "layer": "Agent environment",
+        "description": "Where you build. No code, no terminal, launch your first agent in 3 minutes. Identity, payment rails, and reputation tracking built in.",
+        "partner": "Agent Platform Partner"
+      },
+      "1": {
+        "layer": "Agent architecture",
+        "description": "How your agent thinks, remembers, and learns new skills. Open-source runtime.",
+        "partner": "Architecture Partner"
+      },
+      "2": {
+        "layer": "Intelligence",
+        "description": "Your agent's brain. The models that power reasoning and generation.",
+        "partner": "LLM Partner(s)"
+      },
+      "3": {
+        "layer": "Identity",
+        "description": "Your agent gets its own persistent identity — recognizably yours across sessions.",
+        "partner": "Identity Partner"
+      },
+      "4": {
+        "layer": "Payments",
+        "description": "Your agent can charge, pay, and transact. You define the rules, the rails handle the rest.",
+        "partner": "Payments Partner(s)"
+      },
+      "5": {
+        "layer": "Reputation",
+        "description": "Your agent builds a verified track record of real work — proof, not promises.",
+        "partner": "Reputation Partner"
+      }
+    },
+    "ecosystem": "Part of the Frutero ecosystem",
+    "partnerCta": {
+      "question": "Want to power the next generation of agent operators?",
+      "link": "Partner with us"
+    }
+  },
   "outcomes": {
-    "title": "What you take with you",
-    "intro": "All graduates leave with:",
+    "title": "What You Leave With",
     "items": {
-      "0": "A working agent with its own architecture",
-      "1": "Persistent identity for your agent",
-      "2": "Real integrations with your tools",
-      "3": "A workflow solving a real case",
-      "4": "Integrated transaction capability",
-      "5": "Verifiable reputation and public track record",
-      "6": "A capstone presented at Demo Day with recorded demo, metrics and documented case"
+      "0": "An agent that works for you — with memory, identity, and real integrations to your tools",
+      "1": "A workflow running real work without you — that can charge, pay, and prove what it's done",
+      "2": "A capstone at Demo Day — recorded demo, real metrics, verified track record, documented case"
+    },
+    "closingLine": "Everything. For every graduate. No tiers, no \"if you get there.\""
+  },
+  "instructors": {
+    "title": "Who Built This",
+    "placeholder": "Instructor details coming soon.",
+    "frutero": "AgentCamp is built by Frutero — the builder community behind it all."
+  },
+  "socialProof": {
+    "foundingCohort": "Founding cohort — 50 spots for the first generation of Agent Operators."
+  },
+  "audienceFit": {
+    "title": "Who AgentCamp Is For",
+    "forYou": {
+      "title": "This is for you if:",
+      "items": {
+        "0": "You run real work and you're tired of doing it all yourself",
+        "1": "You've tried AI tools — you know there's something there, but nothing sticks",
+        "2": "You want to leave with a system, not a certificate"
+      }
+    },
+    "notForYou": {
+      "title": "This is NOT for you if:",
+      "items": {
+        "0": "You want to watch, not build",
+        "1": "You're collecting courses — we don't give refunds for showing up and not shipping",
+        "2": "You need hand-holding through every step — this is intensive, not passive"
+      }
     }
   },
   "manifesto": {
     "title": "Serious agents don't live in a sandbox.",
-    "body1": "An agent without identity isn't yours. An agent that can't transact doesn't participate in the economy. An agent without reputation has no history.",
-    "body2": "That's why AgentCamp teaches the complete layer: architecture, own identity, economic capability and verifiable reputation. Not as extras — as the fundamentals of what it means to operate a real agent."
+    "body": "You build agents that remember, transact, prove their work, and run when you're not watching. That's the standard here."
   },
   "demoDay": {
     "title": "Demo Day · June 7",
-    "body1": "The program closes with a public presentation of capstones, use cases and real metrics in front of community, allies and ecosystem guests.",
+    "body1": "The program closes with a public presentation of capstones in front of community, sponsors, and ecosystem guests.",
     "body2": "Demo Day is not ceremony. It's proof.",
-    "body3": "You leave with a recorded demo, documented case, real metrics and your place in the first generation of Agent Operators."
-  },
-  "audienceFit": {
-    "title": "Who AgentCamp is for",
-    "forYou": {
-      "title": "It's for you if:",
-      "items": {
-        "0": "You're a professional (manager, coordinator, consultant, founder, business owner) and you know your repetitive work could run on its own.",
-        "1": "You've tried AI enough to know there's something there — and enough to be frustrated that nobody shows you how to set it up for real.",
-        "2": "You want to leave with a system operating, not with notes."
-      }
-    },
-    "notForYou": {
-      "title": "Not for you if:",
-      "description": "You're looking for a theoretical AI course. AgentCamp is for building."
-    }
+    "body3": "You leave with a recorded demo, a documented case, real metrics, and a verified track record — your place in the first generation of Agent Operators."
   },
   "pricing": {
     "title": "Investment",
     "earlyBird": {
-      "price": "$5,000 MXN",
+      "price": "$300 USD",
       "label": "first 20 spots"
     },
     "regular": {
-      "price": "$7,500 MXN",
+      "price": "$450 USD",
       "label": "regular price"
     },
     "paymentLine": "Pay with credit or debit card via Stripe.",
@@ -182,8 +232,8 @@
       "title": "Includes:",
       "items": {
         "0": "5 weeks of live program (10 sessions) + recordings",
-        "1": "5 weeks + 1 month access to Godínez.AI Studio",
-        "2": "Mentorship with the Frutero ecosystem and allied partners",
+        "1": "Access to Godínez.AI Studio (5 weeks + 1 month post-program)",
+        "2": "Mentorship with the Frutero ecosystem and partners",
         "3": "Templates and playbooks",
         "4": "Agent Operator certification",
         "5": "Access to the Frutero community"
@@ -191,8 +241,8 @@
     },
     "logistics": {
       "spots": "Capacity: 50 spots",
-      "startDate": "Starts: May 4, 2026",
-      "deadline": "Registration closes: May 3 23:59 CDMX"
+      "startDate": "Starts: May 11, 2026",
+      "deadline": "Registration closes: May 10, 23:59 CDMX"
     },
     "cta": "I want my spot"
   },
@@ -201,53 +251,54 @@
     "items": {
       "0": {
         "question": "Do I need to know how to code?",
-        "answer": "No. AgentCamp is designed for professionals with or without a technical background. If you know how to use your daily tools, you have more than enough skill."
+        "answer": "No. You build inside Godínez.AI Studio — no terminal, no code, no complicated setup. If you can use your daily tools, you have more than enough."
       },
       "1": {
-        "question": "How technical is the program?",
-        "answer": "Technical enough for you to build a serious agent. Guided enough so you don't get lost. You work inside Godínez.AI Studio, which gives you base architecture without having to build it from scratch."
+        "question": "How is this different from other AI courses?",
+        "answer": "Most courses teach you to prompt. You leave with notes. Here, you leave with an agent that has its own memory, connects to your tools, handles payments, and builds a track record of real work. That's not a chatbot — that's infrastructure."
       },
       "2": {
-        "question": "How much time do I need to dedicate per week?",
-        "answer": "Between 4 and 6 hours: 2 live sessions plus building time. If you fall behind, you have recordings and mentorship."
+        "question": "How much time do I need per week?",
+        "answer": "4–6 hours: 2 live sessions plus building time. If you fall behind, you have recordings and mentorship."
       },
       "3": {
-        "question": "What do I build by the end?",
-        "answer": "A working agent with its own architecture, identity, real integrations and economic capability — running a workflow that solves real work. Plus your capstone presented at Demo Day."
+        "question": "How technical is the program?",
+        "answer": "Technical enough to build a serious agent. Guided enough so you don't get lost. Studio handles the infrastructure — you focus on building."
       },
       "4": {
-        "question": "Does everyone build agents with identity, economic capability and reputation?",
-        "answer": "Yes. That's the definition of an agent within AgentCamp. Everyone learns and applies all four layers. The depth at which each person works them into their capstone depends on the use case, but nobody leaves without having built them."
+        "question": "What do I build by the end?",
+        "answer": "A working agent with its own identity, connected to your tools, running workflows that can transact, with a verified track record — presented at Demo Day with a recorded demo and real metrics."
       },
       "5": {
         "question": "What is Godínez.AI Studio?",
-        "answer": "The native agent environment where you build inside AgentCamp. It gives you base architecture, memory, skills and tools — so you can focus on building agents that solve real work."
+        "answer": "The environment where you build. It gives you agent architecture, memory, skills, identity, payment rails, and reputation tracking — so you focus on building agents that work, not configuring infrastructure. No code. Launch your first agent in 3 minutes."
       },
       "6": {
-        "question": "What happens with Godínez.AI Studio after the included month?",
-        "answer": "You can continue with any of the plans. AgentCamp graduates get preferred alumni pricing."
+        "question": "What happens after the program?",
+        "answer": "Graduation to the alumni community. Access to the Frutero ecosystem. Invitation to the public launch of Godínez.AI on June 17. Graduates with strong capstones may be eligible for post-program bounties and grants from ecosystem partners."
       },
       "7": {
-        "question": "What happens after the program?",
-        "answer": "Graduation to the alumni community. Invitation to the public launch of Godínez.AI on June 17. Access to the opportunity and collaboration network of the Frutero ecosystem."
-      },
-      "8": {
         "question": "What if I have questions before signing up?",
-        "answer": "Schedule 15 minutes via WhatsApp with the team."
+        "answer": "Talk to the team → WhatsApp"
       }
     }
   },
   "finalCta": {
     "title": {
-      "line1": "Go from experimenting with AI",
-      "line2": "to operating with agents."
+      "line1": "Stop experimenting with AI.",
+      "line2": "Start operating with agents."
     },
-    "proofLine1": "$5,000 MXN first 20 · $7,500 MXN regular · 50 spots",
-    "proofLine2": "Starts May 4 · Closes May 3 23:59 CDMX",
+    "proofLine1": "$300 USD first 20 spots · $450 USD regular · 50 spots",
+    "proofLine2": "Starts May 11 · Registration closes May 10, 23:59 CDMX",
     "cta": {
       "primary": "I want my spot",
-      "secondary": "Talk to the team on WhatsApp"
+      "secondary": "Talk to the team"
     }
+  },
+  "partnerCta": {
+    "title": "Want your infrastructure to become core curriculum?",
+    "body": "AgentCamp teaches 50 builders to operate real agents — with identity, payments, and reputation as production-grade infrastructure. Your technology becomes the rails they build on.",
+    "cta": "Partner with us"
   },
   "footer": {
     "logo": {

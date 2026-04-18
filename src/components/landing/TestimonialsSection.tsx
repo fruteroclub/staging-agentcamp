@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
@@ -6,7 +5,7 @@ export function TestimonialsSection() {
   const { t, i18n } = useTranslation();
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-card/50">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           {/* Section header */}
@@ -23,12 +22,9 @@ export function TestimonialsSection() {
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/15 transition-colors duration-700" />
               <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary/5 rounded-full blur-3xl" />
 
-              <div className="relative z-10 space-y-6">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {t('manifesto.body1')}
-                </p>
+              <div className="relative z-10">
                 <p className="text-lg text-foreground leading-relaxed font-medium">
-                  {t('manifesto.body2')}
+                  {t('manifesto.body')}
                 </p>
               </div>
             </div>

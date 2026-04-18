@@ -62,9 +62,16 @@ export function AudienceFitSection() {
                   </div>
                   {t('audienceFit.notForYou.title')}
                 </h3>
-                <p className="text-foreground/90 leading-relaxed">
-                  {t('audienceFit.notForYou.description')}
-                </p>
+                <ul className="space-y-4">
+                  {Array.from({ length: 3 }).map((_, index) => (
+                    <li key={index} className="flex items-start gap-3 group/item">
+                      <div className="w-6 h-6 rounded-lg bg-muted-foreground/10 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-muted-foreground/20 transition-colors duration-300">
+                        <X className="w-4 h-4 text-muted-foreground" />
+                      </div>
+                      <span className="text-foreground/90">{t(`audienceFit.notForYou.items.${index}`)}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </motion.div>
           </StaggerContainer>

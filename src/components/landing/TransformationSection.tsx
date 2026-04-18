@@ -13,21 +13,14 @@ export function TransformationSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section header */}
-          <ScrollReveal animationKey={i18n.language} className="text-center mb-6">
+          <ScrollReveal animationKey={i18n.language} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold">
               {t('whatIs.title')}
             </h2>
           </ScrollReveal>
 
-          {/* Body */}
-          <ScrollReveal animationKey={i18n.language} delay={0.1} className="text-center mb-12">
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              {t('whatIs.body')}
-            </p>
-          </ScrollReveal>
-
           {/* Three-column framing */}
-          <StaggerContainer animationKey={i18n.language} className="grid md:grid-cols-3 gap-6 mb-12">
+          <StaggerContainer animationKey={i18n.language} className="grid md:grid-cols-3 gap-6">
             {Array.from({ length: 3 }).map((_, index) => {
               const Icon = icons[index];
               return (
@@ -50,13 +43,6 @@ export function TransformationSection() {
               );
             })}
           </StaggerContainer>
-
-          {/* Closing line */}
-          <ScrollReveal animationKey={i18n.language} delay={0.2} className="text-center">
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              {t('whatIs.closingLine')}
-            </p>
-          </ScrollReveal>
         </div>
       </div>
     </section>
