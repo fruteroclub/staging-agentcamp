@@ -318,5 +318,40 @@
       "youtube": "YouTube"
     },
     "copyright": "© 2026 Frutero. All rights reserved."
+  },
+  "testimonials": {
+    "title": "What builders say",
+    "items": {
+      "0": {
+        "quote": "I spent 6 months playing with GPT. In 4 weeks I had an agent that processes my emails automatically.",
+        "name": "María González",
+        "role": "Founder",
+        "company": "Startup LATAM"
+      },
+      "1": {
+        "quote": "The orchestration-first approach changed how I think about automation. Now everything has control.",
+        "name": "Carlos Ruiz",
+        "role": "Head of Ops",
+        "company": "Tech Company"
+      },
+      "2": {
+        "quote": "I thought I needed a developer. Agentcamp showed me I don't.",
+        "name": "Ana López",
+        "role": "Content Creator",
+        "company": "Independent"
+      }
+    }
+  },
+  "provenTrackRecord": {
+    "title": "Proven Track Record",
+    "subtitle": "This isn't the first time we've done this.",
+    "description": "AgentCamp has run in multiple formats — virtual in English and Spanish, in-person in New York and Denver — with hundreds of builders and measurable results.",
+    "statsTitle": "What the numbers say:",
+    "stats": {
+      "0": { "value": "356", "label": "participants in the first edition (virtual, English and Spanish)" },
+      "1": { "value": "143", "label": "participants in the in-person bootcamps (NYC + Denver)" },
+      "2": { "value": "100+", "label": "agents integrated with payments, social media and custom workflows" },
+      "3": { "value": "6", "label": "hackathon winners — projects born in AgentCamp" }
+    }
   }
 }
