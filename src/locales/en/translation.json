@@ -98,35 +98,35 @@
         "title": "From prompt to first agent",
         "description": "In the first session you set up your personal agent and put it to work on a real task. In the second you learn to instruct it like a professional: prompts, context, and the art of directing intelligence.",
         "whatYouLearn": "What separates an agent from a chatbot. How to provision an agent in Studio. Prompt structure, context layers, system instructions.",
-        "whatYouBuild": "A personal agent active in Studio, solving a real task from your actual work."
+        "whatYouBuild": "Your first agent — active in Studio, solving a real task from your day job."
       },
       "1": {
         "number": "Week 2",
         "title": "Agent architecture",
         "description": "We open the engine. You understand how bootstrap files, memory, context, and skills work — the pieces that separate a real agent from a chatbot in disguise.",
         "whatYouLearn": "Bootstrap files, persistent vs. ephemeral memory, context layers, skills as composable capabilities.",
-        "whatYouBuild": "An agent with its own architecture, configured memory, and functional skills you created yourself."
+        "whatYouBuild": "A fully architected system with configured memory and custom skills."
       },
       "2": {
         "number": "Week 3",
         "title": "Integrations, tools, and identity",
         "description": "Your agent leaves the sandbox. It connects to your email, calendar, files, your stack — and activates its own persistent identity. From this moment, everything it does is recorded in its track record.",
         "whatYouLearn": "Tool calling, native integrations (Gmail, Calendar, GitHub, files), what it means for an agent to have its own identity, how reputation starts building automatically.",
-        "whatYouBuild": "An agent connected to your real tools, with its own identity, inside an operational workspace. Track record starts accumulating."
+        "whatYouBuild": "A live operator connected to your real tools — email, calendar, GitHub — with its own identity and growing track record."
       },
       "3": {
         "number": "Week 4",
         "title": "Workflows and agent economics",
         "description": "You design workflows that run without you. You define how your agent charges for its outputs or pays for services — Studio handles the rails. From isolated tasks to complete processes that transact.",
         "whatYouLearn": "Workflow design (triggers, multi-step, conditionals, error recovery, human-in-the-loop), how to declare payment rules, when an agent should pay vs. charge, spend controls.",
-        "whatYouBuild": "A multi-step workflow solving a real case, with a working economic layer — your agent pays, charges, or both."
+        "whatYouBuild": "A multi-step workflow with a working economic layer — it pays, charges, or both."
       },
       "4": {
         "number": "Week 5",
         "title": "Iteration, reputation, and Demo Day",
         "description": "You review the track record your agent has been building since Week 3. You iterate with real evidence. We close with Demo Day: you present your capstone in front of sponsors, investors, and the community.",
         "whatYouLearn": "Basic evals, logging, tracing, common failure patterns, evidence-based iteration, how to read and present your agent's verified track record.",
-        "whatYouBuild": "A capstone with recorded demo, real metrics, documented case, and a verified track record of your agent's work."
+        "whatYouBuild": "A capstone: recorded demo, real metrics, and a verified track record ready to present."
       }
     }
   },
@@ -136,36 +136,38 @@
     "layers": {
       "0": {
         "layer": "Agent environment",
-        "description": "Where you build. No code, no terminal, launch your first agent in 3 minutes. Identity, payment rails, and reputation tracking built in.",
-        "partner": "Agent Platform Partner"
+        "description": "Where you build. No code, no terminal, launch your first agent in 3 minutes. Identity, payment rails built in.",
+        "partner": "Godínez.AI"
       },
       "1": {
         "layer": "Agent architecture",
         "description": "How your agent thinks, remembers, and learns new skills. Open-source runtime.",
-        "partner": "Architecture Partner"
+        "partner": "OpenClaw"
       },
       "2": {
         "layer": "Intelligence",
         "description": "Your agent's brain. The models that power reasoning and generation.",
-        "partner": "LLM Partner(s)"
+        "partner": "OpenAI & Claude"
       },
       "3": {
         "layer": "Identity",
         "description": "Your agent gets its own persistent identity — recognizably yours across sessions.",
-        "partner": "Identity Partner"
+        "partner": "TBD",
+        "candidates": "Monad · Ethereum Foundation · Base"
       },
       "4": {
         "layer": "Payments",
         "description": "Your agent can charge, pay, and transact. You define the rules, the rails handle the rest.",
-        "partner": "Payments Partner(s)"
-      },
-      "5": {
-        "layer": "Reputation",
-        "description": "Your agent builds a verified track record of real work — proof, not promises.",
-        "partner": "Reputation Partner"
+        "partner": "TBD",
+        "candidates": "Privy · Para · Dynamic"
       }
     },
-    "ecosystem": "Part of the Frutero ecosystem",
+    "ecosystem": "Part of the Frutero ecosystem — LATAM's most active builder community.",
+    "stats": {
+      "0": { "value": "+5,000", "label": "builders trained" },
+      "1": { "value": "50+", "label": "agents deployed" },
+      "2": { "value": "95%", "label": "submission rate" }
+    },
     "partnerCta": {
       "question": "Want to power the next generation of agent operators?",
       "link": "Partner with us"
@@ -182,8 +184,12 @@
   },
   "instructors": {
     "title": "Who Built This",
-    "placeholder": "Instructor details coming soon.",
-    "frutero": "AgentCamp is built by Frutero — the builder community behind it all."
+    "founder": {
+      "name": "Ángel Meléndez Córdoba",
+      "role": "Founder, Frutero",
+      "bio": "Implemented tech solutions in 30+ hospitals. Delivered workshops to 5,000+ developers. Grew a crypto project from 300 to 23,000+ users. Now building Godínez.AI and training the first generation of agent operators in Latin America."
+    },
+    "frutero": "AgentCamp is built by Frutero — 500+ builders, multiple programs shipped, and one of the most active Spanish-speaking builder communities in the Frontier Tech space."
   },
   "socialProof": {
     "foundingCohort": "Founding cohort — 50 spots for the first generation of Agent Operators."

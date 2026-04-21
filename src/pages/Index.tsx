@@ -25,15 +25,15 @@ const Index = () => {
       <Navbar />
       <main id="main-content">
         <HeroSection />
-        <BuilderTestimonialsSection />
-        <ProvenTrackRecordSection />
         <PainPointsSection />
+        <BuilderTestimonialsSection />
         <TransformationSection />
         <MethodSection />
-        <CurriculumSection />
         <StackSection />
+        <CurriculumSection />
         <EcosystemSection />
         <InstructorsSection />
+        <ProvenTrackRecordSection />
         <SocialProofSection />
         <AudienceFitSection />
         <TestimonialsSection />
