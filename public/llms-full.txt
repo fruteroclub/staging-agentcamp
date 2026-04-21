@@ -273,7 +273,190 @@ Want your infrastructure to become core curriculum?
 
 AgentCamp teaches 50 builders to operate real agents — with identity, payments, and reputation as production-grade infrastructure. Your technology becomes the rails they build on.
 
-[Partner with us](mailto:mel@frutero.club)
+[View sponsorship deck](/sponsorship-deck) · [Contact: mel@frutero.club](mailto:mel@frutero.club)
+
+---
+
+# Sponsorship Deck — Full Content
+
+> Partner with the first agent operator program in Latin America. Your infrastructure powers the agents they build.
+
+AgentCamp 2026 · 50 operators across Latin America, building on your stack.
+
+---
+
+## The Opportunity
+
+Category leadership in the emerging LATAM AI agent operator market.
+
+- **50** operators per cohort — Professionals, founders, and business owners who decide what tools their teams adopt
+- **100%** powered by your infra — Your technology runs under the hood — every agent uses your stack through the platform
+- **1st** in LATAM · in Spanish — No comparable program exists. You define the category, not compete in it
+
+---
+
+## What Is AgentCamp (Sponsor View)
+
+A 5-week practical program where participants build real AI agents.
+
+### Week 1 — Activate
+"Your first agent, running from day one"
+- Agent environment setup & first run
+- Prompt engineering fundamentals
+- Context and instruction design
+→ **Project:** First Working Agent (input: your use case + AI-assisted setup → output: an active agent solving a real task)
+
+### Week 2 — Architect
+"How your agent thinks and learns new skills"
+- Bootstrap, memory, and context layers
+- Skills framework with OpenClaw
+- The difference between a chatbot and a real agent
+→ **Project:** Agent with Architecture (input: functional skills + memory → output: an agent with its own architecture)
+
+### Week 3 — Connect
+"Your agent touches the real world"
+- Integration with real tools and files
+- Persistent identity setup
+- Workspace and environment configuration
+→ **Project:** Live Integrations (input: tools, files, identity layer → output: real integrations + active identity)
+
+### Week 4 — Automate
+"Workflows that run without you"
+- Workflow design and automation
+- Agent economics and payment rails
+- Human-in-the-loop patterns
+→ **Project:** Autonomous Workflow (input: real case + economic capability → output: a workflow solving real work)
+
+### Week 5 — Launch
+"Iterate, prove, and present"
+- Evaluation and iteration
+- Reputation and public track record
+- Demo Day preparation
+→ **Project:** Capstone at Demo Day (input: recorded demo + real metrics → output: documented case + public reputation)
+
+Every graduate leaves with: a working agent with its own identity, workflows that transact, and a verified track record.
+
+---
+
+## The Audience
+
+50 high-intent operators who will actively build on your infrastructure.
+
+- **Operators & decision-makers** — Managers, consultants, founders, business owners — the people who decide what tools their teams adopt.
+- **AI-active, not AI-curious** — They've tried ChatGPT and Claude. They're frustrated nothing sticks. They're ready to invest in learning.
+- **Spanish-speaking LATAM** — The fastest-growing market for AI adoption. No comparable program exists in Spanish.
+- **Downstream influence** — These aren't junior developers — they bring tools back to their teams, companies, and clients.
+
+---
+
+## How Sponsorship Works
+
+Your technology powers what they build. Participants don't configure your infrastructure directly — the platform abstracts that. Every agent they build runs on your stack. Your brand is associated with the capabilities that make their agents real.
+
+| Layer | When | What |
+|-------|------|------|
+| Identity | Week 3 | Every agent gets persistent identity — your wallet infrastructure powers it |
+| Payments | Week 4 | Every workflow gets an economic layer — your payment rails handle settlement |
+| Reputation | Week 5 | Agent track records verified at Demo Day — your protocol is the proof layer |
+| Intelligence | W1–5 | Your models power every agent built in the program — 50 agents running daily |
+| Environment | W1–5 | The platform where participants live for 5 weeks — your brand is the workspace |
+
+---
+
+## Sponsorship Tiers
+
+### Founding Partner — $5,000 USD
+2–3 slots available · Category exclusive
+
+- Category exclusivity — only one identity partner, one payments partner, one intelligence partner
+- Your technology powers the agent infrastructure every participant uses throughout the program
+- Named in curriculum materials and sessions — participants learn what your tech enables
+- Demo Day presenting sponsor — your brand introduces the capstone presentations
+- Co-marketing rights: case studies, testimonials, video content from Demo Day
+- Logo on all materials: landing page, emails, recordings, certificates
+- Post-program: graduates continue on the platform, which continues running on your stack
+- First right of refusal for future cohorts
+
+### Infrastructure Partner — $2,500 USD
+3–5 slots available
+
+- Named in curriculum — your technology referenced as infrastructure powering agent capabilities
+- Demo Day access — attend, network, evaluate capstones
+- Logo on landing page, emails, and recordings
+- Community access — direct channel to AgentCamp graduates
+- Co-marketing: shared social content and participant highlights
+- Post-program: graduates continue on the platform running on your stack
+
+### Startup Partner — $1,000 USD
+Open slots · Credits and in-kind support do not count toward the fee
+
+- Named as supporting partner in program materials
+- Demo Day access — attend, network, evaluate capstones
+- Logo on landing page and recordings
+- Community access — direct channel to AgentCamp graduates
+- Co-marketing: shared social content and participant highlights
+- Optional: provide API credits or tooling for participants (in addition to fee, not instead of)
+
+### Community Partner — No fee
+For communities, DAOs, collectives, and ecosystem groups — not companies
+
+- Cross-promote AgentCamp to your community — we promote yours to ours
+- Co-host a session, AMA, or workshop during the program
+- Logo on landing page as community partner
+- Demo Day invitation for your community leads
+- Shared content: social co-promotion, recaps, highlights
+
+*This tier is for builder communities, DAOs, developer collectives, and ecosystem groups that want to cross-pollinate audiences. Companies and startups should see the paid tiers.*
+
+---
+
+## Tier Comparison
+
+| Feature | Founding ($5,000) | Infra ($2,500) | Startup ($1,000) | Community (Free) |
+|---------|:-:|:-:|:-:|:-:|
+| Category exclusivity | ✓ | – | – | – |
+| Powers agent infrastructure | ✓ | ✓ | – | – |
+| Named in curriculum | ✓ | ✓ | – | – |
+| Demo Day presenting sponsor | ✓ | – | – | – |
+| Demo Day access | ✓ | ✓ | ✓ | ✓ |
+| Logo on all materials | ✓ | ✓ | ✓ | ✓ |
+| Co-marketing rights | Full | Social | Social | Cross-promo |
+| Post-program platform | ✓ | ✓ | – | – |
+| Community cross-promotion | ✓ | ✓ | ✓ | ✓ |
+| First refusal future cohorts | ✓ | – | – | – |
+
+---
+
+## Timeline
+
+- **Now** — Partner commitments confirmed
+- **April 25** — Partner logos and materials finalized
+- **May 11** — Cohort 1 starts — 50 participants begin building
+- **May–Jun** — 5 weeks of live sessions — your tech powers the infrastructure
+- **June 7** — Demo Day — capstone presentations, sponsor judges, public event
+- **June 17** — Godínez.AI public launch — graduates arrive with working agents
+- **June+** — Post-program: case studies, testimonials, pipeline activation
+
+---
+
+## Why Cohort 1
+
+Founding partners shape the program.
+
+- **First-mover in LATAM AI agents** — No comparable program exists in Spanish. You're defining the category, not competing in it.
+- **Curriculum integration, not afterthought** — Cohort 1 partners co-design how their technology is taught. Later cohorts inherit your structure.
+- **50 operators → organic growth** — Each graduate becomes an advocate in their team, company, and network. 50 operators seed hundreds of users.
+- **Godínez.AI launch alignment** — Cohort 1 graduates arrive on launch day (June 17) with working agents. Your infrastructure is what they're built on.
+
+---
+
+## Contact
+
+Let's build the first generation of agent operators together.
+
+AgentCamp Cohort 1 · May–June 2026 · frutero.club
+
+[Get in Touch: mel@frutero.club](mailto:mel@frutero.club) · [Visit frutero.club](https://frutero.club)
 
 ---
 

@@ -29,7 +29,7 @@ export function PartnerCTASection() {
               className="border-primary/40 text-primary hover:bg-primary/10 hover:border-primary/60 transition-all duration-300 px-[30px] py-[15px] text-[17px] font-semibold group rounded-[10px]"
               asChild
             >
-              <a href="mailto:mel@frutero.club">
+              <a href="/sponsorship-deck">
                 {t('partnerCta.cta')}
                 <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>

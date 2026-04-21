@@ -30,6 +30,27 @@ AgentCamp runs on production-grade infrastructure: agent environment, agent arch
 - Regular: $450 USD
 - Payment via Stripe (credit or debit card)
 
+## Sponsorship Deck
+
+AgentCamp is seeking infrastructure partners whose technology powers the agents participants build.
+
+### Sponsorship Tiers
+
+- **Founding Partner — $5,000 USD** (2–3 slots, category exclusive): Category exclusivity, powers agent infrastructure, named in curriculum, Demo Day presenting sponsor, co-marketing rights, first refusal for future cohorts
+- **Infrastructure Partner — $2,500 USD** (3–5 slots): Named in curriculum, Demo Day access, logo on materials, community access, co-marketing
+- **Startup Partner — $1,000 USD** (open slots): Named as supporting partner, Demo Day access, logo on materials, community access
+- **Community Partner — No fee** (for communities/DAOs/collectives only): Cross-promotion, co-host sessions, Demo Day invitation
+
+### Key Dates
+
+- Now: Partner commitments confirmed
+- April 25: Partner logos and materials finalized
+- May 11: Cohort 1 starts
+- June 7: Demo Day
+- June 17: Godínez.AI public launch
+
+Contact: mel@frutero.club
+
 ## Links
 
 - [Apply](https://tally.so/r/aQ2D0b)
