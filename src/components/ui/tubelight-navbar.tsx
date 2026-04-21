@@ -57,14 +57,14 @@ export function NavBar({ items, className }: NavBarProps) {
   return (
     <div
       className={cn(
-        "relative flex items-center gap-1 rounded-full bg-card/80 backdrop-blur-md border border-white/10 p-1.5 shadow-lg",
+        "relative flex items-center gap-1 rounded-[10px] bg-card/80 backdrop-blur-md border border-border/30 p-1.5 shadow-lg",
         className
       )}
       ref={navRef}
     >
       {/* Tubelight indicator */}
       <motion.div
-        className="absolute h-[calc(100%-12px)] rounded-full bg-primary/20 border border-primary/30"
+        className="absolute h-[calc(100%-12px)] rounded-[8px] bg-primary/15 border border-primary/25"
         initial={false}
         animate={{
           left: indicatorStyle.left,
@@ -76,7 +76,7 @@ export function NavBar({ items, className }: NavBarProps) {
       
       {/* Glow effect */}
       <motion.div
-        className="absolute h-[calc(100%-12px)] rounded-full bg-primary/30 blur-md"
+        className="absolute h-[calc(100%-12px)] rounded-[8px] bg-primary/20 blur-md"
         initial={false}
         animate={{
           left: indicatorStyle.left,
@@ -97,10 +97,10 @@ export function NavBar({ items, className }: NavBarProps) {
           onMouseEnter={() => setHoverIndex(index)}
           onMouseLeave={() => setHoverIndex(null)}
           className={cn(
-            "relative z-10 flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium transition-colors duration-200",
+            "relative z-10 flex items-center gap-2 px-4 py-2.5 rounded-[8px] text-sm font-medium transition-colors duration-200",
             currentIndex === index
-              ? "text-primary"
-              : "text-muted-foreground hover:text-foreground"
+              ? "text-foreground"
+              : "text-muted-foreground hover:text-foreground-body"
           )}
         >
           <item.icon className="w-4 h-4" />

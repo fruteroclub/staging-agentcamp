@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 export function Navbar() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('original');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 

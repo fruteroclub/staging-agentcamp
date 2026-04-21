@@ -18,12 +18,23 @@ export default {
         serif: ['"Playfair Display"', 'Georgia', 'serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
+      fontSize: {
+        /* Brand scale overrides */
+        'body': ['17px', { lineHeight: '1.7' }],
+        'overline': ['13px', { lineHeight: '1.4', letterSpacing: '0.1em' }],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: {
+          DEFAULT: "hsl(var(--background))",
+          alt: "hsl(var(--background-alt))",
+        },
+        foreground: {
+          DEFAULT: "hsl(var(--foreground))",
+          body: "hsl(var(--foreground-body))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

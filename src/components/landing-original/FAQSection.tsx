@@ -33,7 +33,7 @@ function FormattedAnswer({ text }: { text: string }) {
 }
 
 export function FAQSection() {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation('original');
 
   return (
     <section id="faq" className="py-24 bg-background">
@@ -41,9 +41,12 @@ export function FAQSection() {
         <div className="max-w-3xl mx-auto">
           {/* Section header */}
           <ScrollReveal animationKey={i18n.language} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-semibold">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-3">
               {t('faq.title')}
             </h2>
+            <p className="text-muted-foreground">
+              {t('faq.subtitle')}
+            </p>
           </ScrollReveal>
 
           {/* FAQ Accordion */}
@@ -53,7 +56,7 @@ export function FAQSection() {
                 <motion.div key={index} variants={staggerItem}>
                   <AccordionItem
                     value={`item-${index}`}
-                    className="overflow-hidden rounded-2xl bg-card/40 border border-white/5 px-6 data-[state=open]:border-primary/30 data-[state=open]:bg-card/70 transition-all duration-300"
+                    className="overflow-hidden rounded-2xl bg-card/40 border border-border/50 px-6 data-[state=open]:border-primary/30 data-[state=open]:bg-card/70 transition-all duration-300"
                   >
                     <AccordionTrigger className="text-left font-semibold py-5 hover:no-underline group">
                       <span className="group-hover:text-primary transition-colors duration-300 pr-4">
@@ -68,6 +71,13 @@ export function FAQSection() {
               ))}
             </Accordion>
           </StaggerContainer>
+
+          {/* CTA de cierre */}
+          <ScrollReveal animationKey={i18n.language} className="text-center mt-12">
+            <p className="text-muted-foreground text-sm">
+              {t('faq.footer')}
+            </p>
+          </ScrollReveal>
         </div>
       </div>
     </section>

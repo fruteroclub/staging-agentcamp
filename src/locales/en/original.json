@@ -1,0 +1,373 @@
+{
+  "navbar": {
+    "logo": {
+      "text": "Agentcamp"
+    },
+    "links": {
+      "home": "Home",
+      "program": "Program",
+      "results": "Results",
+      "faq": "FAQ"
+    },
+    "cta": "Reserve Your Spot",
+    "ctaMobile": "Reserve Your Spot →",
+    "menuLabel": "Toggle menu",
+    "languageSwitcher": {
+      "label": "Choose language",
+      "switchToEnglish": "Switch to English",
+      "switchToSpanish": "Switch to Spanish"
+    }
+  },
+  "hero": {
+    "badge": {
+      "virtual": "100% Virtual",
+      "duration": "4-week program"
+    },
+    "title": {
+      "line1": "Build AI Agents",
+      "line2": "Deploy to Production",
+      "line3": "No Code"
+    },
+    "subtitle": {
+      "problem": "You've spent months playing with ChatGPT and Claude. Copying prompts. Testing tools. But you have nothing in production.",
+      "solution": "Agentcamp takes you from experimenting to operating in 4 weeks."
+    },
+    "cta": {
+      "primary": "Reserve Your Spot",
+      "secondary": "View Program"
+    },
+    "urgency": "Cohort 2 · Only 50 spots"
+  },
+  "painPoints": {
+    "title": {
+      "line1": "The problem isn't AI.",
+      "line2": "It's the gap between demo and production."
+    },
+    "items": {
+      "0": {
+        "title": "Scattered Prompts",
+        "description": "Every conversation starts from scratch. No system. No memory. No flow."
+      },
+      "1": {
+        "title": "Demos That Die",
+        "description": "It works on your laptop. You show it excitedly. It never makes it to production."
+      },
+      "2": {
+        "title": "Zero Control",
+        "description": "The agent hallucinates. Does random things. And you have no idea how to debug it."
+      }
+    }
+  },
+  "transformation": {
+    "title": "In 4 weeks, this changes:",
+    "items": {
+      "0": {
+        "before": "You experiment with prompts",
+        "after": "You operate automated workflows"
+      },
+      "1": {
+        "before": "Local demos",
+        "after": "Systems deployed to the cloud"
+      },
+      "2": {
+        "before": "Agents that hallucinate",
+        "after": "Agents with control and oversight"
+      },
+      "3": {
+        "before": "\"Someday I'll learn\"",
+        "after": "Certified Agent Operator"
+      }
+    }
+  },
+  "method": {
+    "title": {
+      "part1": "The Method:",
+      "part2": "Orchestration-First"
+    },
+    "explanation": {
+      "problem": "Most courses teach: \"build an agent, then try to control it.\"",
+      "approach": "We flip the model:",
+      "philosophy": "Control first. Intelligence second.",
+      "details": "You start with workflows and state management. Agent autonomy comes later—within boundaries you define.",
+      "reality": "This is how production teams actually build."
+    },
+    "steps": {
+      "0": {
+        "label": "Orchestration Layer",
+        "description": "Flow control"
+      },
+      "1": {
+        "label": "Agent Capabilities",
+        "description": "Intelligence"
+      },
+      "2": {
+        "label": "Human Oversight",
+        "description": "Supervision"
+      },
+      "3": {
+        "label": "Production",
+        "description": "Real deployment"
+      }
+    }
+  },
+  "curriculum": {
+    "title": "4 Weeks. 8 Sessions. 4 Real Projects.",
+    "weeks": {
+      "0": {
+        "number": "Week 1",
+        "title": "Orchestration Foundations",
+        "tagline": "\"Control before intelligence\"",
+        "learningTitle": "What you learn",
+        "learnings": {
+          "0": "Event-driven workflow design",
+          "1": "State management for agents",
+          "2": "Your first workflow without LLMs"
+        },
+        "projectTitle": "What you build",
+        "project": {
+          "name": "Smart Content Processor",
+          "input": "text, URLs, documents",
+          "output": "classified, extracted, routed data"
+        }
+      },
+      "1": {
+        "number": "Week 2",
+        "title": "From Workflows to Agents",
+        "tagline": "\"Agents live inside workflows\"",
+        "learningTitle": "What you learn",
+        "learnings": {
+          "0": "Agent anatomy: role, objectives, tools",
+          "1": "Multi-agent collaboration patterns",
+          "2": "The Researcher → Analyst → Writer pattern"
+        },
+        "projectTitle": "What you build",
+        "project": {
+          "name": "Content Generation Pipeline",
+          "input": "3 agents working as a team",
+          "output": "ready-to-publish content"
+        }
+      },
+      "2": {
+        "number": "Week 3",
+        "title": "Real-World Integration",
+        "tagline": "\"Agents that connect with the real world\"",
+        "learningTitle": "What you learn",
+        "learnings": {
+          "0": "Integration with email, calendar, messaging",
+          "1": "Human-in-the-loop patterns",
+          "2": "Approval workflows and feedback loops"
+        },
+        "projectTitle": "What you build",
+        "project": {
+          "name": "Personal Assistant with Human Oversight",
+          "input": "Inbox triage, drafts with approval",
+          "output": "Real actions, human supervision"
+        }
+      },
+      "3": {
+        "number": "Week 4",
+        "title": "Production & Operations",
+        "tagline": "\"From your laptop to the cloud\"",
+        "learningTitle": "What you learn",
+        "learnings": {
+          "0": "Cloud deployment and architecture",
+          "1": "Monitoring and observability",
+          "2": "Production debugging"
+        },
+        "projectTitle": "What you build",
+        "project": {
+          "name": "Your Agent in Production",
+          "input": "Deployed, monitored, documented",
+          "output": "With complete operational runbook"
+        }
+      }
+    },
+    "supportText": {
+      "title": "Don't know how to code? No problem.",
+      "description": "You use AI coding assistants (Cursor, Claude Code) to generate code.\nYou direct. The AI writes. We teach you to orchestrate."
+    }
+  },
+  "ecosystem": {
+    "title": "Production Infrastructure",
+    "subtitle": "Agentcamp runs on the same stack used by Silicon Valley teams.",
+    "partners": {
+      "0": "Partner Framework",
+      "1": "LLM Provider",
+      "2": "Integration Platform",
+      "3": "Cloud",
+      "4": "Monitoring"
+    },
+    "authority": "Part of the Frutero ecosystem—LATAM's most active builder community.",
+    "stats": {
+      "0": {
+        "value": "+1,000",
+        "label": "builders trained"
+      },
+      "1": {
+        "value": "32.7%",
+        "label": "completion rate"
+      },
+      "2": {
+        "value": "69%",
+        "label": "deployment rate"
+      }
+    },
+    "sponsor": {
+      "question": "AI infrastructure project?",
+      "cta": "Partner with us"
+    }
+  },
+  "testimonials": {
+    "title": "What builders say",
+    "items": {
+      "0": {
+        "quote": "I spent 6 months playing with GPT. In 4 weeks I had an agent that processes my emails automatically.",
+        "name": "María González",
+        "role": "Founder",
+        "company": "Startup LATAM"
+      },
+      "1": {
+        "quote": "The orchestration-first approach changed how I think about automation. Now everything has control.",
+        "name": "Carlos Ruiz",
+        "role": "Head of Ops",
+        "company": "Tech Company"
+      },
+      "2": {
+        "quote": "I thought I needed a developer. Agentcamp showed me I don't.",
+        "name": "Ana López",
+        "role": "Content Creator",
+        "company": "Independent"
+      }
+    }
+  },
+  "audienceFit": {
+    "title": "Is Agentcamp for you?",
+    "forYou": {
+      "title": "It's for you if...",
+      "items": {
+        "0": "You're a founder, marketer, ops lead, or creator",
+        "1": "You've used ChatGPT/Claude for months but have nothing in production",
+        "2": "You want automated systems, not scattered prompts",
+        "3": "You have 5-7 hours per week to dedicate",
+        "4": "You're ready to build, not just consume content"
+      }
+    },
+    "notForYou": {
+      "title": "It's not for you if...",
+      "items": {
+        "0": "You're looking for a theoretical machine learning course",
+        "1": "You expect AI to do everything without your supervision",
+        "2": "You can't commit the weekly time",
+        "3": "You're already a senior developer looking for advanced content",
+        "4": "You want results without doing the work"
+      }
+    }
+  },
+  "pricing": {
+    "cohortTitle": "Cohort 1 — February 2026",
+    "cohortSubtitle": "Sponsored by our infrastructure partners",
+    "badge": "100% Sponsored",
+    "price": {
+      "current": "$0",
+      "original": "$499 USD",
+      "note": "Valued at $499 — free for the first cohort"
+    },
+    "details": {
+      "duration": {
+        "label": "Duration",
+        "value": "4 weeks"
+      },
+      "sessions": {
+        "label": "Sessions",
+        "value": "8 live"
+      },
+      "schedule": {
+        "label": "Schedule",
+        "value": "[TBD]"
+      },
+      "cohort": {
+        "label": "Cohort",
+        "value": "Maximum 50"
+      }
+    },
+    "includes": {
+      "title": "Includes:",
+      "items": {
+        "0": "8 live sessions + recordings",
+        "1": "4 projects with feedback",
+        "2": "Access to Operators community",
+        "3": "Office hours 2x per week",
+        "4": "Async support during the program"
+      }
+    },
+    "cta": "Secure Your Spot",
+    "guarantee": "Week 1 Guarantee: If after the first week you feel it's not for you, just let us know. No questions asked."
+  },
+  "faq": {
+    "title": "Your Questions Answered",
+    "subtitle": "Everything you need to know before reserving your spot.",
+    "footer": "Have a question that's not here? Write to us at hola@frutero.club",
+    "items": {
+      "0": {
+        "question": "Do I need to know how to code?",
+        "answer": "No. We use AI coding assistants (Cursor, Claude Code) to generate code. You learn to direct and orchestrate, not write Python from scratch.\n\nActual requirement: know how to use a computer and be willing to learn new tools."
+      },
+      "1": {
+        "question": "How much time do I need to dedicate per week?",
+        "answer": "5-7 hours weekly:\n• 3-4 hours in live sessions\n• 2-3 hours of independent work and projects\n\nThe program is designed for people with full-time jobs."
+      },
+      "2": {
+        "question": "What tools will I use?",
+        "answer": "The stack includes:\n• IDE with AI assistant (Cursor or VS Code + Copilot)\n• Agent framework (defined with sponsors)\n• Claude API for LLM calls\n• Composio for integrations\n• Cloud platform for deployment\n\nEverything is set up in pre-work before starting."
+      },
+      "3": {
+        "question": "Are the sessions live or recorded?",
+        "answer": "Live with interactive Q&A. Recordings are available for review, but the value is in participating live."
+      },
+      "4": {
+        "question": "What if I fall behind?",
+        "answer": "You have office hours 2x per week to catch up. Async support in the community for specific questions. Access to recordings for review.\n\nThe program has a pace, but there's a support network."
+      },
+      "5": {
+        "question": "What kind of agents can I build after?",
+        "answer": "The program gives you the foundation to build:\n• Email and calendar assistants\n• Automated content pipelines\n• Research and analysis agents\n• Customer support workflows\n• Internal operational automations\n\nThe limit is your use case, not the technical knowledge."
+      },
+      "6": {
+        "question": "Is there a community after the program?",
+        "answer": "Yes. Permanent access to the Agentcamp community. Networking with other graduates. Content updates."
+      },
+      "7": {
+        "question": "Why is it free?",
+        "answer": "The program is sponsored by AI infrastructure companies that want more builders in LATAM to learn to build with their technology. You learn for free, they gain adoption. Win-win."
+      }
+    }
+  },
+  "finalCta": {
+    "title": {
+      "line1": "Stop experimenting.",
+      "line2": "Start operating."
+    },
+    "subtitle": "In 4 weeks you'll have an AI agent in production working for you—not another folder of prompts.",
+    "cta": "Join Agentcamp",
+    "urgency": "Cohort 1 · 50 spots · 100% Sponsored"
+  },
+  "footer": {
+    "logo": {
+      "text": "Agentcamp",
+      "byline": "by Frutero"
+    },
+    "links": {
+      "program": "Program",
+      "faq": "FAQ",
+      "contact": "Contact",
+      "terms": "Terms",
+      "privacy": "Privacy"
+    },
+    "social": {
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    },
+    "copyright": "© 2026 Frutero. All rights reserved."
+  }
+}

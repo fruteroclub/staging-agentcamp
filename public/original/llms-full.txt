@@ -1,0 +1,238 @@
+# AgentCamp — Original Page Content
+
+> A 4-week program to build AI agents and deploy to production — no code required. From experimenting with ChatGPT to operating automated workflows.
+
+By [Frutero](https://frutero.club) · 100% Virtual · 50 spots · Cohort 1
+
+---
+
+## Hero
+
+**100% Virtual · 4-week program**
+
+Build AI Agents. Deploy to Production. No Code.
+
+You've spent months playing with ChatGPT and Claude. Copying prompts. Testing tools. But you have nothing in production.
+
+Agentcamp takes you from experimenting to operating in 4 weeks.
+
+Cohort 2 · Only 50 spots
+
+- [Reserve Your Spot](https://tally.so/r/aQ2D0b)
+- [View Program](#curriculum)
+
+---
+
+## Pain Points
+
+The problem isn't AI. It's the gap between demo and production.
+
+- **Scattered Prompts**: Every conversation starts from scratch. No system. No memory. No flow.
+- **Demos That Die**: It works on your laptop. You show it excitedly. It never makes it to production.
+- **Zero Control**: The agent hallucinates. Does random things. And you have no idea how to debug it.
+
+---
+
+## Transformation
+
+In 4 weeks, this changes:
+
+| Before | After |
+|--------|-------|
+| You experiment with prompts | You operate automated workflows |
+| Local demos | Systems deployed to the cloud |
+| Agents that hallucinate | Agents with control and oversight |
+| "Someday I'll learn" | Certified Agent Operator |
+
+---
+
+## The Method: Orchestration-First
+
+Most courses teach: "build an agent, then try to control it."
+
+We flip the model:
+
+**Control first. Intelligence second.**
+
+You start with workflows and state management. Agent autonomy comes later—within boundaries you define.
+
+This is how production teams actually build.
+
+1. **Orchestration Layer** — Flow control
+2. **Agent Capabilities** — Intelligence
+3. **Human Oversight** — Supervision
+4. **Production** — Real deployment
+
+---
+
+## Curriculum
+
+4 Weeks. 8 Sessions. 4 Real Projects.
+
+### Week 1 — Orchestration Foundations
+*"Control before intelligence"*
+
+**What you learn:**
+- Event-driven workflow design
+- State management for agents
+- Your first workflow without LLMs
+
+**What you build:**
+Smart Content Processor — text, URLs, documents in → classified, extracted, routed data out.
+
+### Week 2 — From Workflows to Agents
+*"Agents live inside workflows"*
+
+**What you learn:**
+- Agent anatomy: role, objectives, tools
+- Multi-agent collaboration patterns
+- The Researcher → Analyst → Writer pattern
+
+**What you build:**
+Content Generation Pipeline — 3 agents working as a team → ready-to-publish content.
+
+### Week 3 — Real-World Integration
+*"Agents that connect with the real world"*
+
+**What you learn:**
+- Integration with email, calendar, messaging
+- Human-in-the-loop patterns
+- Approval workflows and feedback loops
+
+**What you build:**
+Personal Assistant with Human Oversight — inbox triage, drafts with approval → real actions, human supervision.
+
+### Week 4 — Production & Operations
+*"From your laptop to the cloud"*
+
+**What you learn:**
+- Cloud deployment and architecture
+- Monitoring and observability
+- Production debugging
+
+**What you build:**
+Your Agent in Production — deployed, monitored, documented, with complete operational runbook.
+
+**Don't know how to code? No problem.**
+You use AI coding assistants (Cursor, Claude Code) to generate code. You direct. The AI writes. We teach you to orchestrate.
+
+---
+
+## Production Infrastructure
+
+Agentcamp runs on the same stack used by Silicon Valley teams.
+
+- Partner Framework
+- LLM Provider
+- Integration Platform
+- Cloud
+- Monitoring
+
+Part of the Frutero ecosystem—LATAM's most active builder community.
+
+- +1,000 builders trained
+- 32.7% completion rate
+- 69% deployment rate
+
+---
+
+## What Builders Say
+
+> "I spent 6 months playing with GPT. In 4 weeks I had an agent that processes my emails automatically."
+> — María González, Founder, Startup LATAM
+
+> "The orchestration-first approach changed how I think about automation. Now everything has control."
+> — Carlos Ruiz, Head of Ops, Tech Company
+
+> "I thought I needed a developer. Agentcamp showed me I don't."
+> — Ana López, Content Creator, Independent
+
+---
+
+## Is Agentcamp for You?
+
+### It's for you if...
+- You're a founder, marketer, ops lead, or creator
+- You've used ChatGPT/Claude for months but have nothing in production
+- You want automated systems, not scattered prompts
+- You have 5-7 hours per week to dedicate
+- You're ready to build, not just consume content
+
+### It's not for you if...
+- You're looking for a theoretical machine learning course
+- You expect AI to do everything without your supervision
+- You can't commit the weekly time
+- You're already a senior developer looking for advanced content
+- You want results without doing the work
+
+---
+
+## Investment
+
+**Cohort 1 — February 2026**
+Sponsored by our infrastructure partners
+
+**100% Sponsored — $0** (Valued at $499 USD)
+
+- Duration: 4 weeks
+- Sessions: 8 live
+- Cohort: Maximum 50
+
+### Includes:
+- 8 live sessions + recordings
+- 4 projects with feedback
+- Access to Operators community
+- Office hours 2x per week
+- Async support during the program
+
+Week 1 Guarantee: If after the first week you feel it's not for you, just let us know. No questions asked.
+
+[Secure Your Spot](https://tally.so/r/aQ2D0b)
+
+---
+
+## Frequently Asked Questions
+
+**Do I need to know how to code?**
+No. We use AI coding assistants (Cursor, Claude Code) to generate code. You learn to direct and orchestrate, not write Python from scratch. Actual requirement: know how to use a computer and be willing to learn new tools.
+
+**How much time do I need to dedicate per week?**
+5-7 hours weekly: 3-4 hours in live sessions, 2-3 hours of independent work and projects. The program is designed for people with full-time jobs.
+
+**What tools will I use?**
+The stack includes: IDE with AI assistant (Cursor or VS Code + Copilot), Agent framework (defined with sponsors), Claude API for LLM calls, Composio for integrations, Cloud platform for deployment. Everything is set up in pre-work before starting.
+
+**Are the sessions live or recorded?**
+Live with interactive Q&A. Recordings are available for review, but the value is in participating live.
+
+**What if I fall behind?**
+You have office hours 2x per week to catch up. Async support in the community for specific questions. Access to recordings for review. The program has a pace, but there's a support network.
+
+**What kind of agents can I build after?**
+The program gives you the foundation to build: email and calendar assistants, automated content pipelines, research and analysis agents, customer support workflows, internal operational automations. The limit is your use case, not the technical knowledge.
+
+**Is there a community after the program?**
+Yes. Permanent access to the Agentcamp community. Networking with other graduates. Content updates.
+
+**Why is it free?**
+The program is sponsored by AI infrastructure companies that want more builders in LATAM to learn to build with their technology. You learn for free, they gain adoption. Win-win.
+
+---
+
+## Final CTA
+
+Stop experimenting. Start operating.
+
+In 4 weeks you'll have an AI agent in production working for you—not another folder of prompts.
+
+Cohort 1 · 50 spots · 100% Sponsored
+
+- [Join Agentcamp](https://tally.so/r/aQ2D0b)
+
+---
+
+## About
+
+Agentcamp by [Frutero](https://frutero.club)
+[Twitter](https://x.com/fruteroclub) · [LinkedIn](https://www.linkedin.com/company/frutero-club/) · [YouTube](https://www.youtube.com/@fruterotv)
+© 2026 Frutero. All rights reserved.

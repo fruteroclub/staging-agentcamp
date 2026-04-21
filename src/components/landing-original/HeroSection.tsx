@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown, Users, Calendar } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 export function HeroSection() {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation('original');
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden">
       {/* Background gradient effects */}
@@ -26,7 +26,8 @@ export function HeroSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
 
-          {/* Overline — amarillo, antes del headline */}
+
+          {/* Context label */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -34,11 +35,11 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 mb-6"
           >
             <span className="text-overline font-semibold text-warning tracking-[0.1em] uppercase">
-              {t('hero.overline')}
+              Programa intensivo · 5 semanas · En español
             </span>
           </motion.div>
 
-          {/* H1 — Jakarta extrabold line 1 + Playfair italic line 2 */}
+          {/* H1 */}
           <motion.h1
             key={`title-${i18n.language}`}
             initial={{ opacity: 0, y: 30 }}
@@ -47,29 +48,19 @@ export function HeroSection() {
             className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-[-0.01em] mb-6"
           >
             {t('hero.title.line1')}{" "}
-            <span className="text-primary font-serif italic text-[1.1em]">{t('hero.title.line2')}</span>
+            {t('hero.title.line2')}{" "}
+            <span className="text-warning italic">{t('hero.title.line3')}</span>
           </motion.h1>
 
           {/* Sub-headline */}
           <motion.p
-            key={`subtitle-${i18n.language}`}
+            key={`subtitle1-${i18n.language}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-foreground-body max-w-2xl mx-auto mb-6"
+            className="text-lg md:text-xl text-foreground-body max-w-xl mx-auto mb-10"
           >
-            {t('hero.subtitle')}
-          </motion.p>
-
-          {/* Proof line */}
-          <motion.p
-            key={`proof-${i18n.language}`}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.25 }}
-            className="text-sm text-muted-foreground mb-10"
-          >
-            {t('hero.proofLine')}
+            {t('hero.subtitle.problem')}
           </motion.p>
 
           {/* CTAs */}
@@ -94,13 +85,33 @@ export function HeroSection() {
               variant="ghost"
               size="lg"
               className="text-muted-foreground hover:text-foreground px-[30px] py-[15px] text-[17px]"
-              aria-label="Ver currículum de AgentCamp"
-              asChild
+              aria-label="Ver programa del curso Agentcamp"
             >
-              <a href="#curriculum">
-                {t('hero.cta.secondary')}
-              </a>
+              {t('hero.cta.secondary')}
             </Button>
+          </motion.div>
+
+          {/* Program details strip */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground"
+          >
+            <span className="flex items-center gap-1.5">
+              <Calendar className="w-4 h-4 text-primary" />
+              5 semanas
+            </span>
+            <span className="w-px h-4 bg-white/10" />
+            <span className="flex items-center gap-1.5">
+              <Users className="w-4 h-4 text-primary" />
+              Máximo 100 lugares
+            </span>
+            <span className="w-px h-4 bg-white/10" />
+            <span className="flex items-center gap-1.5">
+              <Calendar className="w-4 h-4 text-primary" />
+              Certificación incluida
+            </span>
           </motion.div>
         </div>
       </div>

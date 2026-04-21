@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 
 export function LanguageSwitcher() {
-  const { i18n, t } = useTranslation();
+  const { i18n, t } = useTranslation('original');
   const currentLang = i18n.resolvedLanguage || i18n.language || 'es';
 
   const handleLanguageChange = (value: string) => {

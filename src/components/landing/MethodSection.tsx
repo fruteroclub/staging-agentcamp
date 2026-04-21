@@ -1,67 +1,58 @@
-import { Layers, Bot, Eye, Rocket } from "lucide-react";
+import { Zap, Brain, Link2, Settings, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
 
-const icons = [Layers, Bot, Eye, Rocket];
+const icons = [Zap, Brain, Link2, Settings, Rocket];
 
 export function MethodSection() {
   const { t, i18n } = useTranslation();
 
   return (
-    <section id="programa" className="py-24 bg-background">
+    <section id="programa" className="py-24 bg-card/50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section header */}
-          <ScrollReveal animationKey={i18n.language} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {t('method.title.part1')} <span className="text-gradient">{t('method.title.part2')}</span>
+          <ScrollReveal animationKey={i18n.language} className="text-center mb-4">
+            <h2 className="text-3xl md:text-4xl font-semibold">
+              {t('method.title')}
             </h2>
           </ScrollReveal>
 
-          {/* Method explanation */}
-          <ScrollReveal animationKey={i18n.language} delay={0.1}>
-            <div className="relative overflow-hidden rounded-[2rem] bg-gradient-to-br from-card/90 via-card/70 to-card/50 backdrop-blur-sm border border-white/10 p-8 md:p-12 mb-12 group">
-              {/* Decorative gradient orbs */}
-              <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/15 transition-colors duration-700" />
-              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary/5 rounded-full blur-3xl" />
-
-              <div className="relative z-10">
-                <p className="text-muted-foreground text-lg mb-6">
-                  {t('method.explanation.problem')}
-                </p>
-                <p className="text-xl font-semibold mb-6">
-                  {t('method.explanation.approach')}
-                </p>
-                <p className="text-2xl md:text-3xl font-bold text-gradient mb-8">
-                  {t('method.explanation.philosophy')}
-                </p>
-                <p className="text-muted-foreground text-lg">
-                  {t('method.explanation.details')}
-                </p>
-                <p className="text-foreground font-medium mt-6">
-                  {t('method.explanation.reality')}
-                </p>
-              </div>
-            </div>
+          <ScrollReveal animationKey={i18n.language} delay={0.1} className="text-center mb-16">
+            <p className="text-muted-foreground text-lg">
+              {t('method.subtitle')}
+            </p>
           </ScrollReveal>
 
-          {/* Visual diagram */}
-          <StaggerContainer animationKey={i18n.language} className="relative flex flex-col md:flex-row items-center justify-between gap-4">
-            {Array.from({ length: 4 }).map((_, index) => {
+          {/* 5-week timeline */}
+          <StaggerContainer animationKey={i18n.language} className="relative space-y-6">
+            {/* Vertical line connector */}
+            <div className="absolute left-7 top-8 bottom-8 w-0.5 bg-gradient-to-b from-primary/40 via-primary/20 to-primary/40 hidden md:block" />
+
+            {Array.from({ length: 5 }).map((_, index) => {
               const Icon = icons[index];
               return (
-                <motion.div key={index} variants={staggerItem} className="flex items-center">
-                  <div className="flex flex-col items-center">
-                    <div className="w-18 h-18 p-4 rounded-2xl bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/20 flex items-center justify-center mb-3 hover:from-primary/25 hover:to-primary/10 hover:border-primary/40 hover:scale-110 transition-all duration-300 shadow-lg shadow-primary/5">
-                      <Icon className="w-8 h-8 text-primary" />
-                    </div>
-                    <span className="text-sm font-medium text-center">{t(`method.steps.${index}.label`)}</span>
-                    <span className="text-xs text-muted-foreground mt-1">{t(`method.steps.${index}.description`)}</span>
+                <motion.div
+                  key={index}
+                  variants={staggerItem}
+                  className="relative flex items-start gap-6 group"
+                >
+                  {/* Icon node */}
+                  <div className="relative z-10 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center flex-shrink-0 group-hover:from-primary/30 group-hover:to-primary/10 group-hover:border-primary/40 group-hover:scale-110 transition-all duration-300 shadow-lg shadow-primary/5">
+                    <Icon className="w-7 h-7 text-primary" />
                   </div>
-                  {index < 3 && (
-                    <div className="hidden md:block w-16 h-0.5 bg-gradient-to-r from-primary/40 via-primary/20 to-primary/40 mx-4" />
-                  )}
+
+                  {/* Content */}
+                  <div className="flex-1 p-6 rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 group-hover:border-primary/20 transition-all duration-500">
+                    <div className="flex items-center gap-3 mb-2">
+                      <span className="text-sm font-mono text-primary">{t(`method.weeks.${index}.number`)}</span>
+                      <span className="text-xl font-semibold">{t(`method.weeks.${index}.title`)}</span>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {t(`method.weeks.${index}.description`)}
+                    </p>
+                  </div>
                 </motion.div>
               );
             })}

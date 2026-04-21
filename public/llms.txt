@@ -1,0 +1,59 @@
+# AgentCamp
+
+> A 5-week program where you build your own AI agent — one that remembers, connects to your tools, handles payments, and proves its work.
+
+By [Frutero](https://frutero.club) · In Spanish · 50 spots · Starts May 11, 2026
+
+## Track Record
+
+- 356 participants in the first edition (virtual, English and Spanish)
+- 143 participants in in-person bootcamps (NYC + Denver)
+- 100+ agents integrated with payments, social media and custom workflows
+- 6 hackathon winners — projects born in AgentCamp
+
+## Program
+
+- 5 weeks, 10 live sessions, 1 artifact per week
+- Week 1: Activate — Your first agent running from day one
+- Week 2: Architect — Understand how your agent thinks and teach it new skills
+- Week 3: Connect — Your agent joins the real world with its own identity
+- Week 4: Automate — Workflows that run without you — and transact
+- Week 5: Launch — Public demo with real evidence and a verified track record
+
+## What You Build With
+
+AgentCamp runs on production-grade infrastructure: agent environment, agent architecture, intelligence (LLMs), identity, payments, and reputation layers — all part of the Frutero ecosystem.
+
+## Pricing
+
+- Early bird: $300 USD (first 20 spots)
+- Regular: $450 USD
+- Payment via Stripe (credit or debit card)
+
+## Sponsorship Deck
+
+AgentCamp is seeking infrastructure partners whose technology powers the agents participants build.
+
+### Sponsorship Tiers
+
+- **Founding Partner — $5,000 USD** (2–3 slots, category exclusive): Category exclusivity, powers agent infrastructure, named in curriculum, Demo Day presenting sponsor, co-marketing rights, first refusal for future cohorts
+- **Infrastructure Partner — $2,500 USD** (3–5 slots): Named in curriculum, Demo Day access, logo on materials, community access, co-marketing
+- **Startup Partner — $1,000 USD** (open slots): Named as supporting partner, Demo Day access, logo on materials, community access
+- **Community Partner — No fee** (for communities/DAOs/collectives only): Cross-promotion, co-host sessions, Demo Day invitation
+
+### Key Dates
+
+- Now: Partner commitments confirmed
+- April 25: Partner logos and materials finalized
+- May 11: Cohort 1 starts
+- June 7: Demo Day
+- June 17: Godínez.AI public launch
+
+Contact: mel@frutero.club
+
+## Links
+
+- [Apply](https://tally.so/r/aQ2D0b)
+- [Full page content](https://agentcamp.frutero.club/llms-full.txt)
+- [Website](https://agentcamp.frutero.club/)
+- [Sponsorship deck](https://agentcamp.frutero.club/sponsorship-deck)
