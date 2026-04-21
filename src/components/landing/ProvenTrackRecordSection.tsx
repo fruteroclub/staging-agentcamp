@@ -35,19 +35,19 @@ export function ProvenTrackRecordSection() {
               <motion.div
                 key={index}
                 variants={staggerItem}
-                className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-all duration-500 p-6 flex items-start gap-5"
+                className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm border border-border/50 hover:border-primary/20 transition-all duration-500 p-6 flex items-center gap-5"
               >
                 {/* Decorative glow */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/5 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                <div className="relative z-10 flex items-start gap-5">
+                <div className="relative z-10 flex items-center gap-5">
                   {/* Number */}
                   <div className="text-3xl md:text-4xl font-semibold text-warning flex-shrink-0 min-w-[80px]">
                     {t(`provenTrackRecord.stats.${index}.value`)}
                   </div>
 
                   {/* Label */}
-                  <p className="text-foreground-body leading-relaxed pt-1">
+                  <p className="text-foreground-body leading-relaxed">
                     {t(`provenTrackRecord.stats.${index}.label`)}
                   </p>
                 </div>

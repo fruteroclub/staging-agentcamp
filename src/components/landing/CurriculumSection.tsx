@@ -46,12 +46,12 @@ export function CurriculumSection() {
                     className="relative z-10 w-full flex items-center justify-between p-6 text-left hover:bg-white/[0.02] transition-colors"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-14 h-14 min-w-[3.5rem] min-h-[3.5rem] rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                         <Icon className="w-7 h-7 text-primary" />
                       </div>
                       <div>
                         <div className="flex items-center gap-3">
-                          <span className="text-sm font-mono text-primary">{t(`curriculum.weeks.${weekIndex}.number`)}</span>
+                          <span className="text-sm font-mono text-accent">{t(`curriculum.weeks.${weekIndex}.number`)}</span>
                           <span className="text-xl font-semibold">{t(`curriculum.weeks.${weekIndex}.title`)}</span>
                         </div>
                         <p className="text-muted-foreground text-sm mt-1">{t(`curriculum.weeks.${weekIndex}.description`)}</p>
@@ -93,7 +93,7 @@ export function CurriculumSection() {
                               <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
                                 {t('curriculum.labels.whatYouBuild')}
                               </h4>
-                              <p className="text-primary font-semibold leading-relaxed">
+                              <p className="text-warning font-medium leading-relaxed">
                                 {t(`curriculum.weeks.${weekIndex}.whatYouBuild`)}
                               </p>
                             </div>
