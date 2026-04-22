@@ -1,6 +1,6 @@
 # AgentCamp — Full Page Content
 
-> A 5-week program where you build your own AI agent — one that remembers, connects to your tools, handles payments, and proves its work.
+> A 5-week practical program where each participant builds, integrates, and operates an AI agent applied to their professional context. Every session produces a functional deliverable.
 
 By [Frutero](https://frutero.club) · In Spanish · 50 spots · Starts May 11, 2026
 
@@ -88,44 +88,17 @@ Real workflows, real metrics, real track record.
 
 ---
 
-## Curriculum
+## Curriculum (Summary)
 
-5 weeks. 10 sessions. 5 real artifacts.
+5 weeks · 10 live sessions · 4–6 hrs/week · 1 deliverable per week
 
-### Week 1 — From prompt to first agent
-In the first session you set up your personal agent and put it to work on a real task. In the second you learn to instruct it like a professional: prompts, context, and the art of directing intelligence.
+- Week 1: Foundations — Provision a personal AI agent, learn structured prompt engineering
+- Week 2: Architecture — Bootstrap files, memory, context layers, composable skills (OpenClaw)
+- Week 3: Integrations & Identity — Connect to real tools, activate persistent agent identity
+- Week 4: Workflows & Economics — Multi-step autonomous workflows with economic layer
+- Week 5: Iteration & Demo Day — Evidence-based evaluation, capstone presentation
 
-**What you learn:** What separates an agent from a chatbot. How to provision an agent in Studio. Prompt structure, context layers, system instructions.
-
-**What you build:** A personal agent active in Studio, solving a real task from your actual work.
-
-### Week 2 — Agent architecture
-We open the engine. You understand how bootstrap files, memory, context, and skills work — the pieces that separate a real agent from a chatbot in disguise.
-
-**What you learn:** Bootstrap files, persistent vs. ephemeral memory, context layers, skills as composable capabilities.
-
-**What you build:** An agent with its own architecture, configured memory, and functional skills you created yourself.
-
-### Week 3 — Integrations, tools, and identity
-Your agent leaves the sandbox. It connects to your email, calendar, files, your stack — and activates its own persistent identity. From this moment, everything it does is recorded in its track record.
-
-**What you learn:** Tool calling, native integrations (Gmail, Calendar, GitHub, files), what it means for an agent to have its own identity, how reputation starts building automatically.
-
-**What you build:** An agent connected to your real tools, with its own identity, inside an operational workspace. Track record starts accumulating.
-
-### Week 4 — Workflows and agent economics
-You design workflows that run without you. You define how your agent charges for its outputs or pays for services — Studio handles the rails. From isolated tasks to complete processes that transact.
-
-**What you learn:** Workflow design (triggers, multi-step, conditionals, error recovery, human-in-the-loop), how to declare payment rules, when an agent should pay vs. charge, spend controls.
-
-**What you build:** A multi-step workflow solving a real case, with a working economic layer — your agent pays, charges, or both.
-
-### Week 5 — Iteration, reputation, and Demo Day
-You review the track record your agent has been building since Week 3. You iterate with real evidence. We close with Demo Day: you present your capstone in front of sponsors, investors, and the community.
-
-**What you learn:** Basic evals, logging, tracing, common failure patterns, evidence-based iteration, how to read and present your agent's verified track record.
-
-**What you build:** A capstone with recorded demo, real metrics, documented case, and a verified track record of your agent's work.
+For the complete session-by-session curriculum, see the "Full Curriculum" section at the end of this document.
 
 ---
 
@@ -457,6 +430,192 @@ Let's build the first generation of agent operators together.
 AgentCamp Cohort 1 · May–June 2026 · frutero.club
 
 [Get in Touch: mel@frutero.club](mailto:mel@frutero.club) · [Visit frutero.club](https://frutero.club)
+
+---
+
+---
+
+# Full Curriculum — AgentCamp 2026
+
+> Complete session-by-session curriculum. 5 weeks, 10 sessions, 5 deliverables.
+
+## What this program is for
+
+Most professionals already use AI tools individually — ChatGPT, Claude, Copilot. But there's a gap between using an AI tool and operating an AI system: an agent that retains context across sessions, integrates with the team's existing stack, executes multi-step processes autonomously, and generates measurable results.
+
+This program closes that gap. The participant learns to design, configure, and operate AI agents with real architecture — not chatbots with static prompts, but systems with memory, composable skills, integrations to work tools, and the ability to operate within professional workflows. Everything runs inside Godínez.AI Studio, an environment that abstracts infrastructure complexity so the focus stays on the business problem.
+
+**Prerequisites:** None technical. Assumes familiarity with productivity tools and prior professional experience. No coding required.
+
+**Format:** 5 weeks · 10 live sessions + recordings · 4–6 hours/week · Remote, in Spanish
+
+---
+
+## Week 1 — Foundations: from prompt to first agent
+
+### Session 1: Your first agent in 90 minutes
+
+Hands-on session where each participant provisions their first personal agent inside Godínez.AI Studio and puts it to work on a real task from their professional context. Establishes the fundamental difference between a chatbot and an agent: persistence, own context, and capacity to act.
+
+**Topics covered:**
+- Operational difference between a chatbot and an AI agent
+- Mental model of an agent environment (Studio)
+- Agent provisioning and initial configuration
+- Loading specific professional context
+
+### Session 2: Prompting, context, and the art of giving instructions
+
+Introduction to prompt engineering as a professional skill. The participant refactors their agent's instructions using structured techniques and evaluates impact through A/B testing between two prompt versions.
+
+**Topics covered:**
+- Effective prompt structure (system instructions, role prompting, few-shot)
+- Dynamic vs. static context
+- Common prompt failure modes
+- Comparative evaluation of instructions
+
+**Week 1 deliverable:** Active personal agent with refined system prompt, solving a real professional task.
+
+**Professional application:** The participant can configure a personalized AI assistant for recurring work tasks — research, writing, analysis, support — with optimized instructions that produce consistent results.
+
+---
+
+## Week 2 — Agent architecture with OpenClaw
+
+### Session 1: Anatomy of an agent — bootstrap, context, and memory
+
+Presents the complete architectural model of an OpenClaw agent. The participant understands how bootstrap, memory, and context layers determine agent behavior, and configures each for their use case.
+
+**Topics covered:**
+- Bootstrap files and their role in agent initialization
+- Persistent vs. ephemeral memory
+- Context layers and how they're prioritized
+- Workspace state and its relationship with the agent
+
+### Session 2: Skills — how an agent learns to do things
+
+Introduction to OpenClaw's composable skills system. The participant builds two functional skills from scratch, understands when to create a dedicated skill vs. solve with prompting, and learns the composition pattern that allows scaling capabilities.
+
+**Topics covered:**
+- What a skill is and when its creation is justified
+- Designing composable and reusable skills
+- Composition: combining skills to solve complex problems
+- Skill documentation for maintenance and transfer
+
+**Week 2 deliverable:** Agent with its own architecture, configured memory, and at least 2 documented functional skills.
+
+**Professional application:** The participant can design specialized agents by function (research, support, analysis, content generation) and understands how to make an agent reliable, maintainable, and extensible — not just functional in a demo.
+
+---
+
+## Week 3 — Integrations, tools, and identity
+
+### Session 1: Connecting your agent to the world — tools, APIs, and identity
+
+The agent leaves the sandbox. It connects to the participant's real tools (email, calendar, repositories, files) and activates its persistent identity — the ability to act as a recognizable entity whose actions are recorded. From this point, every agent action contributes to its track record.
+
+**Topics covered:**
+- Tool calling: how an agent interacts with external services
+- Native integrations (Gmail, Calendar, GitHub, file system)
+- Agent identity: what it means and why it enables payments and reputation
+- Track record initiation: automatic activity logging
+
+### Session 2: Workspaces, projects, and persistent identity
+
+Studio's organizational model. The participant structures a complete professional workspace — projects, files, collaborators, assigned agents — and verifies that agent identity persists coherently across actions and that its activity history is building.
+
+**Topics covered:**
+- Workspace and project structure in Studio
+- File management and shared context
+- Specialized agents per project
+- Verifying identity persistence and track record
+
+**Week 3 deliverable:** Agent integrated with 2+ of the participant's real tools, with active own identity, operational workspace, and track record accumulating.
+
+**Professional application:** The agent operates within the team's real stack — reads emails, checks calendars, accesses repositories. The participant can set up agents that work with the same tools their team uses, not in an isolated environment.
+
+---
+
+## Week 4 — Workflows and agent economics
+
+### Session 1: Workflows that solve real problems
+
+Transition from reactive agent to orchestrated agent. The participant designs and implements a multi-step workflow for a real use case: triggers that start the process, conditional steps, error handling, and human intervention points.
+
+**Topics covered:**
+- Workflow design: triggers, steps, conditionals
+- Error handling and recovery patterns
+- Human-in-the-loop: when the agent should request approval
+- Workflow testing with real cases
+
+### Session 2: Economic workflows — payments, pricing, and transactions
+
+The participant adds an economic layer to their workflow. Declaratively defines where the agent charges for an output or pays for a service. Studio handles the payment infrastructure — the participant focuses on business rules, not protocol implementation.
+
+**Topics covered:**
+- Why agents need the ability to transact
+- Declaring pricing and payment rules in workflows
+- Spend controls and operational limits
+- Conceptual differences between payment rails (fiat, crypto, x402)
+
+**Week 4 deliverable:** Multi-step workflow with functional economic layer — the agent can pay for services, charge for outputs, or both.
+
+**Professional application:** The participant can design end-to-end automated processes that include real transactions. This is the difference between internal automation and an agent that operates as an economic actor within a business flow.
+
+---
+
+## Week 5 — Iteration, reputation, and Demo Day
+
+### Session 1: Iteration, evaluation, and track record
+
+The participant reviews the track record their agent has accumulated since Week 3 — what actions it executed, with what results, what reputation signals it generated. Learns to implement basic evaluation cycles and iterate agent design based on evidence, not intuition.
+
+**Topics covered:**
+- Basic evaluations (evals): how to measure agent performance
+- Logging, tracing, and failure diagnosis
+- Evidence-based iteration vs. intuitive adjustments
+- Reading and interpreting the agent's track record
+
+### Session 2: Demo Day — capstone presentations
+
+Program close. Each participant presents their capstone in a 5-minute + Q&A format in front of the community, sponsors, and ecosystem guests. The capstone includes: problem solved, agent built, operational workflow, real metrics, and verifiable track record.
+
+**Topics covered:**
+- Structured presentation of a use case with evidence
+- Communicating metrics and results to stakeholders
+- Documenting a case for professional portfolio
+
+**Week 5 deliverable:** Capstone presented at Demo Day: recorded demo, real metrics, verifiable track record, and documented case.
+
+**Professional application:** The participant knows how to evaluate and improve agents with real data, and can present results with the rigor a stakeholder expects — not a toy demo, but a case with problem, solution, metrics, and evidence.
+
+---
+
+## Competencies at graduation
+
+Upon completing the program, the participant can:
+
+1. Design and configure AI agents with robust architecture (bootstrap, persistent memory, composable skills) for specific professional functions.
+2. Write effective system instructions and diagnose why an agent isn't producing expected results.
+3. Integrate agents with existing work tools (email, calendar, repositories, files) without requiring software development.
+4. Design multi-step workflows that operate autonomously, with error handling and human intervention points.
+5. Configure an agent's economic layer: define what it charges, what it pays, and under what conditions.
+6. Evaluate agent performance with real metrics and iterate its design based on evidence.
+7. Structure a professional workspace with projects, specialized agents, and shared context.
+8. Present a complete use case with demo, metrics, and verifiable track record to stakeholders.
+
+---
+
+## Pedagogical approach
+
+**Practice before theory.** The first session produces a working agent in 90 minutes. Concepts are introduced as answers to questions the participant already has from using the system, not as abstract prerequisites.
+
+**Deliverable every week.** No purely conceptual sessions. Each week closes with a functional artifact that builds on the previous one. The capstone isn't designed in the last week — it's built incrementally from the first.
+
+**Applied to the participant's real context.** Each participant works on their own tasks, tools, and professional processes. Deliverables have immediate value because they solve real problems, not generic exercises.
+
+**Infrastructure abstracted.** The participant doesn't need to open a terminal, manage private keys, or understand protocols at a technical level. Studio absorbs infrastructure complexity so the focus stays on design, configuration, and operation.
+
+**Maximum 2 new concepts per session.** Each session has deliberate scope. Between-session tasks prepare material for the next session, not additional workload. Office hours (async + 1 live) available for unblocking.
 
 ---
 

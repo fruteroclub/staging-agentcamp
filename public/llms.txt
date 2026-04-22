@@ -1,6 +1,6 @@
 # AgentCamp
 
-> A 5-week program where you build your own AI agent — one that remembers, connects to your tools, handles payments, and proves its work.
+> A 5-week practical program where each participant builds, integrates, and operates an AI agent applied to their professional context. Every session produces a functional deliverable.
 
 By [Frutero](https://frutero.club) · In Spanish · 50 spots · Starts May 11, 2026
 
@@ -13,16 +13,23 @@ By [Frutero](https://frutero.club) · In Spanish · 50 spots · Starts May 11, 2
 
 ## Program
 
-- 5 weeks, 10 live sessions, 1 artifact per week
-- Week 1: Activate — Your first agent running from day one
-- Week 2: Architect — Understand how your agent thinks and teach it new skills
-- Week 3: Connect — Your agent joins the real world with its own identity
-- Week 4: Automate — Workflows that run without you — and transact
-- Week 5: Launch — Public demo with real evidence and a verified track record
+5 weeks · 10 live sessions · 4–6 hrs/week · 1 deliverable per week · Remote, in Spanish
+
+- Week 1: Foundations — Provision a personal AI agent, learn structured prompt engineering
+- Week 2: Architecture — Bootstrap files, memory, context layers, composable skills (OpenClaw)
+- Week 3: Integrations & Identity — Connect to real tools (email, calendar, repos), activate persistent agent identity
+- Week 4: Workflows & Economics — Multi-step autonomous workflows with payment/charging capabilities
+- Week 5: Iteration & Demo Day — Evidence-based evaluation, track record review, public capstone presentation
+
+### Competencies at graduation
+
+Graduates can: design agents with robust architecture, write effective system instructions, integrate agents with existing work tools without code, design autonomous multi-step workflows, configure agent economics, evaluate agent performance with real metrics, and present a complete use case to stakeholders.
+
+Prerequisites: None technical. Professional experience assumed. No coding required.
 
 ## What You Build With
 
-AgentCamp runs on production-grade infrastructure: agent environment, agent architecture, intelligence (LLMs), identity, payments, and reputation layers — all part of the Frutero ecosystem.
+AgentCamp runs on production-grade infrastructure: Godínez.AI Studio (agent environment), OpenClaw (agent architecture), LLM providers (intelligence), plus identity, payments, and reputation layers — all part of the Frutero ecosystem.
 
 ## Pricing
 
@@ -54,6 +61,7 @@ Contact: mel@frutero.club
 ## Links
 
 - [Apply](https://tally.so/r/aQ2D0b)
-- [Full page content](https://agentcamp.frutero.club/llms-full.txt)
+- [Full curriculum](https://agentcamp.frutero.club/curriculum)
+- [Full page content for LLMs](https://agentcamp.frutero.club/llms-full.txt)
 - [Website](https://agentcamp.frutero.club/)
 - [Sponsorship deck](https://agentcamp.frutero.club/sponsorship-deck)

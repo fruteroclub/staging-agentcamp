@@ -348,6 +348,205 @@
       }
     }
   },
+  "curriculumPage": {
+    "header": {
+      "title": "Full curriculum",
+      "description": "AgentCamp is a practical 5-week program where each participant builds, integrates, and puts into operation an AI agent applied to their professional context. Every session produces a functional deliverable. By the end, every graduate has an operational system they can apply directly to their work.",
+      "facts": {
+        "duration": "5 weeks",
+        "sessions": "10 live sessions + recordings",
+        "effort": "4–6 hrs/week",
+        "format": "Remote, in Spanish"
+      }
+    },
+    "why": {
+      "title": "What this program is for",
+      "p1": "Most professionals already use AI tools individually — ChatGPT, Claude, Copilot. But there's a gap between using an AI tool and operating an AI system: an agent that retains context across sessions, integrates with the team's existing stack, executes multi-step processes autonomously, and generates measurable results.",
+      "p2": "This program closes that gap. The participant learns to design, configure, and operate AI agents with real architecture — not chatbots with static prompts, but systems with memory, composable skills, integrations to work tools, and the ability to operate within professional workflows. Everything runs inside Godínez.AI Studio, an environment that abstracts infrastructure complexity so the focus stays on the business problem.",
+      "prereq": "Prerequisites: None technical. Assumes familiarity with productivity tools and prior professional experience. No coding required."
+    },
+    "labels": {
+      "concepts": "Topics covered",
+      "deliverable": "Week deliverable",
+      "professionalApplication": "Professional application"
+    },
+    "weeks": {
+      "0": {
+        "number": "Week 1",
+        "title": "Foundations: from prompt to first agent",
+        "s1": {
+          "name": "Your first agent in 90 minutes",
+          "description": "Hands-on session where each participant provisions their first personal agent inside Godínez.AI Studio and puts it to work on a real task from their professional context. Establishes the fundamental difference between a chatbot and an agent: persistence, own context, and capacity to act.",
+          "concepts": [
+            "Operational difference between a chatbot and an AI agent",
+            "Mental model of an agent environment (Studio)",
+            "Agent provisioning and initial configuration",
+            "Loading specific professional context"
+          ]
+        },
+        "s2": {
+          "name": "Prompting, context, and the art of giving instructions",
+          "description": "Introduction to prompt engineering as a professional skill. The participant refactors their agent's instructions using structured techniques and evaluates impact through A/B testing between two prompt versions.",
+          "concepts": [
+            "Effective prompt structure (system instructions, role prompting, few-shot)",
+            "Dynamic vs. static context",
+            "Common prompt failure modes",
+            "Comparative evaluation of instructions"
+          ]
+        },
+        "deliverable": "Active personal agent with refined system prompt, solving a real professional task.",
+        "application": "The participant can configure a personalized AI assistant for recurring work tasks — research, writing, analysis, support — with optimized instructions that produce consistent results."
+      },
+      "1": {
+        "number": "Week 2",
+        "title": "Agent architecture with OpenClaw",
+        "s1": {
+          "name": "Anatomy of an agent: bootstrap, context, and memory",
+          "description": "Presents the complete architectural model of an OpenClaw agent. The participant understands how bootstrap, memory, and context layers determine agent behavior, and configures each for their use case.",
+          "concepts": [
+            "Bootstrap files and their role in agent initialization",
+            "Persistent vs. ephemeral memory",
+            "Context layers and how they're prioritized",
+            "Workspace state and its relationship with the agent"
+          ]
+        },
+        "s2": {
+          "name": "Skills: how an agent learns to do things",
+          "description": "Introduction to OpenClaw's composable skills system. The participant builds two functional skills from scratch, understands when to create a dedicated skill vs. solve with prompting, and learns the composition pattern that allows scaling capabilities.",
+          "concepts": [
+            "What a skill is and when its creation is justified",
+            "Designing composable and reusable skills",
+            "Composition: combining skills to solve complex problems",
+            "Skill documentation for maintenance and transfer"
+          ]
+        },
+        "deliverable": "Agent with its own architecture, configured memory, and at least 2 documented functional skills.",
+        "application": "The participant can design specialized agents by function (research, support, analysis, content generation) and understands how to make an agent reliable, maintainable, and extensible — not just functional in a demo."
+      },
+      "2": {
+        "number": "Week 3",
+        "title": "Integrations, tools, and identity",
+        "s1": {
+          "name": "Connecting your agent to the world: tools, APIs, and identity",
+          "description": "The agent leaves the sandbox. It connects to the participant's real tools (email, calendar, repositories, files) and activates its persistent identity — the ability to act as a recognizable entity whose actions are recorded. From this point, every agent action contributes to its track record.",
+          "concepts": [
+            "Tool calling: how an agent interacts with external services",
+            "Native integrations (Gmail, Calendar, GitHub, file system)",
+            "Agent identity: what it means and why it enables payments and reputation",
+            "Track record initiation: automatic activity logging"
+          ]
+        },
+        "s2": {
+          "name": "Workspaces, projects, and persistent identity",
+          "description": "Studio's organizational model. The participant structures a complete professional workspace — projects, files, collaborators, assigned agents — and verifies that agent identity persists coherently across actions and that its activity history is building.",
+          "concepts": [
+            "Workspace and project structure in Studio",
+            "File management and shared context",
+            "Specialized agents per project",
+            "Verifying identity persistence and track record"
+          ]
+        },
+        "deliverable": "Agent integrated with 2+ of the participant's real tools, with active own identity, operational workspace, and track record accumulating.",
+        "application": "The agent operates within the team's real stack — reads emails, checks calendars, accesses repositories. The participant can set up agents that work with the same tools their team uses, not in an isolated environment."
+      },
+      "3": {
+        "number": "Week 4",
+        "title": "Workflows and agent economics",
+        "s1": {
+          "name": "Workflows that solve real problems",
+          "description": "Transition from reactive agent to orchestrated agent. The participant designs and implements a multi-step workflow for a real use case: triggers that start the process, conditional steps, error handling, and human intervention points.",
+          "concepts": [
+            "Workflow design: triggers, steps, conditionals",
+            "Error handling and recovery patterns",
+            "Human-in-the-loop: when the agent should request approval",
+            "Workflow testing with real cases"
+          ]
+        },
+        "s2": {
+          "name": "Economic workflows: payments, pricing, and transactions",
+          "description": "The participant adds an economic layer to their workflow. Declaratively defines where the agent charges for an output or pays for a service. Studio handles the payment infrastructure — the participant focuses on business rules, not protocol implementation.",
+          "concepts": [
+            "Why agents need the ability to transact",
+            "Declaring pricing and payment rules in workflows",
+            "Spend controls and operational limits",
+            "Conceptual differences between payment rails (fiat, crypto, x402)"
+          ]
+        },
+        "deliverable": "Multi-step workflow with functional economic layer — the agent can pay for services, charge for outputs, or both.",
+        "application": "The participant can design end-to-end automated processes that include real transactions. This is the difference between internal automation and an agent that operates as an economic actor within a business flow."
+      },
+      "4": {
+        "number": "Week 5",
+        "title": "Iteration, reputation, and Demo Day",
+        "s1": {
+          "name": "Iteration, evaluation, and track record",
+          "description": "The participant reviews the track record their agent has accumulated since Week 3 — what actions it executed, with what results, what reputation signals it generated. Learns to implement basic evaluation cycles and iterate agent design based on evidence, not intuition.",
+          "concepts": [
+            "Basic evaluations (evals): how to measure agent performance",
+            "Logging, tracing, and failure diagnosis",
+            "Evidence-based iteration vs. intuitive adjustments",
+            "Reading and interpreting the agent's track record"
+          ]
+        },
+        "s2": {
+          "name": "Demo Day: capstone presentations",
+          "description": "Program close. Each participant presents their capstone in a 5-minute + Q&A format in front of the community, sponsors, and ecosystem guests. The capstone includes: problem solved, agent built, operational workflow, real metrics, and verifiable track record.",
+          "concepts": [
+            "Structured presentation of a use case with evidence",
+            "Communicating metrics and results to stakeholders",
+            "Documenting a case for professional portfolio"
+          ]
+        },
+        "deliverable": "Capstone presented at Demo Day: recorded demo, real metrics, verifiable track record, and documented case.",
+        "application": "The participant knows how to evaluate and improve agents with real data, and can present results with the rigor a stakeholder expects — not a toy demo, but a case with problem, solution, metrics, and evidence."
+      }
+    },
+    "competencies": {
+      "title": "Competencies at graduation",
+      "subtitle": "Upon completing the program, the participant can:",
+      "items": [
+        "Design and configure AI agents with robust architecture (bootstrap, persistent memory, composable skills) for specific professional functions.",
+        "Write effective system instructions and diagnose why an agent isn't producing expected results.",
+        "Integrate agents with existing work tools (email, calendar, repositories, files) without requiring software development.",
+        "Design multi-step workflows that operate autonomously, with error handling and human intervention points.",
+        "Configure an agent's economic layer: define what it charges, what it pays, and under what conditions.",
+        "Evaluate agent performance with real metrics and iterate its design based on evidence.",
+        "Structure a professional workspace with projects, specialized agents, and shared context.",
+        "Present a complete use case with demo, metrics, and verifiable track record to stakeholders."
+      ]
+    },
+    "approach": {
+      "title": "Pedagogical approach",
+      "principles": [
+        {
+          "title": "Practice before theory",
+          "body": "The first session produces a working agent in 90 minutes. Concepts are introduced as answers to questions the participant already has from using the system, not as abstract prerequisites."
+        },
+        {
+          "title": "Deliverable every week",
+          "body": "No purely conceptual sessions. Each week closes with a functional artifact that builds on the previous one. The capstone isn't designed in the last week — it's built incrementally from the first."
+        },
+        {
+          "title": "Applied to the participant's real context",
+          "body": "Each participant works on their own tasks, tools, and professional processes. Deliverables have immediate value because they solve real problems, not generic exercises."
+        },
+        {
+          "title": "Infrastructure abstracted",
+          "body": "The participant doesn't need to open a terminal, manage private keys, or understand protocols at a technical level. Studio absorbs infrastructure complexity so the focus stays on design, configuration, and operation."
+        },
+        {
+          "title": "Maximum 2 new concepts per session",
+          "body": "Each session has deliberate scope. Between-session tasks prepare material for the next session, not additional workload. Office hours (async + 1 live) available for unblocking."
+        }
+      ]
+    },
+    "footer": {
+      "title": "Starts May 11, 2026",
+      "subtitle": "50 spots · Founding cohort",
+      "cta": "Enroll",
+      "back": "Back to home"
+    }
+  },
   "provenTrackRecord": {
     "title": "Proven Track Record",
     "subtitle": "This isn't the first time we've done this.",
