@@ -348,6 +348,205 @@
       }
     }
   },
+  "curriculumPage": {
+    "header": {
+      "title": "Currículum completo",
+      "description": "AgentCamp es un programa práctico de 5 semanas donde cada participante construye, integra y pone en operación un agente de IA aplicado a su contexto profesional. Cada sesión produce un entregable funcional. Al finalizar, cada graduado cuenta con un sistema operativo que puede aplicar directamente en su trabajo.",
+      "facts": {
+        "duration": "5 semanas",
+        "sessions": "10 sesiones en vivo + grabaciones",
+        "effort": "4–6 hrs/semana",
+        "format": "Remoto, en español"
+      }
+    },
+    "why": {
+      "title": "Para qué sirve este programa",
+      "p1": "La mayoría de los profesionales ya usa herramientas de IA de forma individual — ChatGPT, Claude, Copilot. Pero hay una brecha entre usar una herramienta de IA y operar un sistema de IA: un agente que recuerde contexto entre sesiones, se integre con el stack existente del equipo, ejecute procesos multi-paso de forma autónoma y genere resultados medibles.",
+      "p2": "Este programa cierra esa brecha. El participante aprende a diseñar, configurar y operar agentes de IA con arquitectura real — no chatbots con prompts estáticos, sino sistemas con memoria, habilidades componibles, integraciones a herramientas de trabajo y capacidad de operar dentro de workflows profesionales. Todo dentro de Godínez.AI Studio, un entorno que abstrae la complejidad de infraestructura para que el foco esté en el problema de negocio.",
+      "prereq": "Prerequisitos: Ninguno técnico. Se asume familiaridad con herramientas de productividad y experiencia profesional previa. No se requiere saber programar."
+    },
+    "labels": {
+      "concepts": "Temas cubiertos",
+      "deliverable": "Entregable de la semana",
+      "professionalApplication": "Aplicación profesional"
+    },
+    "weeks": {
+      "0": {
+        "number": "Semana 1",
+        "title": "Fundamentos: del prompt al primer agente",
+        "s1": {
+          "name": "Tu primer agente en 90 minutos",
+          "description": "Sesión práctica donde cada participante provisiona su primer agente personal dentro de Godínez.AI Studio y lo pone a trabajar sobre una tarea real de su contexto profesional. Se establece la diferencia fundamental entre un chatbot y un agente: persistencia, contexto propio y capacidad de actuar.",
+          "concepts": [
+            "Diferencia operativa entre chatbot y agente de IA",
+            "Modelo mental de un entorno de agentes (Studio)",
+            "Provisión y configuración inicial de un agente",
+            "Carga de contexto profesional específico"
+          ]
+        },
+        "s2": {
+          "name": "Prompting, contexto y el arte de dar instrucciones",
+          "description": "Introducción a prompt engineering como habilidad profesional. El participante refactoriza las instrucciones de su agente usando técnicas estructuradas y evalúa el impacto mediante A/B testing entre dos versiones del mismo prompt.",
+          "concepts": [
+            "Estructura de prompts efectivos (instrucciones de sistema, role prompting, few-shot)",
+            "Contexto dinámico vs. estático",
+            "Modos de falla comunes en prompts",
+            "Evaluación comparativa de instrucciones"
+          ]
+        },
+        "deliverable": "Agente personal activo con prompt system refinado, resolviendo una tarea profesional real.",
+        "application": "El participante puede configurar un asistente de IA personalizado para tareas recurrentes de su trabajo — investigación, redacción, análisis, soporte — con instrucciones optimizadas que producen resultados consistentes."
+      },
+      "1": {
+        "number": "Semana 2",
+        "title": "Arquitectura de agentes con OpenClaw",
+        "s1": {
+          "name": "Anatomía de un agente: bootstrap, contexto y memoria",
+          "description": "Se presenta el modelo arquitectónico completo de un agente OpenClaw. El participante comprende cómo las capas de bootstrap, memoria y contexto determinan el comportamiento del agente, y configura cada una para su caso de uso.",
+          "concepts": [
+            "Archivos de bootstrap y su rol en la inicialización del agente",
+            "Memoria persistente vs. efímera",
+            "Capas de contexto y cómo se priorizan",
+            "Estado del workspace y su relación con el agente"
+          ]
+        },
+        "s2": {
+          "name": "Skills: cómo un agente aprende a hacer cosas",
+          "description": "Introducción al sistema de habilidades componibles de OpenClaw. El participante construye dos skills funcionales desde cero, entiende cuándo crear una skill dedicada vs. resolver con prompting, y aprende el patrón de composición que permite escalar capacidades.",
+          "concepts": [
+            "Qué es una skill y cuándo justifica su creación",
+            "Diseño de skills componibles y reusables",
+            "Composición: cómo combinar skills para resolver problemas complejos",
+            "Documentación de skills para mantenimiento y transferencia"
+          ]
+        },
+        "deliverable": "Agente con arquitectura propia, memoria configurada y al menos 2 skills funcionales documentadas.",
+        "application": "El participante puede diseñar agentes especializados por función (research, soporte, análisis, generación de contenido) y entiende cómo hacer que un agente sea confiable, mantenible y extensible — no solo funcional en un demo."
+      },
+      "2": {
+        "number": "Semana 3",
+        "title": "Integraciones, herramientas e identidad",
+        "s1": {
+          "name": "Conectando tu agente al mundo: tools, APIs e identidad",
+          "description": "El agente deja el sandbox. Se conecta a herramientas reales del participante (correo, calendario, repositorios, archivos) y activa su identidad persistente — la capacidad de actuar como una entidad reconocible cuyas acciones quedan registradas. Desde este momento, cada acción del agente contribuye a su track record.",
+          "concepts": [
+            "Tool calling: cómo un agente interactúa con servicios externos",
+            "Integraciones nativas (Gmail, Calendar, GitHub, sistema de archivos)",
+            "Identidad de agente: qué significa y por qué habilita pagos y reputación",
+            "Inicio del track record: registro automático de actividad"
+          ]
+        },
+        "s2": {
+          "name": "Workspaces, proyectos e identidad persistente",
+          "description": "Modelo organizacional de Studio. El participante estructura un workspace profesional completo — proyectos, archivos, colaboradores, agentes asignados — y verifica que la identidad del agente persiste coherentemente a través de acciones y que su historial de actividad se está construyendo.",
+          "concepts": [
+            "Estructura de workspaces y proyectos en Studio",
+            "Gestión de archivos y contexto compartido",
+            "Agentes especializados por proyecto",
+            "Verificación de persistencia de identidad y track record"
+          ]
+        },
+        "deliverable": "Agente integrado a 2+ herramientas reales del participante, con identidad propia activa, workspace operativo y track record en acumulación.",
+        "application": "El agente opera dentro del stack real del equipo — lee correos, consulta calendarios, accede a repositorios. El participante puede configurar agentes que trabajan con las mismas herramientas que usa su equipo, no en un entorno aislado."
+      },
+      "3": {
+        "number": "Semana 4",
+        "title": "Workflows y economía de agentes",
+        "s1": {
+          "name": "Workflows que resuelven problemas reales",
+          "description": "Transición de agente reactivo a agente orquestado. El participante diseña e implementa un workflow multi-paso para un caso de uso real: triggers que inician el proceso, pasos condicionales, manejo de errores y puntos de intervención humana.",
+          "concepts": [
+            "Diseño de workflows: triggers, pasos, condicionales",
+            "Manejo de errores y patrones de recuperación",
+            "Human-in-the-loop: cuándo el agente debe pedir aprobación",
+            "Testing de workflows con casos reales"
+          ]
+        },
+        "s2": {
+          "name": "Workflows económicos: pagos, pricing y transacciones",
+          "description": "El participante añade una capa económica a su workflow. Define declarativamente dónde el agente cobra por un output o paga por un servicio. Studio maneja la infraestructura de pagos — el participante se enfoca en las reglas de negocio, no en la implementación del protocolo.",
+          "concepts": [
+            "Por qué los agentes necesitan capacidad de transaccionar",
+            "Declaración de reglas de pricing y pago en workflows",
+            "Controles de gasto y límites operativos",
+            "Diferencias conceptuales entre rieles de pago (fiat, crypto, x402)"
+          ]
+        },
+        "deliverable": "Workflow multi-paso con capa económica funcional — el agente puede pagar por servicios, cobrar por outputs, o ambos.",
+        "application": "El participante puede diseñar procesos automatizados de principio a fin que incluyen transacciones reales. Esto es la diferencia entre automatización interna y un agente que opera como actor económico dentro de un flujo de negocio."
+      },
+      "4": {
+        "number": "Semana 5",
+        "title": "Iteración, reputación y Demo Day",
+        "s1": {
+          "name": "Iteración, evaluación y track record",
+          "description": "El participante revisa el track record que su agente ha acumulado desde la Semana 3 — qué acciones ejecutó, con qué resultados, qué señales de reputación generó. Aprende a implementar ciclos de evaluación básicos y a iterar el diseño del agente basándose en evidencia, no en intuición.",
+          "concepts": [
+            "Evaluaciones básicas (evals): cómo medir desempeño de un agente",
+            "Logging, tracing y diagnóstico de fallos",
+            "Iteración basada en evidencia vs. ajustes intuitivos",
+            "Lectura e interpretación del track record del agente"
+          ]
+        },
+        "s2": {
+          "name": "Demo Day: presentación de capstones",
+          "description": "Cierre del programa. Cada participante presenta su capstone en un formato de 5 minutos + Q&A frente a la comunidad, sponsors e invitados del ecosistema. El capstone incluye: problema resuelto, agente construido, workflow operativo, métricas reales y track record verificable.",
+          "concepts": [
+            "Presentación estructurada de un caso de uso con evidencia",
+            "Comunicación de métricas y resultados a stakeholders",
+            "Documentación de un caso para portafolio profesional"
+          ]
+        },
+        "deliverable": "Capstone presentado en Demo Day: demo grabada, métricas reales, track record verificable y caso documentado.",
+        "application": "El participante sabe evaluar y mejorar agentes con datos reales, y puede presentar resultados con la rigurosidad que un stakeholder espera — no una demo de juguete, sino un caso con problema, solución, métricas y evidencia."
+      }
+    },
+    "competencies": {
+      "title": "Competencias al graduarse",
+      "subtitle": "Al completar el programa, el participante puede:",
+      "items": [
+        "Diseñar y configurar agentes de IA con arquitectura robusta (bootstrap, memoria persistente, skills componibles) para funciones profesionales específicas.",
+        "Escribir instrucciones de sistema efectivas y diagnosticar por qué un agente no produce los resultados esperados.",
+        "Integrar agentes con herramientas de trabajo existentes (correo, calendario, repositorios, archivos) sin requerir desarrollo de software.",
+        "Diseñar workflows multi-paso que operan de forma autónoma, con manejo de errores y puntos de intervención humana.",
+        "Configurar la capa económica de un agente: definir qué cobra, qué paga y bajo qué condiciones.",
+        "Evaluar el desempeño de un agente con métricas reales e iterar su diseño basándose en evidencia.",
+        "Estructurar un workspace profesional con proyectos, agentes especializados y contexto compartido.",
+        "Presentar un caso de uso completo con demo, métricas y track record verificable a stakeholders."
+      ]
+    },
+    "approach": {
+      "title": "Enfoque pedagógico",
+      "principles": [
+        {
+          "title": "Práctica antes de teoría",
+          "body": "La primera sesión produce un agente funcional en 90 minutos. Los conceptos se introducen como respuestas a preguntas que el participante ya tiene por haber usado el sistema, no como prerrequisitos abstractos."
+        },
+        {
+          "title": "Entregable cada semana",
+          "body": "No hay sesiones puramente conceptuales. Cada semana cierra con un artefacto funcional que se construye sobre el anterior. El capstone no se diseña la última semana — se va construyendo desde la primera."
+        },
+        {
+          "title": "Aplicado al contexto real del participante",
+          "body": "Cada participante trabaja sobre sus propias tareas, herramientas y procesos profesionales. Los entregables tienen valor inmediato porque resuelven problemas reales, no ejercicios genéricos."
+        },
+        {
+          "title": "Infraestructura abstraída",
+          "body": "El participante no necesita abrir una terminal, gestionar claves privadas ni entender protocolos a nivel técnico. Studio absorbe la complejidad de infraestructura para que el foco esté en diseño, configuración y operación."
+        },
+        {
+          "title": "Máximo 2 conceptos nuevos por sesión",
+          "body": "Cada sesión tiene un alcance deliberado. Las tareas entre sesiones preparan el material de la siguiente sesión, no son carga adicional. Office hours (asíncronas + 1 en vivo) disponibles para desbloqueo."
+        }
+      ]
+    },
+    "footer": {
+      "title": "Inicia 11 de mayo de 2026",
+      "subtitle": "50 lugares · Cohorte fundadora",
+      "cta": "Inscribirse",
+      "back": "Volver al inicio"
+    }
+  },
   "provenTrackRecord": {
     "title": "Historial comprobado",
     "subtitle": "No es la primera vez que hacemos esto.",
