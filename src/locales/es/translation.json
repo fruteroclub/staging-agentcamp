@@ -88,6 +88,7 @@
   "curriculum": {
     "title": "Currículum",
     "subtitle": "5 semanas. 10 sesiones. 5 artefactos reales.",
+    "fullCurriculumCta": "Ver el currículum completo",
     "labels": {
       "whatYouLearn": "Lo que aprendes:",
       "whatYouBuild": "Lo que construyes:"

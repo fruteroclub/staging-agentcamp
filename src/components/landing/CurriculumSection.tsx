@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { ChevronDown, Zap, Brain, Link2, Settings, Rocket } from "lucide-react";
+import { ChevronDown, Zap, Brain, Link2, Settings, Rocket, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
+import { Button } from "@/components/ui/button";
 
 const icons = [Zap, Brain, Link2, Settings, Rocket];
 
@@ -106,6 +108,20 @@ export function CurriculumSection() {
               );
             })}
           </StaggerContainer>
+
+          {/* Full curriculum link */}
+          <ScrollReveal animationKey={i18n.language} delay={0.2} className="text-center mt-10">
+            <Button
+              variant="ghost"
+              className="text-muted-foreground hover:text-foreground font-semibold group"
+              asChild
+            >
+              <Link to="/curriculum">
+                {t('curriculum.fullCurriculumCta')}
+                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </Button>
+          </ScrollReveal>
         </div>
       </div>
     </section>
