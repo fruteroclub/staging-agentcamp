@@ -5,6 +5,7 @@ import {
   Settings,
   Rocket,
   ArrowRight,
+  Loader2,
   CheckCircle2,
   BookOpen,
   Clock,
@@ -19,6 +20,7 @@ import { staggerItem } from "@/components/ui/scroll-reveal-variants";
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";
+import { useCheckout } from "@/hooks/useCheckout";
 
 const weekIcons = [Zap, Brain, Link2, Settings, Rocket];
 
@@ -328,7 +330,8 @@ function ApproachSection() {
 /* ─────────────────────── FOOTER CTA ─────────────────────── */
 
 function CurriculumFooterCTA() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const { handleCheckout, isLoading, loadingLabel } = useCheckout();
 
   return (
     <section className="py-16 bg-card/50 border-t border-border/50">
@@ -345,12 +348,12 @@ function CurriculumFooterCTA() {
           <div className="flex items-center gap-3 flex-shrink-0">
             <Button
               className="bg-primary hover:bg-primary-hover transition-all duration-300 rounded-[10px] font-semibold"
-              asChild
+              disabled={isLoading}
+              onClick={() => handleCheckout("curriculum.footer")}
             >
-              <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
-                {t("curriculumPage.footer.cta")}
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </a>
+              {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
+              {isLoading ? loadingLabel : t("curriculumPage.footer.cta")}
+              {!isLoading ? <ArrowRight className="w-4 h-4" /> : null}
             </Button>
             <Button variant="ghost" className="text-muted-foreground hover:text-foreground" asChild>
               <a href="/">{t("curriculumPage.footer.back")}</a>

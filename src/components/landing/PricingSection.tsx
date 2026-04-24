@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { ScrollReveal, StaggerContainer } from "@/components/ui/scroll-reveal";
-import { staggerItem } from "@/components/ui/scroll-reveal-variants";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
+import { useCheckout } from "@/hooks/useCheckout";
 
 export function PricingSection() {
   const { t, i18n } = useTranslation();
+  const { handleCheckout, isLoading, loadingLabel } = useCheckout();
 
   return (
     <section className="py-20 bg-card/50">
@@ -69,12 +70,12 @@ export function PricingSection() {
                 <Button
                   size="lg"
                   className="w-full sm:w-auto bg-primary hover:bg-primary-hover transition-all duration-300 px-[30px] py-[15px] text-[17px] font-semibold group rounded-[10px]"
-                  asChild
+                  disabled={isLoading}
+                  onClick={() => handleCheckout("landing.pricing")}
                 >
-                  <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
-                    {t('pricing.cta')}
-                    <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
-                  </a>
+                  {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : null}
+                  {isLoading ? loadingLabel : t('pricing.cta')}
+                  {!isLoading ? <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" /> : null}
                 </Button>
               </div>
             </motion.div>

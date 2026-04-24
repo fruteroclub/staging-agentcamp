@@ -10,7 +10,6 @@
       "faq": "FAQ"
     },
     "cta": "Reserve Your Spot",
-    "ctaMobile": "Reserve Your Spot →",
     "menuLabel": "Toggle menu",
     "languageSwitcher": {
       "label": "Choose language",
@@ -302,6 +301,12 @@
     },
     "cta": "Secure Your Spot",
     "guarantee": "Week 1 Guarantee: If after the first week you feel it's not for you, just let us know. No questions asked."
+  },
+  "checkout": {
+    "loading": "Redirecting to checkout...",
+    "errorTitle": "Checkout unavailable",
+    "errorDescription": "We couldn't start checkout right now. Please try again in a moment.",
+    "soldOut": "AgentCamp is currently sold out."
   },
   "faq": {
     "title": "Your Questions Answered",

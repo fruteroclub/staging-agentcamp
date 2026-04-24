@@ -8,6 +8,8 @@ import Original from "./pages/Original";
 import SponsorshipDeck from "./pages/SponsorshipDeck";
 import Curriculum from "./pages/Curriculum";
 import NotFound from "./pages/NotFound";
+import PaymentSuccess from "./pages/PaymentSuccess";
+import PaymentCancel from "./pages/PaymentCancel";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +24,8 @@ const App = () => (
           <Route path="/original" element={<Original />} />
           <Route path="/sponsorship-deck" element={<SponsorshipDeck />} />
           <Route path="/curriculum" element={<Curriculum />} />
+          <Route path="/payment/success" element={<PaymentSuccess />} />
+          <Route path="/payment/cancel" element={<PaymentCancel />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

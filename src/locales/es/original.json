@@ -10,7 +10,6 @@
       "faq": "FAQ"
     },
     "cta": "Reserva Tu Lugar",
-    "ctaMobile": "Reserva Tu Lugar →",
     "menuLabel": "Toggle menu",
     "languageSwitcher": {
       "label": "Elegir idioma",
@@ -302,6 +301,12 @@
     },
     "cta": "Asegura Tu Lugar",
     "guarantee": "Garantía Semana 1: Si después de la primera semana sientes que no es para ti, simplemente nos avisas."
+  },
+  "checkout": {
+    "loading": "Redirigiendo al checkout...",
+    "errorTitle": "Checkout no disponible",
+    "errorDescription": "No pudimos iniciar el checkout en este momento. Inténtalo de nuevo en unos minutos.",
+    "soldOut": "AgentCamp está agotado por ahora."
   },
   "faq": {
     "title": "Resolvemos tus dudas",

@@ -10,7 +10,6 @@
       "faq": "FAQ"
     },
     "cta": "Quiero mi lugar",
-    "ctaMobile": "Quiero mi lugar →",
     "menuLabel": "Toggle menu",
     "languageSwitcher": {
       "label": "Elegir idioma",
@@ -253,6 +252,12 @@
     },
     "cta": "Quiero mi lugar"
   },
+  "checkout": {
+    "loading": "Redirigiendo al checkout...",
+    "errorTitle": "Checkout no disponible",
+    "errorDescription": "No pudimos iniciar el checkout en este momento. Inténtalo de nuevo en unos minutos.",
+    "soldOut": "AgentCamp está agotado por ahora."
+  },
   "faq": {
     "title": "Preguntas frecuentes",
     "items": {
@@ -306,6 +311,17 @@
     "title": "¿Quieres que tu infraestructura sea parte del currículum?",
     "body": "AgentCamp enseña a 50 builders a operar agentes reales — con identidad, pagos y reputación como infraestructura de grado productivo. Tu tecnología se convierte en los rieles sobre los que construyen.",
     "cta": "Sé partner"
+  },
+  "paymentSuccess": {
+    "title": "Pago confirmado",
+    "description": "Tu inscripción a AgentCamp quedó confirmada. Si tu cuenta de Godínez Studio todavía necesita crearse o vincularse, sigue las instrucciones que te llegarán por correo después del checkout.",
+    "cta": "Volver a AgentCamp"
+  },
+  "paymentCancel": {
+    "title": "Checkout cancelado",
+    "description": "No se realizó ningún cobro. Puedes intentar el checkout otra vez cuando quieras.",
+    "retry": "Intentar de nuevo",
+    "back": "Volver a AgentCamp"
   },
   "footer": {
     "logo": {

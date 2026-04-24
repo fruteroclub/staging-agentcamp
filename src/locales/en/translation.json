@@ -10,7 +10,6 @@
       "faq": "FAQ"
     },
     "cta": "I want my spot",
-    "ctaMobile": "I want my spot →",
     "menuLabel": "Toggle menu",
     "languageSwitcher": {
       "label": "Choose language",
@@ -253,6 +252,12 @@
     },
     "cta": "I want my spot"
   },
+  "checkout": {
+    "loading": "Redirecting to checkout...",
+    "errorTitle": "Checkout unavailable",
+    "errorDescription": "We couldn't start checkout right now. Please try again in a moment.",
+    "soldOut": "AgentCamp is currently sold out."
+  },
   "faq": {
     "title": "Frequently asked questions",
     "items": {
@@ -306,6 +311,17 @@
     "title": "Want your infrastructure to become core curriculum?",
     "body": "AgentCamp teaches 50 builders to operate real agents — with identity, payments, and reputation as production-grade infrastructure. Your technology becomes the rails they build on.",
     "cta": "Partner with us"
+  },
+  "paymentSuccess": {
+    "title": "Payment confirmed",
+    "description": "Your AgentCamp registration is confirmed. If your Godínez Studio account still needs to be created or linked, follow the email instructions sent after checkout.",
+    "cta": "Back to AgentCamp"
+  },
+  "paymentCancel": {
+    "title": "Checkout canceled",
+    "description": "No charge was made. You can retry checkout when you're ready.",
+    "retry": "Try again",
+    "back": "Back to AgentCamp"
   },
   "footer": {
     "logo": {

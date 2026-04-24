@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Home, BookOpen, BarChart3, HelpCircle } from "lucide-react";
+import { Menu, X, Home, BookOpen, BarChart3, HelpCircle, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NavBar } from "@/components/ui/tubelight-navbar";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { useCheckout } from "@/hooks/useCheckout";
 
 export function Navbar() {
   const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { handleCheckout, isLoading, loadingLabel } = useCheckout();
 
   const navItems = [
     { name: t('navbar.links.home'), url: "#", icon: Home },
@@ -68,10 +70,13 @@ export function Navbar() {
             <div className="hidden md:flex items-center gap-4">
               <LanguageSwitcher />
 
-              <Button className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:-translate-y-0.5 rounded-[10px] font-semibold" asChild>
-                <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
-                  {t('navbar.cta')}
-                </a>
+              <Button
+                className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:-translate-y-0.5 rounded-[10px] font-semibold"
+                disabled={isLoading}
+                onClick={() => handleCheckout("landing.nav.desktop")}
+              >
+                {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
+                {isLoading ? loadingLabel : t('navbar.cta')}
               </Button>
             </div>
 
@@ -116,25 +121,18 @@ export function Navbar() {
             ))}
             <Button
               className="bg-primary hover:bg-primary-hover w-full mt-4 rounded-[10px] py-6 text-[17px] font-semibold"
-              onClick={() => setIsMobileMenuOpen(false)}
-              asChild
+              disabled={isLoading}
+              onClick={async () => {
+                setIsMobileMenuOpen(false);
+                await handleCheckout("landing.nav.mobile_menu");
+              }}
             >
-              <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
-                {t('navbar.cta')}
-              </a>
+              {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : null}
+              {isLoading ? loadingLabel : t('navbar.cta')}
             </Button>
           </nav>
         </div>
       )}
-
-      {/* Floating Mobile CTA */}
-      <div className="fixed bottom-6 left-4 right-4 z-40 md:hidden">
-        <Button className="w-full bg-primary hover:bg-primary-hover py-6 text-[17px] font-semibold rounded-[10px]" asChild>
-          <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
-            {t('navbar.ctaMobile')}
-          </a>
-        </Button>
-      </div>
     </>
   );
 }

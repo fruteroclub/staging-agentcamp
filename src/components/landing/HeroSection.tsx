@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useCheckout } from "@/hooks/useCheckout";
 
 export function HeroSection() {
   const { t, i18n } = useTranslation();
+  const { handleCheckout, isLoading, loadingLabel } = useCheckout();
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden">
       {/* Background gradient effects */}
@@ -83,12 +85,12 @@ export function HeroSection() {
             <Button
               size="lg"
               className="bg-primary hover:bg-primary-hover transition-all duration-300 px-[30px] py-[15px] text-[17px] font-semibold group rounded-[10px]"
-              asChild
+              disabled={isLoading}
+              onClick={() => handleCheckout("landing.hero")}
             >
-              <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
-                {t('hero.cta.primary')}
-                <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </a>
+              {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : null}
+              {isLoading ? loadingLabel : t('hero.cta.primary')}
+              {!isLoading ? <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" /> : null}
             </Button>
             <Button
               variant="ghost"
