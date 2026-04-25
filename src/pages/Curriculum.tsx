@@ -14,7 +14,8 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
+import { ScrollReveal, StaggerContainer } from "@/components/ui/scroll-reveal";
+import { staggerItem } from "@/components/ui/scroll-reveal-variants";
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { Button } from "@/components/ui/button";

@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Check, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
+import { ScrollReveal, StaggerContainer } from "@/components/ui/scroll-reveal";
+import { staggerItem } from "@/components/ui/scroll-reveal-variants";
 
 export function PricingSection() {
   const { t, i18n } = useTranslation();

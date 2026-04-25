@@ -4,7 +4,8 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
+import { ScrollReveal, StaggerContainer } from "@/components/ui/scroll-reveal";
+import { staggerItem } from "@/components/ui/scroll-reveal-variants";
 import { Button } from "@/components/ui/button";
 
 const icons = [Zap, Brain, Link2, Settings, Rocket];

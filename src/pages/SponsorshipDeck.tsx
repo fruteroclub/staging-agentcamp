@@ -26,7 +26,8 @@ import {
   Settings,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
+import { ScrollReveal, StaggerContainer } from "@/components/ui/scroll-reveal";
+import { staggerItem } from "@/components/ui/scroll-reveal-variants";
 
 /* ─────────────────────── 1. HERO ─────────────────────── */
 

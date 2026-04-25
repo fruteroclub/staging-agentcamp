@@ -27,22 +27,22 @@ Part of the **Frutero** ecosystem, the most active builder community in LATAM.
 ```sh
 # Clone the repository
 git clone <YOUR_GIT_URL>
-cd agentcamp-2.0-landing
+cd agentcamp-landing
 
 # Install dependencies
-npm install
+pnpm install
 
 # Start development server (runs on http://localhost:8080)
-npm run dev
+pnpm dev
 
 # Build for production
-npm run build
+pnpm build
 
 # Preview production build
-npm run preview
+pnpm preview
 
 # Run tests
-npm run test
+pnpm test
 ```
 
 ### Project Structure
@@ -168,7 +168,7 @@ This is a standard Vite + React app and can be deployed to:
 - **Vercel**: `vercel deploy`
 - **Netlify**: Drag & drop `dist/` folder
 - **GitHub Pages**: Configure in repository settings
-- **Any static host**: Upload contents of `dist/` after `npm run build`
+- **Any static host**: Upload contents of `dist/` after `pnpm build`
 
 ## Contributing
 
