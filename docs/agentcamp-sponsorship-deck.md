@@ -180,10 +180,9 @@ For communities, DAOs, collectives, and ecosystem groups — not companies
 | When | What |
 |---|---|
 | **Now** | Partner commitments confirmed |
-| **April 25** | Partner logos and materials finalized |
-| **May 4** | Cohort 1 starts — 50 participants begin building |
+| **May 11** | Cohort 1 starts — 50 participants begin building |
 | **May–Jun** | 5 weeks of live sessions — your tech powers the infrastructure |
-| **June 7** | Demo Day — capstone presentations, sponsor judges, public event |
+| **June 10** | Demo Day — capstone presentations, sponsor judges, public event |
 | **June 17** | Godínez.AI public launch — graduates arrive with working agents |
 | **June+** | Post-program: case studies, testimonials, pipeline activation |
 
