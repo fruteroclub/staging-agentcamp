@@ -42,16 +42,25 @@ export function InstructorsSection() {
                   <p className="text-accent font-medium mb-4">
                     {t('instructors.founder.role')}
                   </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {t('instructors.founder.bio')}
-                  </p>
+                  <div className="grid gap-3">
+                    {Array.from({ length: 4 }).map((_, index) => (
+                      <div
+                        key={index}
+                        className="rounded-2xl border border-white/10 bg-background/40 px-4 py-3 backdrop-blur-sm"
+                      >
+                        <p className="text-sm font-semibold text-foreground">
+                          {t(`instructors.founder.proof.${index}`)}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
 
               {/* Frutero attribution */}
               <div className="relative z-10 mt-8 pt-6 border-t border-white/5">
                 <p className="text-foreground leading-relaxed text-center md:text-left">
-                  {t('instructors.frutero')}
+                  {t('instructors.footer')}
                 </p>
               </div>
             </div>

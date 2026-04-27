@@ -1,7 +1,8 @@
 import { Zap, Brain, Link2, Settings, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
+import { ScrollReveal, StaggerContainer } from "@/components/ui/scroll-reveal";
+import { staggerItem } from "@/components/ui/scroll-reveal-variants";
 
 const icons = [Zap, Brain, Link2, Settings, Rocket];
 

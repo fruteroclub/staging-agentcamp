@@ -1,7 +1,8 @@
 import { RefreshCw, StopCircle, Dices } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
+import { StaggerContainer } from "@/components/ui/scroll-reveal";
+import { staggerItem } from "@/components/ui/scroll-reveal-variants";
 
 const icons = [RefreshCw, StopCircle, Dices];
 

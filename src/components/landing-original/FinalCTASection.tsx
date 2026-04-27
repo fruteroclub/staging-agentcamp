@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { useTranslation } from "react-i18next";
+import { useCheckout } from "@/hooks/useCheckout";
 
 export function FinalCTASection() {
   const { t, i18n } = useTranslation('original');
+  const { handleCheckout, isLoading, loadingLabel } = useCheckout("original");
   return (
     <section className="py-24 bg-card/50 relative overflow-hidden">
       {/* Background effects */}
@@ -47,12 +49,12 @@ export function FinalCTASection() {
               <Button
                 size="lg"
                 className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:-translate-y-1 px-[30px] py-[15px] text-[17px] font-semibold group animate-pulse-glow rounded-[10px]"
-                asChild
+                disabled={isLoading}
+                onClick={() => handleCheckout("original.final_cta")}
               >
-                <a href="https://tally.so/r/aQ2D0b" target="_blank" rel="noopener noreferrer">
-                  {t('finalCta.cta')}
-                  <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
-                </a>
+                {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : null}
+                {isLoading ? loadingLabel : t('finalCta.cta')}
+                {!isLoading ? <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" /> : null}
               </Button>
             </motion.div>
           </ScrollReveal>

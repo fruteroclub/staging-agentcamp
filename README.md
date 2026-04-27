@@ -27,22 +27,25 @@ Part of the **Frutero** ecosystem, the most active builder community in LATAM.
 ```sh
 # Clone the repository
 git clone <YOUR_GIT_URL>
-cd agentcamp-2.0-landing
+cd agentcamp-landing
 
 # Install dependencies
-npm install
+pnpm install
+
+# Configure local checkout integration
+cp .env.example .env.local
 
 # Start development server (runs on http://localhost:8080)
-npm run dev
+pnpm dev
 
 # Build for production
-npm run build
+pnpm build
 
 # Preview production build
-npm run preview
+pnpm preview
 
 # Run tests
-npm run test
+pnpm test
 ```
 
 ### Project Structure
@@ -73,6 +76,26 @@ src/
 ```
 
 ### Customization
+
+### AgentCamp Checkout Integration
+
+The landing app starts checkout by posting to the Godínez Studio API.
+
+For local testing:
+
+```sh
+cp .env.example .env.local
+```
+
+Set:
+
+```sh
+VITE_GODINEZ_STUDIO_CHECKOUT_URL=http://localhost:3001/api/agentcamp/checkout
+```
+
+The corresponding local Studio API must allow `http://localhost:8080` in `CORS_ORIGIN` and have the `AGENTCAMP_*` Stripe env vars configured.
+
+For the full local manual test flow, including the `godinez-studio` API server and Stripe webhook forwarding, see [docs/dev/local-agentcamp-manual-testing.md](docs/dev/local-agentcamp-manual-testing.md).
 
 **Updating Content:**
 - Landing sections are in `src/components/landing/`
@@ -168,7 +191,7 @@ This is a standard Vite + React app and can be deployed to:
 - **Vercel**: `vercel deploy`
 - **Netlify**: Drag & drop `dist/` folder
 - **GitHub Pages**: Configure in repository settings
-- **Any static host**: Upload contents of `dist/` after `npm run build`
+- **Any static host**: Upload contents of `dist/` after `pnpm build`
 
 ## Contributing
 

@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { AnimatePresence } from "framer-motion";
+import { SponsorshipDeckNavbar } from "@/components/landing/SponsorshipDeckNavbar";
+import { SponsorIntakeForm } from "@/components/landing/SponsorIntakeForm";
+import { useTranslation } from "react-i18next";
 import {
   ArrowRight,
   Users,
@@ -26,11 +29,14 @@ import {
   Settings,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import { ScrollReveal, StaggerContainer, staggerItem } from "@/components/ui/scroll-reveal";
+import { ScrollReveal, StaggerContainer } from "@/components/ui/scroll-reveal";
+import { staggerItem } from "@/components/ui/scroll-reveal-variants";
 
 /* ─────────────────────── 1. HERO ─────────────────────── */
 
 function DeckHero() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden">
       {/* Background gradient effects */}
@@ -58,7 +64,7 @@ function DeckHero() {
             className="inline-flex items-center gap-2 mb-6"
           >
             <span className="text-overline font-semibold text-warning tracking-[0.1em] uppercase">
-              AgentCamp 2026
+              {t("sponsorDeck.hero.overline")}
             </span>
           </motion.div>
 
@@ -68,9 +74,9 @@ function DeckHero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-[-0.01em] mb-6"
           >
-            Partner with the first{" "}
+            {t("sponsorDeck.hero.title")}{" "}
             <span className="text-primary font-serif italic text-[1.1em]">
-              agent operator program in Latin America.
+              {t("sponsorDeck.hero.titleAccent")}
             </span>
           </motion.h1>
 
@@ -80,7 +86,7 @@ function DeckHero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground-body max-w-2xl mx-auto mb-4"
           >
-            Your infrastructure powers the agents they build.
+            {t("sponsorDeck.hero.subtitle")}
           </motion.p>
 
           <motion.p
@@ -89,7 +95,7 @@ function DeckHero() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="text-sm text-muted-foreground mb-10"
           >
-            50 operators across Latin America, building on your stack.
+            {t("sponsorDeck.hero.proof")}
           </motion.p>
 
           <motion.div
@@ -104,7 +110,7 @@ function DeckHero() {
               asChild
             >
               <a href="#tiers">
-                View Sponsorship Tiers
+                {t("sponsorDeck.hero.ctaPrimary")}
                 <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
@@ -115,7 +121,7 @@ function DeckHero() {
               asChild
             >
               <a href="#contact">
-                Get in Touch
+                {t("sponsorDeck.hero.ctaSecondary")}
               </a>
             </Button>
           </motion.div>
@@ -126,7 +132,7 @@ function DeckHero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-sm text-muted-foreground"
           >
-            Cohort 1 · May–June 2026 · frutero.club
+            {t("sponsorDeck.hero.cohortLine")}
           </motion.p>
         </div>
       </div>
@@ -153,42 +159,41 @@ function DeckHero() {
 
 /* ─────────────────────── 2. THE OPPORTUNITY ─────────────────────── */
 
-const opportunityStats = [
-  {
-    value: "50",
-    label: "operators per cohort",
-    description:
-      "Professionals, founders, and business owners who decide what tools their teams adopt",
-  },
-  {
-    value: "100%",
-    label: "powered by your infra",
-    description:
-      "Your technology runs under the hood — every agent uses your stack through the platform",
-  },
-  {
-    value: "1st",
-    label: "in LATAM · in Spanish",
-    description:
-      "No comparable program exists. You define the category, not compete in it",
-  },
-];
-
 function OpportunitySection() {
+  const { t } = useTranslation();
+
+  const opportunityStats = [
+    {
+      value: t("sponsorDeck.opportunity.stats.0.value"),
+      label: t("sponsorDeck.opportunity.stats.0.label"),
+      description: t("sponsorDeck.opportunity.stats.0.description"),
+    },
+    {
+      value: t("sponsorDeck.opportunity.stats.1.value"),
+      label: t("sponsorDeck.opportunity.stats.1.label"),
+      description: t("sponsorDeck.opportunity.stats.1.description"),
+    },
+    {
+      value: t("sponsorDeck.opportunity.stats.2.value"),
+      label: t("sponsorDeck.opportunity.stats.2.label"),
+      description: t("sponsorDeck.opportunity.stats.2.description"),
+    },
+  ];
+
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal className="text-center mb-4">
             <span className="text-overline font-semibold text-warning tracking-[0.1em] uppercase">
-              The Opportunity
+              {t("sponsorDeck.opportunity.overline")}
             </span>
           </ScrollReveal>
           <ScrollReveal className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold">
-              Category leadership in the emerging{" "}
+              {t("sponsorDeck.opportunity.title")}{" "}
               <span className="text-primary font-serif italic text-[1.05em]">
-                LATAM AI agent operator market.
+                {t("sponsorDeck.opportunity.titleAccent")}
               </span>
             </h2>
           </ScrollReveal>
@@ -224,36 +229,38 @@ function OpportunitySection() {
 /* ─────────────────────── 3. WHAT IS AGENTCAMP ─────────────────────── */
 
 const weekIcons = [Zap, Brain, Link2, Settings, Rocket];
-const weekData = [
-  {
-    num: "Week 1", title: "Activate", tagline: '"Your first agent, running from day one"',
-    learnings: ["Agent environment setup & first run", "Prompt engineering fundamentals", "Context and instruction design"],
-    project: { name: "First Working Agent", input: "your use case + AI-assisted setup", output: "an active agent solving a real task" },
-  },
-  {
-    num: "Week 2", title: "Architect", tagline: '"How your agent thinks and learns new skills"',
-    learnings: ["Bootstrap, memory, and context layers", "Skills framework with OpenClaw", "The difference between a chatbot and a real agent"],
-    project: { name: "Agent with Architecture", input: "functional skills + memory", output: "an agent with its own architecture" },
-  },
-  {
-    num: "Week 3", title: "Connect", tagline: '"Your agent touches the real world"',
-    learnings: ["Integration with real tools and files", "Persistent identity setup", "Workspace and environment configuration"],
-    project: { name: "Live Integrations", input: "tools, files, identity layer", output: "real integrations + active identity" },
-  },
-  {
-    num: "Week 4", title: "Automate", tagline: '"Workflows that run without you"',
-    learnings: ["Workflow design and automation", "Agent economics and payment rails", "Human-in-the-loop patterns"],
-    project: { name: "Autonomous Workflow", input: "real case + economic capability", output: "a workflow solving real work" },
-  },
-  {
-    num: "Week 5", title: "Launch", tagline: '"Iterate, prove, and present"',
-    learnings: ["Evaluation and iteration", "Reputation and public track record", "Demo Day preparation"],
-    project: { name: "Capstone at Demo Day", input: "recorded demo + real metrics", output: "documented case + public reputation" },
-  },
-];
 
 function WhatIsSection() {
+  const { t } = useTranslation();
   const [openWeek, setOpenWeek] = useState<number | null>(1);
+
+  const weekData = [
+    {
+      num: t("sponsorDeck.whatIs.weeks.0.num"), title: t("sponsorDeck.whatIs.weeks.0.title"), tagline: t("sponsorDeck.whatIs.weeks.0.tagline"),
+      learnings: t("sponsorDeck.whatIs.weeks.0.learnings", { returnObjects: true }) as string[],
+      project: { name: t("sponsorDeck.whatIs.weeks.0.projectName"), input: t("sponsorDeck.whatIs.weeks.0.projectInput"), output: t("sponsorDeck.whatIs.weeks.0.projectOutput") },
+    },
+    {
+      num: t("sponsorDeck.whatIs.weeks.1.num"), title: t("sponsorDeck.whatIs.weeks.1.title"), tagline: t("sponsorDeck.whatIs.weeks.1.tagline"),
+      learnings: t("sponsorDeck.whatIs.weeks.1.learnings", { returnObjects: true }) as string[],
+      project: { name: t("sponsorDeck.whatIs.weeks.1.projectName"), input: t("sponsorDeck.whatIs.weeks.1.projectInput"), output: t("sponsorDeck.whatIs.weeks.1.projectOutput") },
+    },
+    {
+      num: t("sponsorDeck.whatIs.weeks.2.num"), title: t("sponsorDeck.whatIs.weeks.2.title"), tagline: t("sponsorDeck.whatIs.weeks.2.tagline"),
+      learnings: t("sponsorDeck.whatIs.weeks.2.learnings", { returnObjects: true }) as string[],
+      project: { name: t("sponsorDeck.whatIs.weeks.2.projectName"), input: t("sponsorDeck.whatIs.weeks.2.projectInput"), output: t("sponsorDeck.whatIs.weeks.2.projectOutput") },
+    },
+    {
+      num: t("sponsorDeck.whatIs.weeks.3.num"), title: t("sponsorDeck.whatIs.weeks.3.title"), tagline: t("sponsorDeck.whatIs.weeks.3.tagline"),
+      learnings: t("sponsorDeck.whatIs.weeks.3.learnings", { returnObjects: true }) as string[],
+      project: { name: t("sponsorDeck.whatIs.weeks.3.projectName"), input: t("sponsorDeck.whatIs.weeks.3.projectInput"), output: t("sponsorDeck.whatIs.weeks.3.projectOutput") },
+    },
+    {
+      num: t("sponsorDeck.whatIs.weeks.4.num"), title: t("sponsorDeck.whatIs.weeks.4.title"), tagline: t("sponsorDeck.whatIs.weeks.4.tagline"),
+      learnings: t("sponsorDeck.whatIs.weeks.4.learnings", { returnObjects: true }) as string[],
+      project: { name: t("sponsorDeck.whatIs.weeks.4.projectName"), input: t("sponsorDeck.whatIs.weeks.4.projectInput"), output: t("sponsorDeck.whatIs.weeks.4.projectOutput") },
+    },
+  ];
 
   return (
     <section className="py-24 bg-card/50">
@@ -261,14 +268,14 @@ function WhatIsSection() {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal className="text-center mb-4">
             <span className="text-overline font-semibold text-warning tracking-[0.1em] uppercase">
-              What Is AgentCamp
+              {t("sponsorDeck.whatIs.overline")}
             </span>
           </ScrollReveal>
           <ScrollReveal className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold">
-              A 5-week practical program where{" "}
+              {t("sponsorDeck.whatIs.title")}{" "}
               <span className="text-primary font-serif italic text-[1.05em]">
-                participants build real AI agents.
+                {t("sponsorDeck.whatIs.titleAccent")}
               </span>
             </h2>
           </ScrollReveal>
@@ -326,7 +333,7 @@ function WhatIsSection() {
                             {/* Learnings */}
                             <div>
                               <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
-                                What you learn
+                                {t("sponsorDeck.whatIs.whatYouLearn")}
                               </h4>
                               <ul className="space-y-3">
                                 {week.learnings.map((learning, i) => (
@@ -341,14 +348,14 @@ function WhatIsSection() {
                             {/* Project */}
                             <div className="rounded-xl bg-gradient-to-br from-surface/80 to-surface/40 border border-border/50 p-5">
                               <h4 className="font-semibold mb-4 text-sm uppercase tracking-wide text-muted-foreground">
-                                What you build
+                                {t("sponsorDeck.whatIs.whatYouBuild")}
                               </h4>
                               <p className="text-primary font-semibold mb-3">→ {week.project.name}</p>
                               <p className="text-sm text-muted-foreground">
-                                <span className="text-foreground/70">Input:</span> {week.project.input}
+                                <span className="text-foreground/70">{t("sponsorDeck.whatIs.input")}</span> {week.project.input}
                               </p>
                               <p className="text-sm text-muted-foreground mt-1">
-                                <span className="text-foreground/70">Output:</span> {week.project.output}
+                                <span className="text-foreground/70">{t("sponsorDeck.whatIs.output")}</span> {week.project.output}
                               </p>
                             </div>
                           </div>
@@ -367,9 +374,9 @@ function WhatIsSection() {
               <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/15 transition-colors duration-700" />
               <div className="relative z-10 text-center">
                 <p className="text-lg md:text-xl text-foreground-body leading-relaxed">
-                  Every graduate leaves with:{" "}
+                  {t("sponsorDeck.whatIs.graduation")}{" "}
                   <span className="font-semibold text-foreground">
-                    a working agent with its own identity, workflows that transact, and a verified track record.
+                    {t("sponsorDeck.whatIs.graduationBold")}
                   </span>
                 </p>
               </div>
@@ -383,44 +390,48 @@ function WhatIsSection() {
 
 /* ─────────────────────── 4. THE AUDIENCE ─────────────────────── */
 
-const audienceTraits = [
-  {
-    icon: Crown,
-    title: "Operators & decision-makers",
-    desc: "Managers, consultants, founders, business owners — the people who decide what tools their teams adopt.",
-  },
-  {
-    icon: Brain,
-    title: "AI-active, not AI-curious",
-    desc: "They've tried ChatGPT and Claude. They're frustrated nothing sticks. They're ready to invest in learning.",
-  },
-  {
-    icon: Globe,
-    title: "Spanish-speaking LATAM",
-    desc: "The fastest-growing market for AI adoption. No comparable program exists in Spanish.",
-  },
-  {
-    icon: Users,
-    title: "Downstream influence",
-    desc: "These aren't junior developers — they bring tools back to their teams, companies, and clients.",
-  },
-];
+const audienceIcons = [Crown, Brain, Globe, Users];
 
 function AudienceSection() {
+  const { t } = useTranslation();
+
+  const audienceTraits = [
+    {
+      icon: audienceIcons[0],
+      title: t("sponsorDeck.audience.traits.0.title"),
+      desc: t("sponsorDeck.audience.traits.0.desc"),
+    },
+    {
+      icon: audienceIcons[1],
+      title: t("sponsorDeck.audience.traits.1.title"),
+      desc: t("sponsorDeck.audience.traits.1.desc"),
+    },
+    {
+      icon: audienceIcons[2],
+      title: t("sponsorDeck.audience.traits.2.title"),
+      desc: t("sponsorDeck.audience.traits.2.desc"),
+    },
+    {
+      icon: audienceIcons[3],
+      title: t("sponsorDeck.audience.traits.3.title"),
+      desc: t("sponsorDeck.audience.traits.3.desc"),
+    },
+  ];
+
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal className="text-center mb-4">
             <span className="text-overline font-semibold text-warning tracking-[0.1em] uppercase">
-              The Audience
+              {t("sponsorDeck.audience.overline")}
             </span>
           </ScrollReveal>
           <ScrollReveal className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold">
-              50 high-intent operators who will{" "}
+              {t("sponsorDeck.audience.title")}{" "}
               <span className="text-primary font-serif italic text-[1.05em]">
-                actively build on your infrastructure.
+                {t("sponsorDeck.audience.titleAccent")}
               </span>
             </h2>
           </ScrollReveal>
@@ -454,35 +465,37 @@ function AudienceSection() {
 
 /* ─────────────────────── 5. HOW SPONSORSHIP WORKS ─────────────────────── */
 
-const sponsorshipLayers = [
-  { icon: Fingerprint, layer: "Identity", when: "Week 3", what: "Every agent gets persistent identity — your wallet infrastructure powers it" },
-  { icon: Wallet, layer: "Payments", when: "Week 4", what: "Every workflow gets an economic layer — your payment rails handle settlement" },
-  { icon: Award, layer: "Reputation", when: "Week 5", what: "Agent track records verified at Demo Day — your protocol is the proof layer" },
-  { icon: Brain, layer: "Intelligence", when: "W1–5", what: "Your models power every agent built in the program — 50 agents running daily" },
-  { icon: Server, layer: "Environment", when: "W1–5", what: "The platform where participants live for 5 weeks — your brand is the workspace" },
-];
+const layerIcons = [Fingerprint, Wallet, Award, Brain, Server];
 
 function HowItWorksSection() {
+  const { t } = useTranslation();
+
+  const sponsorshipLayers = [
+    { icon: layerIcons[0], layer: t("sponsorDeck.howItWorks.layers.0.layer"), when: t("sponsorDeck.howItWorks.layers.0.when"), what: t("sponsorDeck.howItWorks.layers.0.what") },
+    { icon: layerIcons[1], layer: t("sponsorDeck.howItWorks.layers.1.layer"), when: t("sponsorDeck.howItWorks.layers.1.when"), what: t("sponsorDeck.howItWorks.layers.1.what") },
+    { icon: layerIcons[2], layer: t("sponsorDeck.howItWorks.layers.2.layer"), when: t("sponsorDeck.howItWorks.layers.2.when"), what: t("sponsorDeck.howItWorks.layers.2.what") },
+    { icon: layerIcons[3], layer: t("sponsorDeck.howItWorks.layers.3.layer"), when: t("sponsorDeck.howItWorks.layers.3.when"), what: t("sponsorDeck.howItWorks.layers.3.what") },
+    { icon: layerIcons[4], layer: t("sponsorDeck.howItWorks.layers.4.layer"), when: t("sponsorDeck.howItWorks.layers.4.when"), what: t("sponsorDeck.howItWorks.layers.4.what") },
+  ];
+
   return (
     <section className="py-24 bg-card/50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <ScrollReveal className="text-center mb-4">
             <span className="text-overline font-semibold text-warning tracking-[0.1em] uppercase">
-              How Sponsorship Works
+              {t("sponsorDeck.howItWorks.overline")}
             </span>
           </ScrollReveal>
           <ScrollReveal className="text-center mb-6">
             <h2 className="text-3xl md:text-4xl font-semibold">
-              Your technology powers{" "}
-              <span className="text-primary font-serif italic text-[1.05em]">what they build.</span>
+              {t("sponsorDeck.howItWorks.title")}{" "}
+              <span className="text-primary font-serif italic text-[1.05em]">{t("sponsorDeck.howItWorks.titleAccent")}</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal className="text-center mb-16">
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Participants don't configure your infrastructure directly — the platform abstracts that.
-              Every agent they build runs on your stack. Your brand is associated with the capabilities
-              that make their agents real.
+              {t("sponsorDeck.howItWorks.subtitle")}
             </p>
           </ScrollReveal>
 
@@ -583,79 +596,52 @@ function TierCard({ overline, price, subtitle, perks, icon: Icon, featured, note
 }
 
 function TiersSection() {
+  const { t } = useTranslation();
+
   return (
     <section id="tiers" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal className="text-center mb-16">
             <span className="text-overline font-semibold text-warning tracking-[0.1em] uppercase block mb-4">
-              Sponsorship Tiers
+              {t("sponsorDeck.tiers.overline")}
             </span>
             <h2 className="text-3xl md:text-4xl font-semibold">
-              Choose your level of{" "}
-              <span className="text-primary font-serif italic text-[1.05em]">partnership.</span>
+              {t("sponsorDeck.tiers.title")}{" "}
+              <span className="text-primary font-serif italic text-[1.05em]">{t("sponsorDeck.tiers.titleAccent")}</span>
             </h2>
           </ScrollReveal>
 
           <div className="grid md:grid-cols-2 gap-8">
             <TierCard
-              overline="Founding Partner"
-              price="$5,000 USD"
-              subtitle="2–3 slots available · Category exclusive"
+              overline={t("sponsorDeck.tiers.founding.overline")}
+              price={t("sponsorDeck.tiers.founding.price")}
+              subtitle={t("sponsorDeck.tiers.founding.subtitle")}
               icon={Crown}
               featured
-              perks={[
-                "Category exclusivity — only one identity partner, one payments partner, one intelligence partner",
-                "Your technology powers the agent infrastructure every participant uses throughout the program",
-                "Named in curriculum materials and sessions — participants learn what your tech enables",
-                "Demo Day presenting sponsor — your brand introduces the capstone presentations",
-                "Co-marketing rights: case studies, testimonials, video content from Demo Day",
-                "Logo on all materials: landing page, emails, recordings, certificates",
-                "Post-program: graduates continue on the platform, which continues running on your stack",
-                "First right of refusal for future cohorts",
-              ]}
+              perks={t("sponsorDeck.tiers.founding.perks", { returnObjects: true }) as string[]}
             />
             <TierCard
-              overline="Infrastructure Partner"
-              price="$2,500 USD"
-              subtitle="3–5 slots available"
+              overline={t("sponsorDeck.tiers.infrastructure.overline")}
+              price={t("sponsorDeck.tiers.infrastructure.price")}
+              subtitle={t("sponsorDeck.tiers.infrastructure.subtitle")}
               icon={Building2}
-              perks={[
-                "Named in curriculum — your technology referenced as infrastructure powering agent capabilities",
-                "Demo Day access — attend, network, evaluate capstones",
-                "Logo on landing page, emails, and recordings",
-                "Community access — direct channel to AgentCamp graduates",
-                "Co-marketing: shared social content and participant highlights",
-                "Post-program: graduates continue on the platform running on your stack",
-              ]}
+              perks={t("sponsorDeck.tiers.infrastructure.perks", { returnObjects: true }) as string[]}
             />
             <TierCard
-              overline="Startup Partner"
-              price="$1,000 USD"
-              subtitle="Open slots · Credits and in-kind support do not count toward the fee"
+              overline={t("sponsorDeck.tiers.startup.overline")}
+              price={t("sponsorDeck.tiers.startup.price")}
+              subtitle={t("sponsorDeck.tiers.startup.subtitle")}
               icon={Rocket}
-              perks={[
-                "Named as supporting partner in program materials",
-                "Demo Day access — attend, network, evaluate capstones",
-                "Logo on landing page and recordings",
-                "Community access — direct channel to AgentCamp graduates",
-                "Co-marketing: shared social content and participant highlights",
-                "Optional: provide API credits or tooling for participants (in addition to fee, not instead of)",
-              ]}
+              perks={t("sponsorDeck.tiers.startup.perks", { returnObjects: true }) as string[]}
             />
             <TierCard
-              overline="Community Partner"
-              price="No fee"
-              subtitle="For communities, DAOs, collectives, and ecosystem groups — not companies"
+              overline={t("sponsorDeck.tiers.community.overline")}
+              price={t("sponsorDeck.tiers.community.price")}
+              subtitle={t("sponsorDeck.tiers.community.subtitle")}
               icon={Heart}
-              perks={[
-                "Cross-promote AgentCamp to your community — we promote yours to ours",
-                "Co-host a session, AMA, or workshop during the program",
-                "Logo on landing page as community partner",
-                "Demo Day invitation for your community leads",
-                "Shared content: social co-promotion, recaps, highlights",
-              ]}
-              note="This tier is for builder communities, DAOs, developer collectives, and ecosystem groups that want to cross-pollinate audiences. Companies and startups should see the paid tiers."
+              perks={t("sponsorDeck.tiers.community.perks", { returnObjects: true }) as string[]}
+              note={t("sponsorDeck.tiers.community.note")}
             />
           </div>
         </div>
@@ -668,20 +654,29 @@ function TiersSection() {
 
 type CellValue = boolean | string;
 
-const comparisonRows: { feature: string; founding: CellValue; infra: CellValue; startup: CellValue; community: CellValue }[] = [
-  { feature: "Category exclusivity", founding: true, infra: false, startup: false, community: false },
-  { feature: "Powers agent infrastructure", founding: true, infra: true, startup: false, community: false },
-  { feature: "Named in curriculum", founding: true, infra: true, startup: false, community: false },
-  { feature: "Demo Day presenting sponsor", founding: true, infra: false, startup: false, community: false },
-  { feature: "Demo Day access", founding: true, infra: true, startup: true, community: true },
-  { feature: "Logo on all materials", founding: true, infra: true, startup: true, community: true },
-  { feature: "Co-marketing rights", founding: "Full", infra: "Social", startup: "Social", community: "Cross-promo" },
-  { feature: "Post-program platform", founding: true, infra: true, startup: false, community: false },
-  { feature: "Community cross-promotion", founding: true, infra: true, startup: true, community: true },
-  { feature: "First refusal future cohorts", founding: true, infra: false, startup: false, community: false },
-];
-
 function ComparisonSection() {
+  const { t } = useTranslation();
+  const features = t("sponsorDeck.comparison.features", { returnObjects: true }) as string[];
+  const coMarketing = {
+    founding: t("sponsorDeck.comparison.coMarketing.founding"),
+    infra: t("sponsorDeck.comparison.coMarketing.infra"),
+    startup: t("sponsorDeck.comparison.coMarketing.startup"),
+    community: t("sponsorDeck.comparison.coMarketing.community"),
+  };
+
+  const comparisonRows: { feature: string; founding: CellValue; infra: CellValue; startup: CellValue; community: CellValue }[] = [
+    { feature: features[0], founding: true, infra: false, startup: false, community: false },
+    { feature: features[1], founding: true, infra: true, startup: false, community: false },
+    { feature: features[2], founding: true, infra: true, startup: false, community: false },
+    { feature: features[3], founding: true, infra: false, startup: false, community: false },
+    { feature: features[4], founding: true, infra: true, startup: true, community: true },
+    { feature: features[5], founding: true, infra: true, startup: true, community: true },
+    { feature: features[6], founding: coMarketing.founding, infra: coMarketing.infra, startup: coMarketing.startup, community: coMarketing.community },
+    { feature: features[7], founding: true, infra: true, startup: false, community: false },
+    { feature: features[8], founding: true, infra: true, startup: true, community: true },
+    { feature: features[9], founding: true, infra: false, startup: false, community: false },
+  ];
+
   const renderCell = (value: CellValue) => {
     if (typeof value === "string") {
       return <span className="text-sm text-foreground-body">{value}</span>;
@@ -698,7 +693,7 @@ function ComparisonSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-semibold">Tier Comparison</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold">{t("sponsorDeck.comparison.title")}</h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
@@ -708,24 +703,24 @@ function ComparisonSection() {
                   <tr className="border-b border-border">
                     <th className="text-left py-4 pr-4 text-muted-foreground font-semibold" />
                     <th className="text-center py-4 px-3">
-                      <span className="text-primary font-semibold">Founding</span>
+                      <span className="text-primary font-semibold">{t("sponsorDeck.comparison.founding")}</span>
                       <br />
                       <span className="text-xs text-warning font-mono">$5,000</span>
                     </th>
                     <th className="text-center py-4 px-3">
-                      <span className="font-semibold">Infra</span>
+                      <span className="font-semibold">{t("sponsorDeck.comparison.infra")}</span>
                       <br />
                       <span className="text-xs text-warning font-mono">$2,500</span>
                     </th>
                     <th className="text-center py-4 px-3">
-                      <span className="font-semibold">Startup</span>
+                      <span className="font-semibold">{t("sponsorDeck.comparison.startup")}</span>
                       <br />
                       <span className="text-xs text-warning font-mono">$1,000</span>
                     </th>
                     <th className="text-center py-4 px-3">
-                      <span className="font-semibold">Community</span>
+                      <span className="font-semibold">{t("sponsorDeck.comparison.community")}</span>
                       <br />
-                      <span className="text-xs text-muted-foreground font-mono">No fee</span>
+                      <span className="text-xs text-muted-foreground font-mono">{t("sponsorDeck.comparison.noFee")}</span>
                     </th>
                   </tr>
                 </thead>
@@ -754,26 +749,27 @@ function ComparisonSection() {
 
 /* ─────────────────────── 11. TIMELINE ─────────────────────── */
 
-const timelineItems = [
-  { when: "Now", what: "Partner commitments confirmed" },
-  { when: "April 25", what: "Partner logos and materials finalized" },
-  { when: "May 4", what: "Cohort 1 starts — 50 participants begin building" },
-  { when: "May–Jun", what: "5 weeks of live sessions — your tech powers the infrastructure" },
-  { when: "June 7", what: "Demo Day — capstone presentations, sponsor judges, public event" },
-  { when: "June 17", what: "Godínez.AI public launch — graduates arrive with working agents" },
-  { when: "June+", what: "Post-program: case studies, testimonials, pipeline activation" },
-];
-
 function TimelineSection() {
+  const { t } = useTranslation();
+
+  const timelineItems = [
+    { when: t("sponsorDeck.timeline.items.0.when"), what: t("sponsorDeck.timeline.items.0.what") },
+    { when: t("sponsorDeck.timeline.items.1.when"), what: t("sponsorDeck.timeline.items.1.what") },
+    { when: t("sponsorDeck.timeline.items.2.when"), what: t("sponsorDeck.timeline.items.2.what") },
+    { when: t("sponsorDeck.timeline.items.3.when"), what: t("sponsorDeck.timeline.items.3.what") },
+    { when: t("sponsorDeck.timeline.items.4.when"), what: t("sponsorDeck.timeline.items.4.what") },
+    { when: t("sponsorDeck.timeline.items.5.when"), what: t("sponsorDeck.timeline.items.5.what") },
+  ];
+
   return (
-    <section className="py-24 bg-background">
+    <section id="timeline" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <ScrollReveal className="text-center mb-16">
             <span className="text-overline font-semibold text-warning tracking-[0.1em] uppercase block mb-4">
-              Timeline
+              {t("sponsorDeck.timeline.overline")}
             </span>
-            <h2 className="text-3xl md:text-4xl font-semibold">Key dates</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold">{t("sponsorDeck.timeline.title")}</h2>
           </ScrollReveal>
 
           <StaggerContainer className="relative">
@@ -808,43 +804,47 @@ function TimelineSection() {
 
 /* ─────────────────────── 12. WHY COHORT 1 ─────────────────────── */
 
-const whyCohort1 = [
-  {
-    icon: Globe,
-    title: "First-mover in LATAM AI agents",
-    desc: "No comparable program exists in Spanish. You're defining the category, not competing in it.",
-  },
-  {
-    icon: Sparkles,
-    title: "Curriculum integration, not afterthought",
-    desc: "Cohort 1 partners co-design how their technology is taught. Later cohorts inherit your structure.",
-  },
-  {
-    icon: Users,
-    title: "50 operators → organic growth",
-    desc: "Each graduate becomes an advocate in their team, company, and network. 50 operators seed hundreds of users.",
-  },
-  {
-    icon: Calendar,
-    title: "Godínez.AI launch alignment",
-    desc: "Cohort 1 graduates arrive on launch day (June 17) with working agents. Your infrastructure is what they're built on.",
-  },
-];
+const whyCohort1Icons = [Globe, Sparkles, Users, Calendar];
 
 function WhyCohort1Section() {
+  const { t } = useTranslation();
+
+  const whyCohort1 = [
+    {
+      icon: whyCohort1Icons[0],
+      title: t("sponsorDeck.whyCohort1.items.0.title"),
+      desc: t("sponsorDeck.whyCohort1.items.0.desc"),
+    },
+    {
+      icon: whyCohort1Icons[1],
+      title: t("sponsorDeck.whyCohort1.items.1.title"),
+      desc: t("sponsorDeck.whyCohort1.items.1.desc"),
+    },
+    {
+      icon: whyCohort1Icons[2],
+      title: t("sponsorDeck.whyCohort1.items.2.title"),
+      desc: t("sponsorDeck.whyCohort1.items.2.desc"),
+    },
+    {
+      icon: whyCohort1Icons[3],
+      title: t("sponsorDeck.whyCohort1.items.3.title"),
+      desc: t("sponsorDeck.whyCohort1.items.3.desc"),
+    },
+  ];
+
   return (
     <section className="py-24 bg-card/50">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <ScrollReveal className="text-center mb-4">
             <span className="text-overline font-semibold text-warning tracking-[0.1em] uppercase">
-              Why Cohort 1
+              {t("sponsorDeck.whyCohort1.overline")}
             </span>
           </ScrollReveal>
           <ScrollReveal className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-semibold">
-              Founding partners shape{" "}
-              <span className="text-primary font-serif italic text-[1.05em]">the program.</span>
+              {t("sponsorDeck.whyCohort1.title")}{" "}
+              <span className="text-primary font-serif italic text-[1.05em]">{t("sponsorDeck.whyCohort1.titleAccent")}</span>
             </h2>
           </ScrollReveal>
 
@@ -878,6 +878,8 @@ function WhyCohort1Section() {
 /* ─────────────────────── 13. CONTACT CTA ─────────────────────── */
 
 function ContactSection() {
+  const { t } = useTranslation();
+
   return (
     <section id="contact" className="py-24 bg-background relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
@@ -896,51 +898,24 @@ function ContactSection() {
         <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal>
             <h2 className="text-3xl md:text-5xl font-semibold leading-[1.1] tracking-[-0.01em] mb-6">
-              Let's build the first generation{" "}
+              {t("sponsorDeck.contact.title")}{" "}
               <span className="text-primary font-serif italic text-[1.1em]">
-                of agent operators together.
+                {t("sponsorDeck.contact.titleAccent")}
               </span>
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.1}>
             <p className="text-lg text-muted-foreground mb-2">
-              AgentCamp Cohort 1 · May–June 2026
+              {t("sponsorDeck.contact.subtitle")}
             </p>
             <p className="text-sm text-muted-foreground mb-10">
-              frutero.club
+              {t("sponsorDeck.contact.frutero")}
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <motion.div
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <Button
-                  size="lg"
-                  className="bg-primary hover:bg-primary-hover transition-all duration-300 hover:-translate-y-1 px-[30px] py-[15px] text-[17px] font-semibold group animate-pulse-glow rounded-[10px]"
-                  asChild
-                >
-                  <a href="mailto:mel@frutero.club">
-                    <Mail className="mr-2 w-5 h-5" />
-                    Get in Touch
-                  </a>
-                </Button>
-              </motion.div>
-              <Button
-                variant="ghost"
-                size="lg"
-                className="text-muted-foreground hover:text-foreground px-[30px] py-[15px] text-[17px]"
-                asChild
-              >
-                <a href="https://frutero.club" target="_blank" rel="noopener noreferrer">
-                  Visit frutero.club
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </a>
-              </Button>
-            </div>
+            <SponsorIntakeForm />
           </ScrollReveal>
         </div>
       </div>
@@ -951,6 +926,8 @@ function ContactSection() {
 /* ─────────────────────── DECK FOOTER ─────────────────────── */
 
 function DeckFooter() {
+  const { t } = useTranslation();
+
   return (
     <footer className="py-12 bg-background border-t border-border">
       <div className="container mx-auto px-4">
@@ -959,16 +936,16 @@ function DeckFooter() {
             <div className="flex items-center gap-3">
               <img
                 src="/godinez-logo.svg"
-                alt="Godínez.AI"
+                alt="Godinez.AI"
                 className="h-10 w-auto"
                 width="120"
                 height="40"
               />
               <span className="font-semibold text-foreground">AgentCamp</span>
-              <span className="text-muted-foreground text-sm">· Sponsorship Deck</span>
+              <span className="text-muted-foreground text-sm">{t("sponsorDeck.deckFooter.sponsorshipDeck")}</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              © 2026 Frutero. All rights reserved.
+              {t("sponsorDeck.deckFooter.copyright")}
             </p>
           </div>
         </div>
@@ -981,8 +958,9 @@ function DeckFooter() {
 
 const SponsorshipDeck = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <main>
+    <div id="top" className="min-h-screen bg-background">
+      <SponsorshipDeckNavbar />
+      <main id="main-content">
         <DeckHero />
         <OpportunitySection />
         <WhatIsSection />

@@ -193,7 +193,7 @@ You build agents that remember, transact, prove their work, and run when you're 
 
 ---
 
-## 12. Demo Day · June 7
+## 12. Demo Day · June 10
 
 The program closes with a public presentation of capstones in front of community, sponsors, and ecosystem guests.
 
