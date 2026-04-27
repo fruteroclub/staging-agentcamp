@@ -32,6 +32,9 @@ cd agentcamp-landing
 # Install dependencies
 pnpm install
 
+# Configure local checkout integration
+cp .env.example .env.local
+
 # Start development server (runs on http://localhost:8080)
 pnpm dev
 
@@ -73,6 +76,26 @@ src/
 ```
 
 ### Customization
+
+### AgentCamp Checkout Integration
+
+The landing app starts checkout by posting to the Godínez Studio API.
+
+For local testing:
+
+```sh
+cp .env.example .env.local
+```
+
+Set:
+
+```sh
+VITE_GODINEZ_STUDIO_CHECKOUT_URL=http://localhost:3001/api/agentcamp/checkout
+```
+
+The corresponding local Studio API must allow `http://localhost:8080` in `CORS_ORIGIN` and have the `AGENTCAMP_*` Stripe env vars configured.
+
+For the full local manual test flow, including the `godinez-studio` API server and Stripe webhook forwarding, see [docs/dev/local-agentcamp-manual-testing.md](docs/dev/local-agentcamp-manual-testing.md).
 
 **Updating Content:**
 - Landing sections are in `src/components/landing/`
