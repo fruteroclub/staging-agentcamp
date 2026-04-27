@@ -167,7 +167,7 @@ You build agents that remember, transact, prove their work, and run when you're 
 
 ---
 
-## Demo Day · June 7
+## Demo Day · June 10
 
 The program closes with a public presentation of capstones in front of community, sponsors, and ecosystem guests.
 
@@ -406,7 +406,7 @@ For communities, DAOs, collectives, and ecosystem groups — not companies
 - **April 25** — Partner logos and materials finalized
 - **May 11** — Cohort 1 starts — 50 participants begin building
 - **May–Jun** — 5 weeks of live sessions — your tech powers the infrastructure
-- **June 7** — Demo Day — capstone presentations, sponsor judges, public event
+- **June 10** — Demo Day — capstone presentations, sponsor judges, public event
 - **June 17** — Godínez.AI public launch — graduates arrive with working agents
 - **June+** — Post-program: case studies, testimonials, pipeline activation
 

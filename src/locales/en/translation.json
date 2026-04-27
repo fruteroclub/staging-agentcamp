@@ -33,11 +33,37 @@
   "painPoints": {
     "title": "You've tried ChatGPT, Claude, Copilot and 17 other tools. You're still doing everything yourself.",
     "body": "The problem isn't AI. It's the gap between opening a tool and having a system that works for you.",
-    "extendedBody": "You've built prompts that work once and break the next day. You've duct-taped Zapier to GPT to Google Sheets and called it \"automation.\" You've spent more time configuring tools than doing the work they were supposed to handle.",
-    "bridge": "AgentCamp exists to close that gap."
+    "items": {
+      "0": {
+        "title": "Prompts that do not scale",
+        "description": "Not enough architecture. It works once, then breaks tomorrow."
+      },
+      "1": {
+        "title": "Tools held together with duct tape",
+        "description": "Not enough system. You stitch apps together, but the work still depends on you."
+      },
+      "2": {
+        "title": "More exploring than operating",
+        "description": "Not enough real output. You learn features, but you don't build operations."
+      },
+      "3": {
+        "title": "Knowledge without execution",
+        "description": "Not enough implementation. You take classes, but leave without anything running."
+      }
+    },
+    "close": {
+      "eyebrow": "You do not need another tool",
+      "title": "You need a system that works for you.",
+      "body": "AgentCamp does not leave you with more prompts or more theory. You leave with a working agent, connected to your tools, with real deliverables and a Demo Day finish."
+    },
+    "validation": {
+      "0": "A working agent + 5 functional workflows tied to real work",
+      "1": "Capstone presented at Demo Day with a recorded demo and real metrics",
+      "2": "Certification credential backed by real implementations"
+    }
   },
   "whatIs": {
-    "title": "It's not a course. It's a program to build agents that operate.",
+    "title": "It's not just a course. It's a certification for building agents that operate.",
     "columns": {
       "0": {
         "title": "Build",
@@ -176,20 +202,40 @@
   "outcomes": {
     "title": "What You Leave With",
     "items": {
-      "0": "An agent that works for you — with memory, identity, and real integrations to your tools",
-      "1": "A workflow running real work without you — that can charge, pay, and prove what it's done",
-      "2": "A capstone at Demo Day — recorded demo, real metrics, verified track record, documented case"
+      "0": "An agent working for you — with memory, identity, real integrations, and 5 functional workflows",
+      "1": "A capstone at Demo Day — recorded demo, real metrics, verified track record, and a documented case",
+      "2": "A certification backed by real implementations, not attendance"
     },
-    "closingLine": "Everything. For every graduate. No tiers, no \"if you get there.\""
+    "valueCta": {
+      "eyebrow": "Real value",
+      "intro": "A program with",
+      "totalValue": "$2,100+ USD",
+      "outro": "within reach for",
+      "price": "$300 USD",
+      "priceNote": "(first 20 spots)",
+      "title": "What's included",
+      "items": {
+        "0": "Certification · $1,500+ USD",
+        "1": "2-month Godínez.AI subscription · Personal Agent · $600 USD",
+        "2": "Office hours",
+        "3": "Community access"
+      },
+      "cta": "I want my spot"
+    }
   },
   "instructors": {
     "title": "Who Built This",
     "founder": {
       "name": "Ángel Meléndez Córdoba",
       "role": "Founder, Frutero",
-      "bio": "Implemented tech solutions in 30+ hospitals. Delivered workshops to 5,000+ developers. Grew a crypto project from 300 to 23,000+ users. Now building Godínez.AI and training the first generation of agent operators in Latin America."
+      "proof": {
+        "0": "Implemented tech solutions in 30+ hospitals",
+        "1": "As an AWS Champion, led SAP migrations that cut costs by 80%",
+        "2": "Grew Regen.Tips from 300 to 23,000+ users",
+        "3": "Has trained 5,000+ builders as a Developer Relations Lead Engineer"
+      }
     },
-    "frutero": "AgentCamp is built by Frutero — 500+ builders, multiple programs shipped, and one of the most active Spanish-speaking builder communities in the Frontier Tech space."
+    "footer": "From Frutero — 500+ builders and multiple programs launched — now building Godínez.AI and training the first generation of agent operators in LATAM."
   },
   "socialProof": {
     "foundingCohort": "Founding cohort — 50 spots for the first generation of Agent Operators."
@@ -215,10 +261,10 @@
   },
   "manifesto": {
     "title": "Serious agents don't live in a sandbox.",
-    "body": "You build agents that remember, transact, prove their work, and run when you're not watching. That's the standard here."
+    "body": "Here, certification is earned by building: a working agent, real workflows, and a capstone backed by evidence. We do not certify theory; we certify implementation."
   },
   "demoDay": {
-    "title": "Demo Day · June 7",
+    "title": "Demo Day · June 10",
     "body1": "The program closes with a public presentation of capstones in front of community, sponsors, and ecosystem guests.",
     "body2": "Demo Day is not ceremony. It's proof.",
     "body3": "You leave with a recorded demo, a documented case, real metrics, and a verified track record — your place in the first generation of Agent Operators."
@@ -343,25 +389,46 @@
     "copyright": "© 2026 Frutero. All rights reserved."
   },
   "testimonials": {
-    "title": "What builders say",
+    "eyebrow": "Builders who actually ship",
+    "title": "What came out of this is already running.",
+    "subtitle": "Stories from builders who already left with something working inside the Frutero ecosystem.",
+    "labels": {
+      "featured": "With video",
+      "more": "More builders",
+      "video": "Video testimonial",
+      "watch": "Watch video",
+      "program": "Verano en Cadena"
+    },
     "items": {
       "0": {
-        "quote": "I spent 6 months playing with GPT. In 4 weeks I had an agent that processes my emails automatically.",
-        "name": "María González",
-        "role": "Founder",
-        "company": "Startup LATAM"
+        "quote": "The mix of theory and practice was excellent. I went from an idea to a real product in a few weeks, with mentors and community helping me make better decisions."
       },
       "1": {
-        "quote": "The orchestration-first approach changed how I think about automation. Now everything has control.",
-        "name": "Carlos Ruiz",
-        "role": "Head of Ops",
-        "company": "Tech Company"
+        "quote": "Frutero helped me enter an ecosystem that felt complex at first. The AI tips saved me time and helped me move faster."
       },
       "2": {
-        "quote": "I thought I needed a developer. Agentcamp showed me I don't.",
-        "name": "Ana López",
-        "role": "Content Creator",
-        "company": "Independent"
+        "quote": "What stood out most was the support, the confidence they gave me, and everything I learned along the way."
+      },
+      "3": {
+        "quote": "The support in understanding the program and the team's guidance were extremely valuable for our project."
+      },
+      "4": {
+        "quote": "Seeing people without a technical background get their app out opened my eyes. That final push to ship made all the difference."
+      },
+      "5": {
+        "quote": "I went from zero to publishing a working app. More importantly, I learned the path and left with confidence to keep building."
+      },
+      "6": {
+        "quote": "I learned by building, and that helped me get past the fear of thinking I couldn't do it. I left wanting to keep creating."
+      },
+      "7": {
+        "quote": "Working with Frutero was a great experience. The team is generous, highly capable, and creates the kind of learning spaces people actually need."
+      },
+      "8": {
+        "quote": "I learned a lot by taking my project from an idea to something functional. It was a valuable experience and made me want to keep improving it."
+      },
+      "9": {
+        "quote": "It was challenging, but seeing your app live at the end feels incredible."
       }
     }
   },
@@ -574,6 +641,240 @@
       "1": { "value": "143", "label": "participants in the in-person bootcamps (NYC + Denver)" },
       "2": { "value": "100+", "label": "agents integrated with payments, social media and custom workflows" },
       "3": { "value": "6", "label": "hackathon winners — projects born in AgentCamp" }
+    }
+  },
+  "sponsorDeck": {
+    "hero": {
+      "overline": "AgentCamp 2026",
+      "title": "Partner with the first",
+      "titleAccent": "agent operator program in Latin America.",
+      "subtitle": "Your infrastructure powers the agents they build.",
+      "proof": "50 operators across Latin America, building on your stack.",
+      "ctaPrimary": "View Sponsorship Tiers",
+      "ctaSecondary": "Get in Touch",
+      "cohortLine": "Cohort 1 · May–June 2026 · frutero.club"
+    },
+    "opportunity": {
+      "overline": "The Opportunity",
+      "title": "Category leadership in the emerging",
+      "titleAccent": "LATAM AI agent operator market.",
+      "stats": {
+        "0": { "value": "50", "label": "operators per cohort", "description": "Professionals, founders, and business owners who decide what tools their teams adopt" },
+        "1": { "value": "100%", "label": "powered by your infra", "description": "Your technology runs under the hood — every agent uses your stack through the platform" },
+        "2": { "value": "1st", "label": "in LATAM · in Spanish", "description": "No comparable program exists. You define the category, not compete in it" }
+      }
+    },
+    "whatIs": {
+      "overline": "What Is AgentCamp",
+      "title": "A 5-week practical program where",
+      "titleAccent": "participants build real AI agents.",
+      "whatYouLearn": "What you learn",
+      "whatYouBuild": "What you build",
+      "input": "Input:",
+      "output": "Output:",
+      "weeks": {
+        "0": {
+          "num": "Week 1", "title": "Activate",
+          "tagline": "\"Your first agent, running from day one\"",
+          "learnings": ["Agent environment setup & first run", "Prompt engineering fundamentals", "Context and instruction design"],
+          "projectName": "First Working Agent", "projectInput": "your use case + AI-assisted setup", "projectOutput": "an active agent solving a real task"
+        },
+        "1": {
+          "num": "Week 2", "title": "Architect",
+          "tagline": "\"How your agent thinks and learns new skills\"",
+          "learnings": ["Bootstrap, memory, and context layers", "Skills framework with OpenClaw", "The difference between a chatbot and a real agent"],
+          "projectName": "Agent with Architecture", "projectInput": "functional skills + memory", "projectOutput": "an agent with its own architecture"
+        },
+        "2": {
+          "num": "Week 3", "title": "Connect",
+          "tagline": "\"Your agent touches the real world\"",
+          "learnings": ["Integration with real tools and files", "Persistent identity setup", "Workspace and environment configuration"],
+          "projectName": "Live Integrations", "projectInput": "tools, files, identity layer", "projectOutput": "real integrations + active identity"
+        },
+        "3": {
+          "num": "Week 4", "title": "Automate",
+          "tagline": "\"Workflows that run without you\"",
+          "learnings": ["Workflow design and automation", "Agent economics and payment rails", "Human-in-the-loop patterns"],
+          "projectName": "Autonomous Workflow", "projectInput": "real case + economic capability", "projectOutput": "a workflow solving real work"
+        },
+        "4": {
+          "num": "Week 5", "title": "Launch",
+          "tagline": "\"Iterate, prove, and present\"",
+          "learnings": ["Evaluation and iteration", "Reputation and public track record", "Demo Day preparation"],
+          "projectName": "Capstone at Demo Day", "projectInput": "recorded demo + real metrics", "projectOutput": "documented case + public reputation"
+        }
+      },
+      "graduation": "Every graduate leaves with:",
+      "graduationBold": "a working agent with its own identity, workflows that transact, and a verified track record."
+    },
+    "audience": {
+      "overline": "The Audience",
+      "title": "50 high-intent operators who will",
+      "titleAccent": "actively build on your infrastructure.",
+      "traits": {
+        "0": { "title": "Operators & decision-makers", "desc": "Managers, consultants, founders, business owners — the people who decide what tools their teams adopt." },
+        "1": { "title": "AI-active, not AI-curious", "desc": "They've tried ChatGPT and Claude. They're frustrated nothing sticks. They're ready to invest in learning." },
+        "2": { "title": "Spanish-speaking LATAM", "desc": "The fastest-growing market for AI adoption. No comparable program exists in Spanish." },
+        "3": { "title": "Downstream influence", "desc": "These aren't junior developers — they bring tools back to their teams, companies, and clients." }
+      }
+    },
+    "howItWorks": {
+      "overline": "How Sponsorship Works",
+      "title": "Your technology powers",
+      "titleAccent": "what they build.",
+      "subtitle": "Participants don't configure your infrastructure directly — the platform abstracts that. Every agent they build runs on your stack. Your brand is associated with the capabilities that make their agents real.",
+      "layers": {
+        "0": { "layer": "Identity", "when": "Week 3", "what": "Every agent gets persistent identity — your wallet infrastructure powers it" },
+        "1": { "layer": "Payments", "when": "Week 4", "what": "Every workflow gets an economic layer — your payment rails handle settlement" },
+        "2": { "layer": "Reputation", "when": "Week 5", "what": "Agent track records verified at Demo Day — your protocol is the proof layer" },
+        "3": { "layer": "Intelligence", "when": "W1–5", "what": "Your models power every agent built in the program — 50 agents running daily" },
+        "4": { "layer": "Environment", "when": "W1–5", "what": "The platform where participants live for 5 weeks — your brand is the workspace" }
+      }
+    },
+    "tiers": {
+      "overline": "Sponsorship Tiers",
+      "title": "Choose your level of",
+      "titleAccent": "partnership.",
+      "founding": {
+        "overline": "Founding Partner",
+        "price": "$5,000 USD",
+        "subtitle": "2–3 slots available · Category exclusive",
+        "perks": [
+          "Category exclusivity — only one identity partner, one payments partner, one intelligence partner",
+          "Your technology powers the agent infrastructure every participant uses throughout the program",
+          "Named in curriculum materials and sessions — participants learn what your tech enables",
+          "Demo Day presenting sponsor — your brand introduces the capstone presentations",
+          "Co-marketing rights: case studies, testimonials, video content from Demo Day",
+          "Logo on all materials: landing page, emails, recordings, certificates",
+          "Post-program: graduates continue on the platform, which continues running on your stack",
+          "First right of refusal for future cohorts"
+        ]
+      },
+      "infrastructure": {
+        "overline": "Infrastructure Partner",
+        "price": "$2,500 USD",
+        "subtitle": "3–5 slots available",
+        "perks": [
+          "Named in curriculum — your technology referenced as infrastructure powering agent capabilities",
+          "Demo Day access — attend, network, evaluate capstones",
+          "Logo on landing page, emails, and recordings",
+          "Community access — direct channel to AgentCamp graduates",
+          "Co-marketing: shared social content and participant highlights",
+          "Post-program: graduates continue on the platform running on your stack"
+        ]
+      },
+      "startup": {
+        "overline": "Startup Partner",
+        "price": "$1,000 USD",
+        "subtitle": "Open slots · Credits and in-kind support do not count toward the fee",
+        "perks": [
+          "Named as supporting partner in program materials",
+          "Demo Day access — attend, network, evaluate capstones",
+          "Logo on landing page and recordings",
+          "Community access — direct channel to AgentCamp graduates",
+          "Co-marketing: shared social content and participant highlights",
+          "Optional: provide API credits or tooling for participants (in addition to fee, not instead of)"
+        ]
+      },
+      "community": {
+        "overline": "Community Partner",
+        "price": "No fee",
+        "subtitle": "For communities, DAOs, collectives, and ecosystem groups — not companies",
+        "perks": [
+          "Cross-promote AgentCamp to your community — we promote yours to ours",
+          "Co-host a session, AMA, or workshop during the program",
+          "Logo on landing page as community partner",
+          "Demo Day invitation for your community leads",
+          "Shared content: social co-promotion, recaps, highlights"
+        ],
+        "note": "This tier is for builder communities, DAOs, developer collectives, and ecosystem groups that want to cross-pollinate audiences. Companies and startups should see the paid tiers."
+      }
+    },
+    "comparison": {
+      "title": "Tier Comparison",
+      "founding": "Founding",
+      "infra": "Infra",
+      "startup": "Startup",
+      "community": "Community",
+      "noFee": "No fee",
+      "features": [
+        "Category exclusivity",
+        "Powers agent infrastructure",
+        "Named in curriculum",
+        "Demo Day presenting sponsor",
+        "Demo Day access",
+        "Logo on all materials",
+        "Co-marketing rights",
+        "Post-program platform",
+        "Community cross-promotion",
+        "First refusal future cohorts"
+      ],
+      "coMarketing": { "founding": "Full", "infra": "Social", "startup": "Social", "community": "Cross-promo" }
+    },
+    "timeline": {
+      "overline": "Timeline",
+      "title": "Key dates",
+      "items": {
+        "0": { "when": "Now", "what": "Partner commitments confirmed" },
+        "1": { "when": "May 11", "what": "Cohort 1 starts — 50 participants begin building" },
+        "2": { "when": "May–Jun", "what": "5 weeks of live sessions — your tech powers the infrastructure" },
+        "3": { "when": "June 10", "what": "Demo Day — capstone presentations, sponsor judges, public event" },
+        "4": { "when": "June 17", "what": "Godínez.AI public launch — graduates arrive with working agents" },
+        "5": { "when": "June+", "what": "Post-program: case studies, testimonials, pipeline activation" }
+      }
+    },
+    "whyCohort1": {
+      "overline": "Why Cohort 1",
+      "title": "Founding partners shape",
+      "titleAccent": "the program.",
+      "items": {
+        "0": { "title": "First-mover in LATAM AI agents", "desc": "No comparable program exists in Spanish. You're defining the category, not competing in it." },
+        "1": { "title": "Curriculum integration, not afterthought", "desc": "Cohort 1 partners co-design how their technology is taught. Later cohorts inherit your structure." },
+        "2": { "title": "50 operators → organic growth", "desc": "Each graduate becomes an advocate in their team, company, and network. 50 operators seed hundreds of users." },
+        "3": { "title": "Godínez.AI launch alignment", "desc": "Cohort 1 graduates arrive on launch day (June 17) with working agents. Your infrastructure is what they're built on." }
+      }
+    },
+    "contact": {
+      "title": "Let's build the first generation",
+      "titleAccent": "of agent operators together.",
+      "subtitle": "AgentCamp Cohort 1 · May–June 2026",
+      "frutero": "frutero.club"
+    },
+    "deckFooter": {
+      "sponsorshipDeck": "Sponsorship Deck",
+      "copyright": "© 2026 Frutero. All rights reserved."
+    },
+    "form": {
+      "successTitle": "We'll be in touch!",
+      "successMsg": "Thanks for your interest in sponsoring AgentCamp. We'll reach out within 48 hours.",
+      "submitAnother": "Submit another",
+      "nameLabel": "Name *",
+      "namePlaceholder": "Jane Smith",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "jane@company.com",
+      "companyLabel": "Company *",
+      "companyPlaceholder": "Acme Inc.",
+      "roleLabel": "Role",
+      "rolePlaceholder": "Head of Marketing",
+      "tierLabel": "Sponsorship tier interest",
+      "tierPlaceholder": "Select a tier (optional)",
+      "tiers": {
+        "founding": "Founding Sponsor — $5,000",
+        "infrastructure": "Infrastructure Partner — $2,500",
+        "startup": "Startup Sponsor — $1,000",
+        "community": "Community Partner — Free",
+        "unsure": "Not sure yet"
+      },
+      "messageLabel": "Anything else?",
+      "messagePlaceholder": "Tell us about your goals, questions, or how you'd like to be involved...",
+      "submitting": "Sending...",
+      "submit": "Get in Touch",
+      "disclaimer": "We'll respond within 48 hours. No spam, ever.",
+      "validation": {
+        "name": "Name is required",
+        "email": "Valid email required",
+        "company": "Company is required"
+      }
     }
   }
 }

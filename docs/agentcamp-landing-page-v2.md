@@ -182,7 +182,7 @@ Por eso AgentCamp enseña la capa completa: arquitectura, identidad propia, capa
 ## Sección 8 — Demo Day
 
 **Headline:**
-Demo Day · 7 de junio
+Demo Day · 10 de junio
 
 **Body:**
 El programa cierra con una presentación pública de capstones, casos de uso y métricas reales frente a comunidad, aliados e invitados del ecosistema.
