@@ -61,7 +61,7 @@ Contact: mel@frutero.club
 ## Links
 
 - [Apply](https://tally.so/r/aQ2D0b)
-- [Full curriculum](https://agentcamp.frutero.club/curriculum)
-- [Full page content for LLMs](https://agentcamp.frutero.club/llms-full.txt)
-- [Website](https://agentcamp.frutero.club/)
-- [Sponsorship deck](https://agentcamp.frutero.club/sponsorship-deck)
+- [Full curriculum](https://www.agentcamp.xyz/curriculum)
+- [Full page content for LLMs](https://www.agentcamp.xyz/llms-full.txt)
+- [Website](https://www.agentcamp.xyz/)
+- [Sponsorship deck](https://www.agentcamp.xyz/sponsorship-deck)

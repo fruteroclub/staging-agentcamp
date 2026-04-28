@@ -1,0 +1,15 @@
+{
+  "name": "AgentCamp",
+  "short_name": "AgentCamp",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5efe3",
+  "theme_color": "#E91E8C",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
