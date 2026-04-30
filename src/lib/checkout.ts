@@ -4,6 +4,7 @@ export type CheckoutRequest = {
   cancelUrl: string;
   checkoutSource: string;
   locale: CheckoutLocale;
+  referralCode?: string;
   successUrl: string;
 };
 
