@@ -21,10 +21,13 @@ export function useCheckout(namespace: CheckoutNamespace = "translation") {
 
     setIsLoading(true);
 
+    const referralCode = new URLSearchParams(window.location.search).get("ref") ?? undefined;
+
     try {
       const { url } = await createCheckoutSession({
         checkoutSource,
         locale: toCheckoutLocale(i18n.language),
+        referralCode,
         successUrl: new URL("/payment/success", window.location.origin).toString(),
         cancelUrl: new URL("/payment/cancel", window.location.origin).toString(),
       });
